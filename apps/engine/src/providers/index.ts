@@ -1,6 +1,5 @@
 import { logger } from "@engine/utils/logger";
 import { EnableBankingProvider } from "./enablebanking/enablebanking-provider";
-
 import { PlaidProvider } from "./plaid/plaid-provider";
 import { TellerProvider } from "./teller/teller-provider";
 import type {
@@ -27,7 +26,6 @@ export class Provider {
     this.#name = params?.provider;
 
     switch (params?.provider) {
-
       case "teller":
         this.#provider = new TellerProvider(params);
         break;
@@ -46,7 +44,6 @@ export class Provider {
   ): Promise<GetHealthCheckResponse> {
     const teller = new TellerProvider(params);
     const plaid = new PlaidProvider(params);
-
     const enablebanking = new EnableBankingProvider(params);
 
     try {
@@ -64,7 +61,6 @@ export class Provider {
         plaid: {
           healthy: isPlaidHealthy,
         },
-
         teller: {
           healthy: isTellerHealthy,
         },
