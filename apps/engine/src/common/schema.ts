@@ -22,7 +22,7 @@ export const GeneralErrorSchema = z.object({
 export const Providers = z.enum([
   "teller",
   "plaid",
-  "gocardless",
+  
   "enablebanking",
 ]);
 

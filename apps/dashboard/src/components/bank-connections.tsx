@@ -33,8 +33,7 @@ import { SyncTransactions } from "./sync-transactions";
 
 function getProviderName(provider: string | null) {
   switch (provider) {
-    case "gocardless":
-      return "GoCardLess";
+
     case "enablebanking":
       return "Enable Banking";
     case "teller":
@@ -256,7 +255,7 @@ export function BankConnection({ connection }: { connection: BankConnection }) {
       reconnectConnection.execute({
         connectionId: params.id,
         provider: connection.provider as
-          | "gocardless"
+          
           | "plaid"
           | "teller"
           | "enablebanking",

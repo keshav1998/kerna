@@ -136,7 +136,7 @@ const formSchema = z.object({
   referenceId: z.string().nullable().optional(), // GoCardLess
   accessToken: z.string().nullable().optional(), // Teller
   enrollmentId: z.string().nullable().optional(), // Teller
-  provider: z.enum(["gocardless", "plaid", "teller", "enablebanking"]),
+  provider: z.enum(["plaid", "teller", "enablebanking"]),
   accounts: z
     .array(
       z.object({
@@ -195,7 +195,7 @@ export function SelectBankAccountsModal() {
         accessToken: token ?? undefined,
         institutionId: institution_id ?? undefined,
         provider: provider as
-          | "gocardless"
+          
           | "plaid"
           | "teller"
           | "enablebanking",
@@ -246,14 +246,14 @@ export function SelectBankAccountsModal() {
       accessToken: token ?? undefined,
       enrollmentId: enrollment_id ?? undefined,
       referenceId: ref ?? undefined,
-      provider: provider as "gocardless" | "plaid" | "teller" | "enablebanking",
+      provider: provider as "plaid" | "teller" | "enablebanking",
       accounts: [],
     },
   });
 
   useEffect(() => {
     form.reset({
-      provider: provider as "gocardless" | "plaid" | "teller" | "enablebanking",
+      provider: provider as "plaid" | "teller" | "enablebanking",
       accessToken: token ?? undefined,
       enrollmentId: enrollment_id ?? undefined,
       // GoCardLess Requestion ID or Plaid Item ID

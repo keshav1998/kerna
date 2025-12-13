@@ -1,14 +1,12 @@
 import type { AccountType } from "@engine/utils/account";
 
-export type Providers = "teller" | "plaid" | "gocardless" | "enablebanking";
+export type Providers = "teller" | "plaid" | "enablebanking";
 
 export type ProviderParams = {
   provider: Providers;
   kv: KVNamespace;
   fetcher?: Fetcher | null; // Teller
   envs: {
-    GOCARDLESS_SECRET_KEY: string;
-    GOCARDLESS_SECRET_ID: string;
     PLAID_CLIENT_ID: string;
     PLAID_SECRET: string;
     PLAID_ENVIRONMENT: string;
@@ -50,8 +48,8 @@ export type Account = {
   institution: Institution;
   balance: Balance;
   enrollment_id: string | null; // Teller
-  resource_id: string | null; // GoCardLess
-  expires_at: string | null; // EnableBanking & GoCardLess
+  resource_id: string | null; // Removed: GoCardLess
+  expires_at: string | null; // EnableBanking
 };
 
 export type ConnectionStatus = {
@@ -71,7 +69,7 @@ export type GetTransactionsRequest = {
 };
 
 export type GetAccountsRequest = {
-  id?: string; // GoCardLess & EnableBanking
+  id?: string; // EnableBanking
   accessToken?: string; // Teller & Plaid
   institutionId?: string; // Plaid
 };
@@ -87,7 +85,7 @@ export type GetAccountBalanceResponse = {
 };
 
 export type DeleteAccountsRequest = {
-  accountId?: string; // GoCardLess
+  accountId?: string; // Removed: GoCardLess
   accessToken?: string; // Teller & Plaid
 };
 
@@ -117,7 +115,7 @@ export type HealthCheckResponse = {
 
 export type GetHealthCheckResponse = {
   teller: HealthCheckResponse;
-  gocardless: HealthCheckResponse;
+
   plaid: HealthCheckResponse;
   enablebanking: HealthCheckResponse;
 };
@@ -125,6 +123,6 @@ export type GetHealthCheckResponse = {
 export type GetConnectionStatusResponse = ConnectionStatus;
 
 export type DeleteConnectionRequest = {
-  id: string; // GoCardLess & EnableBanking
+  id: string; // EnableBanking
   accessToken?: string; // Teller & Plaid
 };

@@ -3,7 +3,7 @@ import { useTRPC } from "@/trpc/client";
 import { useMutation } from "@tanstack/react-query";
 import { BankConnectButton } from "./bank-connect-button";
 import { EnableBankingConnect } from "./enablebanking-connect";
-import { GoCardLessConnect } from "./gocardless-connect";
+
 import { TellerConnect } from "./teller-connect";
 
 type Props = {
@@ -50,17 +50,7 @@ export function ConnectBankProvider({
           }}
         />
       );
-    case "gocardless": {
-      return (
-        <GoCardLessConnect
-          id={id}
-          availableHistory={availableHistory}
-          onSelect={() => {
-            updateUsage();
-          }}
-        />
-      );
-    }
+
     case "enablebanking": {
       return (
         <EnableBankingConnect
