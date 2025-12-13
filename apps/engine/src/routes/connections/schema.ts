@@ -89,5 +89,3 @@ export const ConnectionByReferenceSchema = z.object({
     accounts: z.array(z.string()),
   }),
 });
-
-

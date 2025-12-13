@@ -1,7 +1,6 @@
 import type { Bindings } from "@engine/common/bindings";
 import { ErrorSchema } from "@engine/common/schema";
 import { EnableBankingApi } from "@engine/providers/enablebanking/enablebanking-api";
-
 import { PlaidApi } from "@engine/providers/plaid/plaid-api";
 import { createErrorResponse } from "@engine/utils/error";
 import { createRoute } from "@hono/zod-openapi";
@@ -12,7 +11,6 @@ import {
   EnableBankingLinkResponseSchema,
   EnableBankingSessionQuerySchema,
   EnableBankingSessionSchema,
-
   PlaidExchangeBodySchema,
   PlaidExchangeSchema,
   PlaidLinkBodySchema,

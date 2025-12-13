@@ -1,7 +1,6 @@
 import type { Bindings } from "@engine/common/bindings";
 import { ErrorSchema } from "@engine/common/schema";
 import { Provider } from "@engine/providers";
-
 import { createErrorResponse } from "@engine/utils/error";
 import { OpenAPIHono, createRoute } from "@hono/zod-openapi";
 import { env } from "hono/adapter";
@@ -12,7 +11,6 @@ import {
   ConnectionStatusQuerySchema,
   ConnectionStatusSchema,
   DeleteConnectionBodySchema,
-
 } from "./schema";
 
 const app = new OpenAPIHono<{ Bindings: Bindings }>()
