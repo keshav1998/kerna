@@ -1,7 +1,7 @@
 "use client";
 
-import { createClient } from "@midday/supabase/client";
-import { Button } from "@midday/ui/button";
+import { createClient } from "@kerna/supabase/client";
+import { Button } from "@kerna/ui/button";
 
 export function SignOutButton() {
   const supabase = createClient();

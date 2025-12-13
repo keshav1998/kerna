@@ -5,10 +5,10 @@ import {
   groupRelatedInboxItems,
   updateInbox,
   updateInboxWithProcessedData,
-} from "@midday/db/queries";
-import { DocumentClient } from "@midday/documents";
-import { triggerJob } from "@midday/job-client";
-import { createClient } from "@midday/supabase/job";
+} from "@kerna/db/queries";
+import { DocumentClient } from "@kerna/documents";
+import { triggerJob } from "@kerna/job-client";
+import { createClient } from "@kerna/supabase/job";
 import type { Job } from "bullmq";
 import convert from "heic-convert";
 import sharp from "sharp";

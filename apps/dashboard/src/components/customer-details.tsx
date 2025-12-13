@@ -14,18 +14,18 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
-import { Badge } from "@midday/ui/badge";
-import { Button } from "@midday/ui/button";
+} from "@kerna/ui/accordion";
+import { Badge } from "@kerna/ui/badge";
+import { Button } from "@kerna/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
-import { SheetFooter } from "@midday/ui/sheet";
-import { Skeleton } from "@midday/ui/skeleton";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
+import { SheetFooter } from "@kerna/ui/sheet";
+import { Skeleton } from "@kerna/ui/skeleton";
 import {
   Table,
   TableBody,
@@ -33,9 +33,9 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@midday/ui/table";
-import { useToast } from "@midday/ui/use-toast";
-import { formatDate } from "@midday/utils/format";
+} from "@kerna/ui/table";
+import { useToast } from "@kerna/ui/use-toast";
+import { formatDate } from "@kerna/utils/format";
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import { useTheme } from "next-themes";
 import Link from "next/link";

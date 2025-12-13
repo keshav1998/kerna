@@ -4,7 +4,7 @@ import {
   updateUsageSchema,
 } from "@api/schemas/institutions";
 import { createTRPCRouter, protectedProcedure } from "@api/trpc/init";
-import { client } from "@midday/engine-client";
+import { client } from "@kerna/engine-client";
 import { TRPCError } from "@trpc/server";
 
 export const institutionsRouter = createTRPCRouter({

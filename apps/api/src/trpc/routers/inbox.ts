@@ -36,10 +36,10 @@ import {
   matchTransaction,
   unmatchTransaction,
   updateInbox,
-} from "@midday/db/queries";
-import { triggerJob } from "@midday/job-client";
-import { logger } from "@midday/logger";
-import { remove } from "@midday/supabase/storage";
+} from "@kerna/db/queries";
+import { triggerJob } from "@kerna/job-client";
+import { logger } from "@kerna/logger";
+import { remove } from "@kerna/supabase/storage";
 
 export const inboxRouter = createTRPCRouter({
   get: protectedProcedure

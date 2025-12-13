@@ -1,14 +1,14 @@
 "use client";
 
 import { VerifyMfa } from "@/components/verify-mfa";
-import { Icons } from "@midday/ui/icons";
+import { Icons } from "@kerna/ui/icons";
 import Link from "next/link";
 
 export default function Verify() {
   return (
     <div>
       <div className="absolute left-4 top-4">
-        <Link href="https://midday.ai">
+        <Link href="https://kerna.ai">
           <Icons.LogoSmall className="h-6 w-auto" />
         </Link>
       </div>

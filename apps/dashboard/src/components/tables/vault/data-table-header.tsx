@@ -1,9 +1,9 @@
 "use client";
 
 import { HorizontalPagination } from "@/components/horizontal-pagination";
-import { Checkbox } from "@midday/ui/checkbox";
-import { cn } from "@midday/ui/cn";
-import { TableHead, TableHeader, TableRow } from "@midday/ui/table";
+import { Checkbox } from "@kerna/ui/checkbox";
+import { cn } from "@kerna/ui/cn";
+import { TableHead, TableHeader, TableRow } from "@kerna/ui/table";
 
 interface TableColumn {
   id: string;

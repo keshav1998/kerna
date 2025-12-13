@@ -1,7 +1,7 @@
 import { isTeamEligibleForSync } from "@/utils/check-team-eligibility";
 import { validateTellerSignature } from "@/utils/teller";
-import type { SyncConnectionPayload } from "@midday/jobs/schema";
-import { createClient } from "@midday/supabase/server";
+import type { SyncConnectionPayload } from "@kerna/jobs/schema";
+import { createClient } from "@kerna/supabase/server";
 import { tasks } from "@trigger.dev/sdk";
 import { isAfter, subDays } from "date-fns";
 import { type NextRequest, NextResponse } from "next/server";

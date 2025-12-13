@@ -1,7 +1,7 @@
 "use client";
 
 import { useTRPC } from "@/trpc/client";
-import { uniqueCurrencies } from "@midday/location/currencies";
+import { uniqueCurrencies } from "@kerna/location/currencies";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -10,8 +10,8 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
 import { useMutation } from "@tanstack/react-query";
 import { useFormContext } from "react-hook-form";
 import { SelectCurrency } from "../select-currency";

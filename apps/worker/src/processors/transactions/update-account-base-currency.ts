@@ -4,7 +4,7 @@ import {
   getExchangeRate,
   getTransactionsByAccountId,
   updateBankAccount,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 import type { Job } from "bullmq";
 import type { UpdateAccountBaseCurrencyPayload } from "../../schemas/transactions";
 import {

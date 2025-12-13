@@ -712,13 +712,13 @@ originalSuggestion: {
 **Industry Comparison**:
 - **Basic Systems**: Simple name matching (60% accuracy)
 - **Advanced Systems**: Rule-based financial matching (75% accuracy)
-- **Midday System**: AI-powered with continuous learning (90%+ accuracy potential)
+- **Kerna System**: AI-powered with continuous learning (90%+ accuracy potential)
 
 ### Key Differentiators
 
 1. **Semantic Merchant Auto-Matching**: Uses ML embeddings to learn merchant-specific patterns, enabling safe auto-matching for proven merchant pairs (Netflix → Netflix, but not affecting Vercel matches)
 2. **Dismissed Match Prevention**: Permanently respects user dismissals - never re-suggests the same inbox-transaction pair once declined
-3. **Post-Match Learning**: Unlike most systems that only learn from initial feedback, Midday learns when users unmatch transactions days or weeks later
+3. **Post-Match Learning**: Unlike most systems that only learn from initial feedback, Kerna learns when users unmatch transactions days or weeks later
 4. **Hybrid Scoring**: Perfect financial matches get confidence boosts even with moderate semantic scores
 5. **Conservative Merchant Learning**: Applies 85% confidence caps for unproven merchants until patterns are established
 6. **Cross-Currency Intelligence**: Sophisticated detection of suspicious cross-currency matches

@@ -1,5 +1,5 @@
-import { getBankAccounts } from "@midday/db/queries";
-import { triggerJob } from "@midday/job-client";
+import { getBankAccounts } from "@kerna/db/queries";
+import { triggerJob } from "@kerna/job-client";
 import type { Job } from "bullmq";
 import type { UpdateBaseCurrencyPayload } from "../../schemas/transactions";
 import { getDb } from "../../utils/db";

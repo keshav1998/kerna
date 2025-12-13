@@ -3,9 +3,9 @@
 import { useProductParams } from "@/hooks/use-product-params";
 import { useTRPC } from "@/trpc/client";
 import { formatAmount } from "@/utils/format";
-import { extractTextFromValue } from "@midday/invoice";
-import type { InvoiceProduct } from "@midday/invoice/types";
-import { cn } from "@midday/ui/cn";
+import { extractTextFromValue } from "@kerna/invoice";
+import type { InvoiceProduct } from "@kerna/invoice/types";
+import { cn } from "@kerna/ui/cn";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useFormContext } from "react-hook-form";

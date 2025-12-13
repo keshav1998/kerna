@@ -7,19 +7,19 @@ import { useUpload } from "@/hooks/use-upload";
 import { useUserQuery } from "@/hooks/use-user";
 import { useZodForm } from "@/hooks/use-zod-form";
 import { useTRPC } from "@/trpc/client";
-import { uniqueCurrencies } from "@midday/location/currencies";
-import { AnimatedSizeContainer } from "@midday/ui/animated-size-container";
+import { uniqueCurrencies } from "@kerna/location/currencies";
+import { AnimatedSizeContainer } from "@kerna/ui/animated-size-container";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@midday/ui/dialog";
-import { Icons } from "@midday/ui/icons";
-import { SubmitButton } from "@midday/ui/submit-button";
-import { useToast } from "@midday/ui/use-toast";
-import { stripSpecialCharacters } from "@midday/utils";
+} from "@kerna/ui/dialog";
+import { Icons } from "@kerna/ui/icons";
+import { SubmitButton } from "@kerna/ui/submit-button";
+import { useToast } from "@kerna/ui/use-toast";
+import { stripSpecialCharacters } from "@kerna/utils";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { parseAsBoolean, parseAsString, useQueryStates } from "nuqs";
 import { useEffect, useState } from "react";

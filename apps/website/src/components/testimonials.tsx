@@ -64,7 +64,7 @@ const testimonials = [
       "https://pbs.twimg.com/profile_images/1839412200760610816/Lce29ADc_400x400.jpg",
     handle: "@calcom",
     verified: true,
-    quote: "We love @middayai 🖤",
+    quote: "We love @kernaai 🖤",
   },
   {
     name: "Guillermo Rauch",
@@ -73,7 +73,7 @@ const testimonials = [
     handle: "@rauchg",
     verified: true,
     quote:
-      "nice to see @middayai generative ui features built on @vercel AI sdk midday is becoming one of the best OSS @nextjs real-world apps",
+      "nice to see @kernaai generative ui features built on @vercel AI sdk midday is becoming one of the best OSS @nextjs real-world apps",
   },
   {
     name: "Steven Tey",
@@ -81,7 +81,7 @@ const testimonials = [
       "https://pbs.twimg.com/profile_images/1923813473240203264/owJG92AC_400x400.jpg",
     handle: "@steventey",
     verified: true,
-    quote: `Just found my new favorite open-source project → http://midday.ai
+    quote: `Just found my new favorite open-source project → http://kerna.ai
 
     It's a modern layer on top of Quickbooks/Xero that lets you automate the tedious accounting aspects of your business and focus on what matters – your product.
     
@@ -98,7 +98,7 @@ const testimonials = [
     handle: "@peer_rich",
     verified: true,
     quote:
-      "the best thing i couldve done as a founder is build something that helps other founders. so proud 🖤 @middayai",
+      "the best thing i couldve done as a founder is build something that helps other founders. so proud 🖤 @kernaai",
   },
 ];
 

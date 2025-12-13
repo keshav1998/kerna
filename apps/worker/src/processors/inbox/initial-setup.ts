@@ -1,5 +1,5 @@
-import { updateInboxAccount } from "@midday/db/queries";
-import { triggerJob } from "@midday/job-client";
+import { updateInboxAccount } from "@kerna/db/queries";
+import { triggerJob } from "@kerna/job-client";
 import type { Job } from "bullmq";
 import { registerDynamicScheduler } from "../../schedulers/registry";
 import type { InboxProviderInitialSetupPayload } from "../../schemas/inbox";

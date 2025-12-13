@@ -4,8 +4,8 @@ import { CopyInput } from "@/components/copy-input";
 import { OpenURL } from "@/components/open-url";
 import { useTRPC } from "@/trpc/client";
 import { getUrl } from "@/utils/environment";
-import { Button } from "@midday/ui/button";
-import { Calendar } from "@midday/ui/calendar";
+import { Button } from "@kerna/ui/button";
+import { Calendar } from "@kerna/ui/calendar";
 import {
   Dialog,
   DialogContent,
@@ -13,11 +13,11 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@midday/ui/dialog";
-import { Icons } from "@midday/ui/icons";
-import { Label } from "@midday/ui/label";
-import { Popover, PopoverContent, PopoverTrigger } from "@midday/ui/popover";
-import { SubmitButton } from "@midday/ui/submit-button";
+} from "@kerna/ui/dialog";
+import { Icons } from "@kerna/ui/icons";
+import { Label } from "@kerna/ui/label";
+import { Popover, PopoverContent, PopoverTrigger } from "@kerna/ui/popover";
+import { SubmitButton } from "@kerna/ui/submit-button";
 import { useMutation } from "@tanstack/react-query";
 import { addDays, format } from "date-fns";
 import { CalendarIcon } from "lucide-react";

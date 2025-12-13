@@ -1,4 +1,4 @@
-import { triggerJob } from "@midday/job-client";
+import { triggerJob } from "@kerna/job-client";
 import type {
   BatchProcessMatchingPayload,
   EmbedInboxPayload,

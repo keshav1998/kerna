@@ -1,7 +1,7 @@
 "use client";
 
-import { Avatar, AvatarImageNext } from "@midday/ui/avatar";
-import { Icons } from "@midday/ui/icons";
+import { Avatar, AvatarImageNext } from "@kerna/ui/avatar";
+import { Icons } from "@kerna/ui/icons";
 
 export type Story = {
   id: number;

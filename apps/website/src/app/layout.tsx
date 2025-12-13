@@ -3,10 +3,10 @@ import { Footer } from "@/components/footer";
 import { FooterCTA } from "@/components/footer-cta";
 import { Header } from "@/components/header";
 import "@/styles/globals.css";
-import { cn } from "@midday/ui/cn";
-import "@midday/ui/globals.css";
+import { cn } from "@kerna/ui/cn";
+import "@kerna/ui/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Provider as Analytics } from "@midday/events/client";
+import { Provider as Analytics } from "@kerna/events/client";
 import type { Metadata } from "next";
 import { Hedvig_Letters_Sans, Hedvig_Letters_Serif } from "next/font/google";
 import type { ReactElement } from "react";
@@ -45,12 +45,12 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://cdn.midday.ai/opengraph-image.jpg",
+        url: "https://cdn.kerna.ai/opengraph-image.jpg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://cdn.midday.ai/opengraph-image.jpg",
+        url: "https://cdn.kerna.ai/opengraph-image.jpg",
         width: 1800,
         height: 1600,
       },
@@ -62,12 +62,12 @@ export const metadata: Metadata = {
       "Midday provides you with greater insight into your business and automates the boring tasks, allowing you to focus on what you love to do instead.",
     images: [
       {
-        url: "https://cdn.midday.ai/opengraph-image.jpg",
+        url: "https://cdn.kerna.ai/opengraph-image.jpg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://cdn.midday.ai/opengraph-image.jpg",
+        url: "https://cdn.kerna.ai/opengraph-image.jpg",
         width: 1800,
         height: 1600,
       },

@@ -1,6 +1,6 @@
 import { getPlanByProductId } from "@/utils/plans";
-import { updateTeamPlan } from "@midday/supabase/mutations";
-import { createClient } from "@midday/supabase/server";
+import { updateTeamPlan } from "@kerna/supabase/mutations";
+import { createClient } from "@kerna/supabase/server";
 import { Webhooks } from "@polar-sh/nextjs";
 
 export const POST = Webhooks({

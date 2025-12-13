@@ -1,6 +1,6 @@
-import type { Database } from "@midday/db/client";
-import { getInboxAccountById, upsertInboxAccount } from "@midday/db/queries";
-import { decrypt, encrypt } from "@midday/encryption";
+import type { Database } from "@kerna/db/client";
+import { getInboxAccountById, upsertInboxAccount } from "@kerna/db/queries";
+import { decrypt, encrypt } from "@kerna/encryption";
 import { GmailProvider } from "./providers/gmail";
 import {
   type Account,

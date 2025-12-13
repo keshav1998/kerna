@@ -11,17 +11,17 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@midday/ui/alert-dialog";
-import { Avatar, AvatarFallback, AvatarImageNext } from "@midday/ui/avatar";
-import { Button } from "@midday/ui/button";
+} from "@kerna/ui/alert-dialog";
+import { Avatar, AvatarFallback, AvatarImageNext } from "@kerna/ui/avatar";
+import { Button } from "@kerna/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { SubmitButton } from "@midday/ui/submit-button";
-import { toast } from "@midday/ui/use-toast";
+} from "@kerna/ui/dropdown-menu";
+import { SubmitButton } from "@kerna/ui/submit-button";
+import { toast } from "@kerna/ui/use-toast";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import type { ColumnDef, FilterFn, Row } from "@tanstack/react-table";
 import { MoreHorizontal } from "lucide-react";

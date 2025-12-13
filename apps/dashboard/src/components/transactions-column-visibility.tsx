@@ -1,8 +1,8 @@
 import { useTransactionsStore } from "@/store/transactions";
-import { Button } from "@midday/ui/button";
-import { Checkbox } from "@midday/ui/checkbox";
-import { Icons } from "@midday/ui/icons";
-import { Popover, PopoverContent, PopoverTrigger } from "@midday/ui/popover";
+import { Button } from "@kerna/ui/button";
+import { Checkbox } from "@kerna/ui/checkbox";
+import { Icons } from "@kerna/ui/icons";
+import { Popover, PopoverContent, PopoverTrigger } from "@kerna/ui/popover";
 
 export function TransactionsColumnVisibility() {
   const { columns } = useTransactionsStore();

@@ -1,8 +1,8 @@
 import { Cookies } from "@/utils/constants";
-import { LogEvents } from "@midday/events/events";
-import { setupAnalytics } from "@midday/events/server";
-import { getSession } from "@midday/supabase/cached-queries";
-import { createClient } from "@midday/supabase/server";
+import { LogEvents } from "@kerna/events/events";
+import { setupAnalytics } from "@kerna/events/server";
+import { getSession } from "@kerna/supabase/cached-queries";
+import { createClient } from "@kerna/supabase/server";
 import { addSeconds, addYears } from "date-fns";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";

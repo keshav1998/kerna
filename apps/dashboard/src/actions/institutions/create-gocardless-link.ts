@@ -1,7 +1,7 @@
 "use server";
 
-import { client } from "@midday/engine-client";
-import { LogEvents } from "@midday/events/events";
+import { client } from "@kerna/engine-client";
+import { LogEvents } from "@kerna/events/events";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 import { authActionClient } from "../safe-action";

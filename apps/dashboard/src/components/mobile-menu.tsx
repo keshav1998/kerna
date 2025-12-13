@@ -1,8 +1,8 @@
 "use client";
 
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
-import { Sheet, SheetContent, SheetTrigger } from "@midday/ui/sheet";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
+import { Sheet, SheetContent, SheetTrigger } from "@kerna/ui/sheet";
 import { useState } from "react";
 import { MainMenu } from "./main-menu";
 

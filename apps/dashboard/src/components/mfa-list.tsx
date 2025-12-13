@@ -1,6 +1,6 @@
 import { getI18n } from "@/locales/server";
-import { createClient } from "@midday/supabase/server";
-import { Skeleton } from "@midday/ui/skeleton";
+import { createClient } from "@kerna/supabase/server";
+import { Skeleton } from "@kerna/ui/skeleton";
 import { format } from "date-fns";
 import { RemoveMFAButton } from "./remove-mfa-button";
 

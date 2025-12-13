@@ -3,19 +3,19 @@
 import { useInboxParams } from "@/hooks/use-inbox-params";
 import { useZodForm } from "@/hooks/use-zod-form";
 import { useTRPC } from "@/trpc/client";
-import { CurrencyInput } from "@midday/ui/currency-input";
-import { DialogContent, DialogHeader, DialogTitle } from "@midday/ui/dialog";
-import { Dialog } from "@midday/ui/dialog";
+import { CurrencyInput } from "@kerna/ui/currency-input";
+import { DialogContent, DialogHeader, DialogTitle } from "@kerna/ui/dialog";
+import { Dialog } from "@kerna/ui/dialog";
 import {
   FormControl,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
-} from "@midday/ui/form";
-import { Form } from "@midday/ui/form";
-import { Input } from "@midday/ui/input";
-import { SubmitButton } from "@midday/ui/submit-button";
+} from "@kerna/ui/form";
+import { Form } from "@kerna/ui/form";
+import { Input } from "@kerna/ui/input";
+import { SubmitButton } from "@kerna/ui/submit-button";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
 import { z } from "zod/v3";

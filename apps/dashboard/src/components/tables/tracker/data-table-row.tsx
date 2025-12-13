@@ -19,19 +19,19 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@midday/ui/alert-dialog";
-import { Avatar, AvatarFallback, AvatarImageNext } from "@midday/ui/avatar";
-import { Badge } from "@midday/ui/badge";
+} from "@kerna/ui/alert-dialog";
+import { Avatar, AvatarFallback, AvatarImageNext } from "@kerna/ui/avatar";
+import { Badge } from "@kerna/ui/badge";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
-import { ScrollArea, ScrollBar } from "@midday/ui/scroll-area";
-import { TableCell, TableRow } from "@midday/ui/table";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
+import { ScrollArea, ScrollBar } from "@kerna/ui/scroll-area";
+import { TableCell, TableRow } from "@kerna/ui/table";
 import Link from "next/link";
 
 type DataTableCellProps = {

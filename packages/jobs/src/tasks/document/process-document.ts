@@ -1,9 +1,9 @@
 import { getDb } from "@jobs/init";
 import { processDocumentSchema } from "@jobs/schema";
-import { updateDocumentByPath } from "@midday/db/queries";
-import { loadDocument } from "@midday/documents/loader";
-import { getContentSample } from "@midday/documents/utils";
-import { createClient } from "@midday/supabase/job";
+import { updateDocumentByPath } from "@kerna/db/queries";
+import { loadDocument } from "@kerna/documents/loader";
+import { getContentSample } from "@kerna/documents/utils";
+import { createClient } from "@kerna/supabase/job";
 import { schemaTask, tasks } from "@trigger.dev/sdk";
 import { classifyDocument } from "./classify-document";
 import { classifyImage } from "./classify-image";

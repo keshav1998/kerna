@@ -6,30 +6,30 @@ import { useZodForm } from "@/hooks/use-zod-form";
 import { useI18n } from "@/locales/client";
 import { useTRPC } from "@/trpc/client";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Avatar, AvatarFallback } from "@midday/ui/avatar";
-import { Button } from "@midday/ui/button";
+import { Avatar, AvatarFallback } from "@kerna/ui/avatar";
+import { Button } from "@kerna/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@midday/ui/dialog";
+} from "@kerna/ui/dialog";
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormLabel,
-} from "@midday/ui/form";
-import { Icons } from "@midday/ui/icons";
-import { Skeleton } from "@midday/ui/skeleton";
-import { SubmitButton } from "@midday/ui/submit-button";
-import { Switch } from "@midday/ui/switch";
-import { Tabs, TabsContent } from "@midday/ui/tabs";
-import { Textarea } from "@midday/ui/textarea";
-import { useToast } from "@midday/ui/use-toast";
-import { getInitials } from "@midday/utils/format";
+} from "@kerna/ui/form";
+import { Icons } from "@kerna/ui/icons";
+import { Skeleton } from "@kerna/ui/skeleton";
+import { SubmitButton } from "@kerna/ui/submit-button";
+import { Switch } from "@kerna/ui/switch";
+import { Tabs, TabsContent } from "@kerna/ui/tabs";
+import { Textarea } from "@kerna/ui/textarea";
+import { useToast } from "@kerna/ui/use-toast";
+import { getInitials } from "@kerna/utils/format";
 import { useQuery } from "@tanstack/react-query";
 import { useMutation } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";

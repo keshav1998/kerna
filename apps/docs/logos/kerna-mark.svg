@@ -1,0 +1,24 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kerna Primary Mark - Geometric kernel symbol -->
+  <g id="kerna-mark">
+    <!-- Outer frame - top left -->
+    <path d="M24 24 L24 40 L32 40 L32 32 L40 32 L40 24 Z" fill="#00D9FF"/>
+    <!-- Outer frame - top right -->
+    <path d="M88 24 L88 32 L96 32 L96 40 L104 40 L104 24 Z" fill="#00D9FF"/>
+    <!-- Outer frame - bottom left -->
+    <path d="M24 88 L24 104 L40 104 L40 96 L32 96 L32 88 Z" fill="#00D9FF"/>
+    <!-- Outer frame - bottom right -->
+    <path d="M88 96 L88 104 L104 104 L104 88 L96 88 L96 96 Z" fill="#00D9FF"/>
+    
+    <!-- Inner core - central square -->
+    <rect x="52" y="52" width="24" height="24" fill="#00D9FF"/>
+    
+    <!-- Connecting elements - vertical -->
+    <rect x="60" y="40" width="8" height="12" fill="#00D9FF"/>
+    <rect x="60" y="76" width="8" height="12" fill="#00D9FF"/>
+    
+    <!-- Connecting elements - horizontal -->
+    <rect x="40" y="60" width="12" height="8" fill="#00D9FF"/>
+    <rect x="76" y="60" width="12" height="8" fill="#00D9FF"/>
+  </g>
+</svg>

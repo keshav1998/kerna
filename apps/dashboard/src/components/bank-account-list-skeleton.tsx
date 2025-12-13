@@ -1,4 +1,4 @@
-import { Skeleton } from "@midday/ui/skeleton";
+import { Skeleton } from "@kerna/ui/skeleton";
 
 export function BankAccountListSkeleton() {
   return (

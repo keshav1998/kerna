@@ -7,8 +7,8 @@ import {
   getUserById,
   getUserInvites,
   updateUser,
-} from "@midday/db/queries";
-import { generateFileKey } from "@midday/encryption";
+} from "@kerna/db/queries";
+import { generateFileKey } from "@kerna/encryption";
 
 export const userRouter = createTRPCRouter({
   me: protectedProcedure.query(async ({ ctx: { db, session } }) => {

@@ -1,7 +1,7 @@
 "use client";
 
-import { createClient } from "@midday/supabase/client";
-import { DropdownMenuItem } from "@midday/ui/dropdown-menu";
+import { createClient } from "@kerna/supabase/client";
+import { DropdownMenuItem } from "@kerna/ui/dropdown-menu";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 

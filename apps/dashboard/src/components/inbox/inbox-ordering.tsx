@@ -1,14 +1,14 @@
 "use client";
 
 import { useInboxParams } from "@/hooks/use-inbox-params";
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
 
 export function InboxOrdering() {
   const { params, setParams } = useInboxParams();

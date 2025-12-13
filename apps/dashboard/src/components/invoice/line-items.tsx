@@ -2,9 +2,9 @@
 
 import { useTRPC } from "@/trpc/client";
 import { formatAmount } from "@/utils/format";
-import { calculateLineItemTotal } from "@midday/invoice/calculate";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
+import { calculateLineItemTotal } from "@kerna/invoice/calculate";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
 import { useMutation } from "@tanstack/react-query";
 import { Reorder, useDragControls } from "framer-motion";
 import { useFieldArray, useFormContext, useWatch } from "react-hook-form";

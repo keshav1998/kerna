@@ -1,9 +1,9 @@
 "use server";
 
-import { LogEvents } from "@midday/events/events";
-import { formatAmountValue } from "@midday/import";
-import { triggerJob } from "@midday/job-client";
-import type { ImportTransactionsPayload } from "@midday/jobs/schema";
+import { LogEvents } from "@kerna/events/events";
+import { formatAmountValue } from "@kerna/import";
+import { triggerJob } from "@kerna/job-client";
+import type { ImportTransactionsPayload } from "@kerna/jobs/schema";
 import { z } from "zod";
 import { authActionClient } from "../safe-action";
 

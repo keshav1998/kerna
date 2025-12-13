@@ -17,7 +17,7 @@ import {
   startTimer,
   stopTimer,
   upsertTrackerEntries,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 
 export const trackerEntriesRouter = createTRPCRouter({
   byDate: protectedProcedure

@@ -134,7 +134,7 @@ export async function extractWebsite(
   website: string | null | undefined,
   email: string | null | undefined,
   vendorName: string | null | undefined,
-  logger?: ReturnType<typeof import("@midday/logger").createLoggerWithContext>,
+  logger?: ReturnType<typeof import("@kerna/logger").createLoggerWithContext>,
 ): Promise<string | null> {
   // First priority: explicit website field
   if (website) {

@@ -11,9 +11,9 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@midday/ui/alert-dialog";
-import { Input } from "@midday/ui/input";
-import { Label } from "@midday/ui/label";
+} from "@kerna/ui/alert-dialog";
+import { Input } from "@kerna/ui/input";
+import { Label } from "@kerna/ui/label";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 import { useState } from "react";

@@ -1,8 +1,8 @@
 "use client";
 
 import { Cookies } from "@/utils/constants";
-import type { AppRouter } from "@midday/api/trpc/routers/_app";
-import { createClient } from "@midday/supabase/client";
+import type { AppRouter } from "@kerna/api/trpc/routers/_app";
+import { createClient } from "@kerna/supabase/client";
 import type { QueryClient } from "@tanstack/react-query";
 import { QueryClientProvider, isServer } from "@tanstack/react-query";
 import { createTRPCClient, httpBatchLink, loggerLink } from "@trpc/client";

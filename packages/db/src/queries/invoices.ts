@@ -10,9 +10,9 @@ import {
   trackerEntries,
   trackerProjects,
 } from "@db/schema";
-import { buildSearchQuery } from "@midday/db/utils/search-query";
-import { generateToken } from "@midday/invoice/token";
-import type { EditorDoc, LineItem } from "@midday/invoice/types";
+import { buildSearchQuery } from "@kerna/db/utils/search-query";
+import { generateToken } from "@kerna/invoice/token";
+import type { EditorDoc, LineItem } from "@kerna/invoice/types";
 import camelcaseKeys from "camelcase-keys";
 import {
   addMonths,

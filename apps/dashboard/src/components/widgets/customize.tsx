@@ -2,8 +2,8 @@
 
 import { useMetricsCustomize } from "@/hooks/use-metrics-customize";
 import { useOverviewTab } from "@/hooks/use-overview-tab";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
 import { usePathname } from "next/navigation";
 import { useIsCustomizing, useWidgetActions } from "./widget-provider";
 

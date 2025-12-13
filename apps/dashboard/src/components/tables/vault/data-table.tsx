@@ -10,8 +10,8 @@ import { useTableScroll } from "@/hooks/use-table-scroll";
 import { useUserQuery } from "@/hooks/use-user";
 import { useDocumentsStore } from "@/store/vault";
 import { useTRPC } from "@/trpc/client";
-import { cn } from "@midday/ui/cn";
-import { Table, TableBody, TableCell, TableRow } from "@midday/ui/table";
+import { cn } from "@kerna/ui/cn";
+import { Table, TableBody, TableCell, TableRow } from "@kerna/ui/table";
 import {
   useMutation,
   useQueryClient,

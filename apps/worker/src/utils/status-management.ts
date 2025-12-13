@@ -3,8 +3,8 @@
  * Ensures status transitions are valid and atomic with data operations
  */
 
-import type { Database } from "@midday/db/client";
-import { createLoggerWithContext } from "@midday/logger";
+import type { Database } from "@kerna/db/client";
+import { createLoggerWithContext } from "@kerna/logger";
 
 const logger = createLoggerWithContext("status-management");
 

@@ -1,6 +1,6 @@
-import { teamCache } from "@midday/cache/team-cache";
-import type { Database } from "@midday/db/client";
-import { hasTeamAccess } from "@midday/db/queries";
+import { teamCache } from "@kerna/cache/team-cache";
+import type { Database } from "@kerna/db/client";
+import { hasTeamAccess } from "@kerna/db/queries";
 import { HTTPException } from "hono/http-exception";
 
 /**

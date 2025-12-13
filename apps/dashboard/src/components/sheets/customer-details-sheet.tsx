@@ -1,5 +1,5 @@
 import { useCustomerParams } from "@/hooks/use-customer-params";
-import { Sheet, SheetContent } from "@midday/ui/sheet";
+import { Sheet, SheetContent } from "@kerna/ui/sheet";
 import React from "react";
 import { CustomerDetails } from "../customer-details";
 

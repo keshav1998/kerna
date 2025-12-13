@@ -6,14 +6,14 @@ import {
   isMonthlyBreakdownType,
 } from "@/lib/metrics-breakdown-constants";
 import { useArtifacts } from "@ai-sdk-tools/artifacts/client";
-import { cn } from "@midday/ui/cn";
+import { cn } from "@kerna/ui/cn";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
 import { format, parseISO } from "date-fns";
 import { parseAsInteger, parseAsString, useQueryState } from "nuqs";
 import { useCallback, useMemo } from "react";

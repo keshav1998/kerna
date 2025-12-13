@@ -1,8 +1,8 @@
 import type { AppContext } from "@api/ai/agents/config/shared";
-import { db } from "@midday/db/client";
-import { getInbox } from "@midday/db/queries";
-import { getAppUrl } from "@midday/utils/envs";
-import { formatAmount, formatDate } from "@midday/utils/format";
+import { db } from "@kerna/db/client";
+import { getInbox } from "@kerna/db/queries";
+import { getAppUrl } from "@kerna/utils/envs";
+import { formatAmount, formatDate } from "@kerna/utils/format";
 import { tool } from "ai";
 import { z } from "zod";
 

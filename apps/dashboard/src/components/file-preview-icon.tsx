@@ -1,7 +1,7 @@
 "use client";
 
-import { cn } from "@midday/ui/cn";
-import { Icons } from "@midday/ui/icons";
+import { cn } from "@kerna/ui/cn";
+import { Icons } from "@kerna/ui/icons";
 
 type Props = {
   mimetype?: string | null;

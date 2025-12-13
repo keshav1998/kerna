@@ -1,8 +1,8 @@
 "use client";
 
 import { EnrollMFA } from "@/components/enroll-mfa";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -52,7 +52,7 @@ export function SetupMfa() {
   return (
     <div>
       <div className="absolute left-5 top-4 md:left-10 md:top-10">
-        <Link href="https://midday.ai">
+        <Link href="https://kerna.ai">
           <Icons.LogoSmall />
         </Link>
       </div>

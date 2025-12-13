@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@midday/ui/button";
-import { cn } from "@midday/ui/cn";
+import { Button } from "@kerna/ui/button";
+import { cn } from "@kerna/ui/cn";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { ChatAvatar } from "./chat-avatar";
@@ -127,7 +127,7 @@ export function SignUpCard({
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 2.2 }}
       >
-        <a href="https://app.midday.ai">
+        <a href="https://app.kerna.ai">
           <Button>Sign up</Button>
         </a>
       </motion.div>

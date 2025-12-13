@@ -1,7 +1,7 @@
 "use server";
 
-import { client } from "@midday/engine-client";
-import { getSession } from "@midday/supabase/cached-queries";
+import { client } from "@kerna/engine-client";
+import { getSession } from "@kerna/supabase/cached-queries";
 
 export const createPlaidLinkTokenAction = async (accessToken?: string) => {
   const {

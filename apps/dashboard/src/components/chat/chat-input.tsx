@@ -20,7 +20,7 @@ import {
   useChatStatus,
   useDataPart,
 } from "@ai-sdk-tools/store";
-import { cn } from "@midday/ui/cn";
+import { cn } from "@kerna/ui/cn";
 import {
   PromptInput,
   PromptInputActionAddAttachments,
@@ -32,7 +32,7 @@ import {
   PromptInputTextarea,
   PromptInputToolbar,
   PromptInputTools,
-} from "@midday/ui/prompt-input";
+} from "@kerna/ui/prompt-input";
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 import { parseAsString, useQueryState } from "nuqs";
 import { useEffect, useRef, useState } from "react";

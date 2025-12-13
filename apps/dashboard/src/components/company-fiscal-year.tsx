@@ -9,15 +9,15 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
+} from "@kerna/ui/card";
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@midday/ui/form";
-import { SubmitButton } from "@midday/ui/submit-button";
+} from "@kerna/ui/form";
+import { SubmitButton } from "@kerna/ui/submit-button";
 import { z } from "zod/v3";
 import { SelectFiscalMonth } from "./select-fiscal-month";
 

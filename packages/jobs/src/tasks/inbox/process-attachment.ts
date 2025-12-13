@@ -6,10 +6,10 @@ import {
   groupRelatedInboxItems,
   updateInbox,
   updateInboxWithProcessedData,
-} from "@midday/db/queries";
-import { getTeamById } from "@midday/db/queries";
-import { DocumentClient } from "@midday/documents";
-import { createClient } from "@midday/supabase/job";
+} from "@kerna/db/queries";
+import { getTeamById } from "@kerna/db/queries";
+import { DocumentClient } from "@kerna/documents";
+import { createClient } from "@kerna/supabase/job";
 import { logger, schemaTask, tasks } from "@trigger.dev/sdk";
 import { convertHeic } from "../document/convert-heic";
 import { processDocument } from "../document/process-document";

@@ -2,8 +2,8 @@
 
 import { AddAccountButton } from "@/components/add-account-button";
 import { useTransactionFilterParamsWithPersistence } from "@/hooks/use-transaction-filter-params-with-persistence";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
 
 export function NoResults() {
   const { clearAllFilters } = useTransactionFilterParamsWithPersistence();

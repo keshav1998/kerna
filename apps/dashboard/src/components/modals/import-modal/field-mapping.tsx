@@ -7,15 +7,15 @@ import { useUserQuery } from "@/hooks/use-user";
 import { useTRPC } from "@/trpc/client";
 import { formatAmount } from "@/utils/format";
 import { readStreamableValue } from "@ai-sdk/rsc";
-import { formatAmountValue, formatDate } from "@midday/import";
+import { formatAmountValue, formatDate } from "@kerna/import";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
-import { Icons } from "@midday/ui/icons";
-import { Label } from "@midday/ui/label";
+} from "@kerna/ui/accordion";
+import { Icons } from "@kerna/ui/icons";
+import { Label } from "@kerna/ui/label";
 import {
   Select,
   SelectContent,
@@ -24,15 +24,15 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@midday/ui/select";
-import { Spinner } from "@midday/ui/spinner";
-import { Switch } from "@midday/ui/switch";
+} from "@kerna/ui/select";
+import { Spinner } from "@kerna/ui/spinner";
+import { Switch } from "@kerna/ui/switch";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
+} from "@kerna/ui/tooltip";
 import { useQuery } from "@tanstack/react-query";
 import { capitalCase } from "change-case";
 import { useEffect, useRef, useState } from "react";

@@ -4,7 +4,7 @@ import { revalidateAfterTeamChange } from "@/actions/revalidate-action";
 import { SelectCurrency } from "@/components/select-currency";
 import { useZodForm } from "@/hooks/use-zod-form";
 import { useTRPC } from "@/trpc/client";
-import { uniqueCurrencies } from "@midday/location/currencies";
+import { uniqueCurrencies } from "@kerna/location/currencies";
 import {
   Form,
   FormControl,
@@ -13,10 +13,10 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@midday/ui/form";
-import { Input } from "@midday/ui/input";
-import { SubmitButton } from "@midday/ui/submit-button";
-import { getDefaultFiscalYearStartMonth } from "@midday/utils";
+} from "@kerna/ui/form";
+import { Input } from "@kerna/ui/input";
+import { SubmitButton } from "@kerna/ui/submit-button";
+import { getDefaultFiscalYearStartMonth } from "@kerna/utils";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { use, useEffect, useRef, useState } from "react";
 import { z } from "zod/v3";

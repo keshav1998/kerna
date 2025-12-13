@@ -20,7 +20,7 @@ import {
   InvalidReportTypeError,
   ReportExpiredError,
   ReportNotFoundError,
-} from "@midday/db/errors";
+} from "@kerna/db/errors";
 import {
   createReport,
   getBurnRate,
@@ -32,7 +32,7 @@ import {
   getRunway,
   getSpending,
   getTaxSummary,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 import { TRPCError } from "@trpc/server";
 
 export const reportsRouter = createTRPCRouter({

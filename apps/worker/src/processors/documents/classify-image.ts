@@ -1,8 +1,8 @@
-import { updateDocumentByPath } from "@midday/db/queries";
-import { limitWords, mapLanguageCodeToPostgresConfig } from "@midday/documents";
-import { DocumentClassifier } from "@midday/documents/classifier";
-import { triggerJob } from "@midday/job-client";
-import { createClient } from "@midday/supabase/job";
+import { updateDocumentByPath } from "@kerna/db/queries";
+import { limitWords, mapLanguageCodeToPostgresConfig } from "@kerna/documents";
+import { DocumentClassifier } from "@kerna/documents/classifier";
+import { triggerJob } from "@kerna/job-client";
+import { createClient } from "@kerna/supabase/job";
 import type { Job } from "bullmq";
 import type { ClassifyImagePayload } from "../../schemas/documents";
 import { getDb } from "../../utils/db";

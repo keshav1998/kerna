@@ -1,6 +1,6 @@
 import { processTransactionAttachmentSchema } from "@jobs/schema";
-import { DocumentClient } from "@midday/documents";
-import { createClient } from "@midday/supabase/job";
+import { DocumentClient } from "@kerna/documents";
+import { createClient } from "@kerna/supabase/job";
 import { schemaTask } from "@trigger.dev/sdk";
 import { convertHeic } from "../document/convert-heic";
 import { processDocument } from "../document/process-document";

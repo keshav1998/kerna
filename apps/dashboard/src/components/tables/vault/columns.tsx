@@ -4,16 +4,16 @@ import { useFileUrl } from "@/hooks/use-file-url";
 import { downloadFile } from "@/lib/download";
 import { formatSize } from "@/utils/format";
 import type { RouterOutputs } from "@api/trpc/routers/_app";
-import { Badge } from "@midday/ui/badge";
-import { Button } from "@midday/ui/button";
-import { Checkbox } from "@midday/ui/checkbox";
+import { Badge } from "@kerna/ui/badge";
+import { Button } from "@kerna/ui/button";
+import { Checkbox } from "@kerna/ui/checkbox";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Skeleton } from "@midday/ui/skeleton";
+} from "@kerna/ui/dropdown-menu";
+import { Skeleton } from "@kerna/ui/skeleton";
 import { useState } from "react";
 
 function DownloadFileMenuItem({

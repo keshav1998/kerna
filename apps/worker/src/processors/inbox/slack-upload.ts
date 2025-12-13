@@ -1,15 +1,15 @@
 import {
   createSlackWebClient,
   downloadFile,
-} from "@midday/app-store/slack-client";
+} from "@kerna/app-store/slack-client";
 import {
   getInboxByFilePath,
   updateInboxWithProcessedData,
-} from "@midday/db/queries";
-import { DocumentClient } from "@midday/documents";
-import { Notifications } from "@midday/notifications";
-import { createClient } from "@midday/supabase/job";
-import { getExtensionFromMimeType } from "@midday/utils";
+} from "@kerna/db/queries";
+import { DocumentClient } from "@kerna/documents";
+import { Notifications } from "@kerna/notifications";
+import { createClient } from "@kerna/supabase/job";
+import { getExtensionFromMimeType } from "@kerna/utils";
 import type { Job } from "bullmq";
 import { format } from "date-fns";
 import type { SlackUploadPayload } from "../../schemas/inbox";

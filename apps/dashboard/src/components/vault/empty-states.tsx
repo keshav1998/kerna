@@ -1,8 +1,8 @@
 "use client";
 
 import { useDocumentFilterParams } from "@/hooks/use-document-filter-params";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
 import { VaultGridSkeleton } from "./vault-grid-skeleton";
 
 export function NoResults() {

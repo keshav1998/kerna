@@ -1,6 +1,6 @@
 import type { Database } from "@db/client";
 import { bankAccounts, teams } from "@db/schema";
-import { chatCache } from "@midday/cache/chat-cache";
+import { chatCache } from "@kerna/cache/chat-cache";
 import { and, asc, desc, eq } from "drizzle-orm";
 import { sql } from "drizzle-orm";
 import { nanoid } from "nanoid";

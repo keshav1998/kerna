@@ -1,4 +1,4 @@
-import { createLoggerWithContext } from "@midday/logger";
+import { createLoggerWithContext } from "@kerna/logger";
 import type { Job } from "bullmq";
 import type { ZodSchema } from "zod";
 import {

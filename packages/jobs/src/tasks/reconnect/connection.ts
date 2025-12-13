@@ -1,7 +1,7 @@
 import { reconnectConnectionSchema } from "@jobs/schema";
 import { syncConnection } from "@jobs/tasks/bank/sync/connection";
-import { client } from "@midday/engine-client";
-import { createClient } from "@midday/supabase/job";
+import { client } from "@kerna/engine-client";
+import { createClient } from "@kerna/supabase/job";
 import { logger, schemaTask } from "@trigger.dev/sdk";
 
 export const reconnectConnection = schemaTask({

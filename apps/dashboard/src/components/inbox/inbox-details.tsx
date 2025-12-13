@@ -8,30 +8,30 @@ import { downloadFile } from "@/lib/download";
 import { useTRPC } from "@/trpc/client";
 import { getUrl } from "@/utils/environment";
 import { getWebsiteLogo } from "@/utils/logos";
-import { Avatar, AvatarFallback, AvatarImageNext } from "@midday/ui/avatar";
-import { Button } from "@midday/ui/button";
-import { cn } from "@midday/ui/cn";
-import { DialogTrigger } from "@midday/ui/dialog";
+import { Avatar, AvatarFallback, AvatarImageNext } from "@kerna/ui/avatar";
+import { Button } from "@kerna/ui/button";
+import { cn } from "@kerna/ui/cn";
+import { DialogTrigger } from "@kerna/ui/dialog";
 import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
-} from "@midday/ui/dropdown-menu";
-import { DropdownMenu, DropdownMenuTrigger } from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
-import { Separator } from "@midday/ui/separator";
-import { Skeleton } from "@midday/ui/skeleton";
+} from "@kerna/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuTrigger } from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
+import { Separator } from "@kerna/ui/separator";
+import { Skeleton } from "@kerna/ui/skeleton";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
-import { useToast } from "@midday/ui/use-toast";
-import { formatDate, getInitials } from "@midday/utils/format";
-import { getTaxTypeLabel } from "@midday/utils/tax";
+} from "@kerna/ui/tooltip";
+import { useToast } from "@kerna/ui/use-toast";
+import { formatDate, getInitials } from "@kerna/utils/format";
+import { getTaxTypeLabel } from "@kerna/utils/tax";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { MoreVertical, Trash2 } from "lucide-react";
 import { useEffect, useState } from "react";

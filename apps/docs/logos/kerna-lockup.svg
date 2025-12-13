@@ -1,0 +1,29 @@
+<svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kerna Lockup - Mark + Wordmark -->
+  
+  <!-- Primary Mark (scaled to fit) -->
+  <g id="mark" transform="translate(10, 10)">
+    <!-- Outer frame - top left -->
+    <path d="M15 15 L15 25 L20 25 L20 20 L25 20 L25 15 Z" fill="#00D9FF"/>
+    <!-- Outer frame - top right -->
+    <path d="M55 15 L55 20 L60 20 L60 25 L65 25 L65 15 Z" fill="#00D9FF"/>
+    <!-- Outer frame - bottom left -->
+    <path d="M15 55 L15 65 L25 65 L25 60 L20 60 L20 55 Z" fill="#00D9FF"/>
+    <!-- Outer frame - bottom right -->
+    <path d="M55 60 L55 65 L65 65 L65 55 L60 55 L60 60 Z" fill="#00D9FF"/>
+    
+    <!-- Inner core - central square -->
+    <rect x="32.5" y="32.5" width="15" height="15" fill="#00D9FF"/>
+    
+    <!-- Connecting elements - vertical -->
+    <rect x="37.5" y="25" width="5" height="7.5" fill="#00D9FF"/>
+    <rect x="37.5" y="47.5" width="5" height="7.5" fill="#00D9FF"/>
+    
+    <!-- Connecting elements - horizontal -->
+    <rect x="25" y="37.5" width="7.5" height="5" fill="#00D9FF"/>
+    <rect x="47.5" y="37.5" width="7.5" height="5" fill="#00D9FF"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="110" y="62" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="48" font-weight="500" letter-spacing="0.96" fill="#FFFFFF">Kerna</text>
+</svg>

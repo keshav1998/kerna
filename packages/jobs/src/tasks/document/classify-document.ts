@@ -1,7 +1,7 @@
 import { getDb } from "@jobs/init";
-import { updateDocumentByFileName } from "@midday/db/queries";
-import { limitWords, mapLanguageCodeToPostgresConfig } from "@midday/documents";
-import { DocumentClassifier } from "@midday/documents/classifier";
+import { updateDocumentByFileName } from "@kerna/db/queries";
+import { limitWords, mapLanguageCodeToPostgresConfig } from "@kerna/documents";
+import { DocumentClassifier } from "@kerna/documents/classifier";
 import { schemaTask } from "@trigger.dev/sdk";
 import { z } from "zod";
 import { embedDocumentTags } from "./embed-document-tags";

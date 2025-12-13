@@ -4,7 +4,7 @@ import {
   getTransactionsForEnrichment,
   markTransactionsAsEnriched,
   updateTransactionEnrichments,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 import { generateObject } from "ai";
 import type { Job } from "bullmq";
 import type { EnrichTransactionsPayload } from "../../schemas/transactions";

@@ -7,8 +7,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
-import { Switch } from "@midday/ui/switch";
+} from "@kerna/ui/card";
+import { Switch } from "@kerna/ui/switch";
 
 export function WeekSettings() {
   const { data: user } = useUserQuery();

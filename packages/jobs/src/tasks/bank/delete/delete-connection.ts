@@ -1,5 +1,5 @@
-import { client } from "@midday/engine-client";
-import { deleteConnectionSchema } from "@midday/jobs/schema";
+import { client } from "@kerna/engine-client";
+import { deleteConnectionSchema } from "@kerna/jobs/schema";
 import { schemaTask } from "@trigger.dev/sdk";
 
 export const deleteConnection = schemaTask({

@@ -4,13 +4,13 @@ import {
   getInboxAccountInfo,
   getInboxBlocklist,
   updateInboxAccount,
-} from "@midday/db/queries";
-import { separateBlocklistEntries } from "@midday/db/utils/blocklist";
-import { InboxConnector } from "@midday/inbox/connector";
-import { isAuthenticationError } from "@midday/inbox/utils";
-import { createClient } from "@midday/supabase/job";
-import { getExistingInboxAttachmentsQuery } from "@midday/supabase/queries";
-import { ensureFileExtension } from "@midday/utils";
+} from "@kerna/db/queries";
+import { separateBlocklistEntries } from "@kerna/db/utils/blocklist";
+import { InboxConnector } from "@kerna/inbox/connector";
+import { isAuthenticationError } from "@kerna/inbox/utils";
+import { createClient } from "@kerna/supabase/job";
+import { getExistingInboxAttachmentsQuery } from "@kerna/supabase/queries";
+import { ensureFileExtension } from "@kerna/utils";
 import { logger, schemaTask, tasks } from "@trigger.dev/sdk";
 import { z } from "zod";
 import { processAttachment } from "../process-attachment";

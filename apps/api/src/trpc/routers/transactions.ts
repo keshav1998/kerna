@@ -22,10 +22,10 @@ import {
   updateBankAccount,
   updateTransaction,
   updateTransactions,
-} from "@midday/db/queries";
-import { formatAmountValue } from "@midday/import";
-import { triggerJob } from "@midday/job-client";
-import type { EmbedTransactionPayload } from "@midday/jobs/schema";
+} from "@kerna/db/queries";
+import { formatAmountValue } from "@kerna/import";
+import { triggerJob } from "@kerna/job-client";
+import type { EmbedTransactionPayload } from "@kerna/jobs/schema";
 
 export const transactionsRouter = createTRPCRouter({
   get: protectedProcedure

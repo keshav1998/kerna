@@ -1,5 +1,5 @@
-import { invoke } from "@midday/desktop-client/core";
-import { isDesktopApp } from "@midday/desktop-client/platform";
+import { invoke } from "@kerna/desktop-client/core";
+import { isDesktopApp } from "@kerna/desktop-client/platform";
 
 export async function downloadFile(url: string, filename: string) {
   if (!isDesktopApp()) {

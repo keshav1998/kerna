@@ -1,4 +1,4 @@
-import { getEmailUrl } from "@midday/utils/envs";
+import { getEmailUrl } from "@kerna/utils/envs";
 import {
   Column,
   Hr,
@@ -47,49 +47,49 @@ export function Footer() {
           </Text>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/bOp4NOx"
+            href="https://go.kerna.ai/bOp4NOx"
             style={{ color: lightStyles.mutedText.color }}
           >
             Overview
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/VFcNsmQ"
+            href="https://go.kerna.ai/VFcNsmQ"
             style={{ color: lightStyles.mutedText.color }}
           >
             Inbox
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/uA06kWO"
+            href="https://go.kerna.ai/uA06kWO"
             style={{ color: lightStyles.mutedText.color }}
           >
             Vault
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/x7Fow9L"
+            href="https://go.kerna.ai/x7Fow9L"
             style={{ color: lightStyles.mutedText.color }}
           >
             Tracker
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/fkYXc95"
+            href="https://go.kerna.ai/fkYXc95"
             style={{ color: lightStyles.mutedText.color }}
           >
             Invoice
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/dEnP9h5"
+            href="https://go.kerna.ai/dEnP9h5"
             style={{ color: lightStyles.mutedText.color }}
           >
             Pricing
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://midday.ai/download"
+            href="https://kerna.ai/download"
             style={{ color: lightStyles.mutedText.color }}
           >
             Download
@@ -107,7 +107,7 @@ export function Footer() {
           </Text>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/fhEy5CL"
+            href="https://go.kerna.ai/fhEy5CL"
             style={{ color: lightStyles.mutedText.color }}
           >
             Homepage
@@ -121,28 +121,28 @@ export function Footer() {
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/ZrhEMbR"
+            href="https://go.kerna.ai/ZrhEMbR"
             style={{ color: lightStyles.mutedText.color }}
           >
             Support
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/rofdWKi"
+            href="https://go.kerna.ai/rofdWKi"
             style={{ color: lightStyles.mutedText.color }}
           >
             Terms of service
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/TJIL5mQ"
+            href="https://go.kerna.ai/TJIL5mQ"
             style={{ color: lightStyles.mutedText.color }}
           >
             Privacy policy
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/IQ1kcN0"
+            href="https://go.kerna.ai/IQ1kcN0"
             style={{ color: lightStyles.mutedText.color }}
           >
             Branding
@@ -158,28 +158,28 @@ export function Footer() {
           </Text>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/186swoH"
+            href="https://go.kerna.ai/186swoH"
             style={{ color: lightStyles.mutedText.color }}
           >
             Story
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/QWyX8Um"
+            href="https://go.kerna.ai/QWyX8Um"
             style={{ color: lightStyles.mutedText.color }}
           >
             Updates
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/Dd7M8cl"
+            href="https://go.kerna.ai/Dd7M8cl"
             style={{ color: lightStyles.mutedText.color }}
           >
             Open startup
           </Link>
           <Link
             className={`text-[14px] block mb-1.5 ${themeClasses.mutedLink}`}
-            href="https://go.midday.ai/M2Hv420"
+            href="https://go.kerna.ai/M2Hv420"
             style={{ color: lightStyles.mutedText.color }}
           >
             OSS Friends
@@ -192,7 +192,7 @@ export function Footer() {
 
       <Row>
         <Column className="align-middle w-[40px]">
-          <Link href="https://go.midday.ai/lS72Toq">
+          <Link href="https://go.kerna.ai/lS72Toq">
             <Img
               src={`${baseUrl}/email/x.png`}
               width="18"
@@ -202,7 +202,7 @@ export function Footer() {
           </Link>
         </Column>
         <Column className="align-middle w-[40px]">
-          <Link href="https://go.midday.ai/7rhA3rz">
+          <Link href="https://go.kerna.ai/7rhA3rz">
             <Img
               src={`${baseUrl}/email/producthunt.png`}
               width="22"
@@ -212,7 +212,7 @@ export function Footer() {
           </Link>
         </Column>
         <Column className="align-middle">
-          <Link href="https://go.midday.ai/Ct3xybK">
+          <Link href="https://go.kerna.ai/Ct3xybK">
             <Img
               src={`${baseUrl}/email/linkedin.png`}
               width="22"
@@ -235,7 +235,7 @@ export function Footer() {
 
       <Link
         className={`text-[14px] block ${themeClasses.mutedLink}`}
-        href="https://app.midday.ai/settings/notifications"
+        href="https://app.kerna.ai/settings/notifications"
         title="Unsubscribe"
         style={{ color: lightStyles.mutedText.color }}
       >

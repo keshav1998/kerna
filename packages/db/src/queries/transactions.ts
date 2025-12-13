@@ -16,10 +16,10 @@ import {
 import {
   CONTRA_REVENUE_CATEGORIES,
   REVENUE_CATEGORIES,
-} from "@midday/categories";
-import { buildSearchQuery } from "@midday/db/utils/search-query";
-import { createLoggerWithContext } from "@midday/logger";
-import { resolveTaxValues } from "@midday/utils/tax";
+} from "@kerna/categories";
+import { buildSearchQuery } from "@kerna/db/utils/search-query";
+import { createLoggerWithContext } from "@kerna/logger";
+import { resolveTaxValues } from "@kerna/utils/tax";
 import {
   and,
   asc,

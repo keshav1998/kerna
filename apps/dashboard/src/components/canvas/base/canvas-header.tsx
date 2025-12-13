@@ -5,16 +5,16 @@ import {
   generateCanvasPdf,
   generateCanvasPdfBlob,
 } from "@/utils/canvas-to-pdf";
-import { Button } from "@midday/ui/button";
-import { cn } from "@midday/ui/cn";
+import { Button } from "@kerna/ui/button";
+import { cn } from "@kerna/ui/cn";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
-import { useToast } from "@midday/ui/use-toast";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
+import { useToast } from "@kerna/ui/use-toast";
 import { useTheme } from "next-themes";
 import { ArtifactTabs } from "../artifact-tabs";
 

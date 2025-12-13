@@ -1,11 +1,11 @@
 "use client";
 
 import { useTRPC } from "@/trpc/client";
-import { AnimatedSizeContainer } from "@midday/ui/animated-size-container";
-import { cn } from "@midday/ui/cn";
-import { Icons } from "@midday/ui/icons";
-import { Input } from "@midday/ui/input";
-import { Skeleton } from "@midday/ui/skeleton";
+import { AnimatedSizeContainer } from "@kerna/ui/animated-size-container";
+import { cn } from "@kerna/ui/cn";
+import { Icons } from "@kerna/ui/icons";
+import { Input } from "@kerna/ui/input";
+import { Skeleton } from "@kerna/ui/skeleton";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { formatDistanceToNow } from "date-fns";
 import { useRouter } from "next/navigation";

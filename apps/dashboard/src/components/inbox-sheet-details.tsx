@@ -7,11 +7,11 @@ import { useInboxParams } from "@/hooks/use-inbox-params";
 import { useUserQuery } from "@/hooks/use-user";
 import { useTRPC } from "@/trpc/client";
 import { getWebsiteLogo } from "@/utils/logos";
-import { Avatar, AvatarFallback, AvatarImageNext } from "@midday/ui/avatar";
-import { Separator } from "@midday/ui/separator";
-import { SheetHeader } from "@midday/ui/sheet";
-import { Skeleton } from "@midday/ui/skeleton";
-import { formatDate, getInitials } from "@midday/utils/format";
+import { Avatar, AvatarFallback, AvatarImageNext } from "@kerna/ui/avatar";
+import { Separator } from "@kerna/ui/separator";
+import { SheetHeader } from "@kerna/ui/sheet";
+import { Skeleton } from "@kerna/ui/skeleton";
+import { formatDate, getInitials } from "@kerna/utils/format";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 export function InboxSheetDetails() {

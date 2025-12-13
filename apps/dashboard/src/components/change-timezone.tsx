@@ -2,17 +2,17 @@
 
 import { useUserMutation, useUserQuery } from "@/hooks/use-user";
 import { useI18n } from "@/locales/client";
-import { getTimezones } from "@midday/location/timezones";
+import { getTimezones } from "@kerna/location/timezones";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
-import { ComboboxDropdown } from "@midday/ui/combobox-dropdown";
-import { Label } from "@midday/ui/label";
-import { Switch } from "@midday/ui/switch";
+} from "@kerna/ui/card";
+import { ComboboxDropdown } from "@kerna/ui/combobox-dropdown";
+import { Label } from "@kerna/ui/label";
+import { Switch } from "@kerna/ui/switch";
 import { useEffect, useState } from "react";
 
 export function ChangeTimezone() {

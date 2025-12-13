@@ -1,4 +1,4 @@
-import { createClient } from "@midday/supabase/job";
+import { createClient } from "@kerna/supabase/job";
 
 export async function shouldSendEmail(teamId: string) {
   const supabase = createClient();

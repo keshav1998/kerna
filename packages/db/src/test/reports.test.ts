@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, test } from "bun:test";
-import { REVENUE_CATEGORIES } from "@midday/categories";
+import { REVENUE_CATEGORIES } from "@kerna/categories";
 import { and, eq, sql } from "drizzle-orm";
 import type { Database } from "../client";
 import {

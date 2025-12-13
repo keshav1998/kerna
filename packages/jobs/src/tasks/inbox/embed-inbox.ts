@@ -5,8 +5,8 @@ import {
   checkInboxEmbeddingExists,
   createInboxEmbedding,
   getInboxForEmbedding,
-} from "@midday/db/queries";
-import { inbox } from "@midday/db/schema";
+} from "@kerna/db/queries";
+import { inbox } from "@kerna/db/schema";
 import { logger, schemaTask } from "@trigger.dev/sdk";
 import { eq } from "drizzle-orm";
 import { z } from "zod";

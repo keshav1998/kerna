@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@midday/ui/cn";
+import { cn } from "@kerna/ui/cn";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

@@ -1,4 +1,4 @@
-import { uniqueCurrencies } from "@midday/location/currencies";
+import { uniqueCurrencies } from "@kerna/location/currencies";
 
 const ENDPOINT =
   "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1";

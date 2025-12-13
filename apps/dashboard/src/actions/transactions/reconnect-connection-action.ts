@@ -1,8 +1,8 @@
 "use server";
 
 import { authActionClient } from "@/actions/safe-action";
-import { LogEvents } from "@midday/events/events";
-import type { ReconnectConnectionPayload } from "@midday/jobs/schema";
+import { LogEvents } from "@kerna/events/events";
+import type { ReconnectConnectionPayload } from "@kerna/jobs/schema";
 import { tasks } from "@trigger.dev/sdk";
 import { z } from "zod";
 

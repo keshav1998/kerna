@@ -1,5 +1,5 @@
-import { cn } from "@midday/ui/cn";
-import { getAppUrl } from "@midday/utils/envs";
+import { cn } from "@kerna/ui/cn";
+import { getAppUrl } from "@kerna/utils/envs";
 import {
   Body,
   Container,

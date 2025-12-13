@@ -10,8 +10,8 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
-import { Button } from "@midday/ui/button";
+} from "@kerna/ui/accordion";
+import { Button } from "@kerna/ui/button";
 import {
   Form,
   FormControl,
@@ -20,11 +20,11 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@midday/ui/form";
-import { Input } from "@midday/ui/input";
-import { Label } from "@midday/ui/label";
-import { SubmitButton } from "@midday/ui/submit-button";
-import { Textarea } from "@midday/ui/textarea";
+} from "@kerna/ui/form";
+import { Input } from "@kerna/ui/input";
+import { Label } from "@kerna/ui/label";
+import { SubmitButton } from "@kerna/ui/submit-button";
+import { Textarea } from "@kerna/ui/textarea";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { z } from "zod/v3";
 import { CountrySelector } from "../country-selector";

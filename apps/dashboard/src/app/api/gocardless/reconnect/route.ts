@@ -1,6 +1,6 @@
-import { getSession } from "@midday/supabase/cached-queries";
-import { updateBankConnection } from "@midday/supabase/mutations";
-import { createClient } from "@midday/supabase/server";
+import { getSession } from "@kerna/supabase/cached-queries";
+import { updateBankConnection } from "@kerna/supabase/mutations";
+import { createClient } from "@kerna/supabase/server";
 import { type NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {

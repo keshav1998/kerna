@@ -1,7 +1,7 @@
 "use client";
 
-import { Avatar, AvatarImage } from "@midday/ui/avatar";
-import { Icons } from "@midday/ui/icons";
+import { Avatar, AvatarImage } from "@kerna/ui/avatar";
+import { Icons } from "@kerna/ui/icons";
 
 type Props = {
   role: "assistant" | "user";

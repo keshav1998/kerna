@@ -1,11 +1,11 @@
-import type { Database } from "@midday/db/client";
+import type { Database } from "@kerna/db/client";
 import {
   getInboxById,
   getTransactionById,
   hasSuggestion,
-} from "@midday/db/queries";
-import type { MatchResult } from "@midday/db/queries";
-import { Notifications } from "@midday/notifications";
+} from "@kerna/db/queries";
+import type { MatchResult } from "@kerna/db/queries";
+import { Notifications } from "@kerna/notifications";
 
 export async function triggerMatchingNotification(params: {
   db: Database;

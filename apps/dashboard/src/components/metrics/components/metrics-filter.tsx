@@ -4,9 +4,9 @@ import { useMetricsFilter } from "@/hooks/use-metrics-filter";
 import { useTeamQuery } from "@/hooks/use-team";
 import { useTRPC } from "@/trpc/client";
 import type { PeriodOption } from "@/utils/metrics-date-utils";
-import { Button } from "@midday/ui/button";
-import { Calendar, CalendarDayButton } from "@midday/ui/calendar";
-import { cn } from "@midday/ui/cn";
+import { Button } from "@kerna/ui/button";
+import { Calendar, CalendarDayButton } from "@kerna/ui/calendar";
+import { cn } from "@kerna/ui/cn";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -20,8 +20,8 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
 import { CheckIcon } from "@radix-ui/react-icons";
 import { useQuery } from "@tanstack/react-query";
 import { format, formatISO } from "date-fns";

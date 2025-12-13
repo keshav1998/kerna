@@ -1,5 +1,5 @@
-import { cn } from "@midday/ui/cn";
-import { Skeleton } from "@midday/ui/skeleton";
+import { cn } from "@kerna/ui/cn";
+import { Skeleton } from "@kerna/ui/skeleton";
 
 type Props = {
   small?: boolean;

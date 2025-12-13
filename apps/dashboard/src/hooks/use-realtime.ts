@@ -1,7 +1,7 @@
 "use client";
 
-import { createClient } from "@midday/supabase/client";
-import type { Database } from "@midday/supabase/types";
+import { createClient } from "@kerna/supabase/client";
+import type { Database } from "@kerna/supabase/types";
 import type {
   RealtimePostgresChangesFilter,
   RealtimePostgresChangesPayload,

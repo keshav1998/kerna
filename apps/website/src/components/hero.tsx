@@ -1,4 +1,4 @@
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import Link from "next/link";
 import { HeroImage } from "./hero-image";
 import { Metrics } from "./metrics";
@@ -36,7 +36,7 @@ export function Hero() {
 
         <div className="mt-8 md:mt-10">
           <div className="flex items-center space-x-4">
-            <a href="https://app.midday.ai">
+            <a href="https://app.kerna.ai">
               <Button className="h-11 px-5">Meet your assistant</Button>
             </a>
           </div>

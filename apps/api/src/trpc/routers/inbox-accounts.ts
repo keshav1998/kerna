@@ -6,8 +6,8 @@ import {
   syncInboxAccountSchema,
 } from "@api/schemas/inbox-accounts";
 import { createTRPCRouter, protectedProcedure } from "@api/trpc/init";
-import { deleteInboxAccount, getInboxAccounts } from "@midday/db/queries";
-import { InboxConnector } from "@midday/inbox/connector";
+import { deleteInboxAccount, getInboxAccounts } from "@kerna/db/queries";
+import { InboxConnector } from "@kerna/inbox/connector";
 import { schedules, tasks } from "@trigger.dev/sdk";
 import { TRPCError } from "@trpc/server";
 

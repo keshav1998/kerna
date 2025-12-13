@@ -1,4 +1,4 @@
-import { Icons } from "@midday/ui/icons";
+import { Icons } from "@kerna/ui/icons";
 
 interface EmptyStateProps {
   description: string;

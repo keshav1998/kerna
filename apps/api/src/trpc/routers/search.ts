@@ -9,7 +9,7 @@ import {
   getInvoices,
   globalSearchQuery,
   globalSemanticSearchQuery,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 
 export const searchRouter = createTRPCRouter({
   global: protectedProcedure

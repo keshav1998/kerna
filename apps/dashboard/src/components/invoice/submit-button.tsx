@@ -2,8 +2,8 @@
 
 import { useUserQuery } from "@/hooks/use-user";
 import { useTRPC } from "@/trpc/client";
-import { Button } from "@midday/ui/button";
-import { Calendar } from "@midday/ui/calendar";
+import { Button } from "@kerna/ui/button";
+import { Calendar } from "@kerna/ui/calendar";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -13,10 +13,10 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
-import { Input } from "@midday/ui/input";
-import { SubmitButton as BaseSubmitButton } from "@midday/ui/submit-button";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
+import { Input } from "@kerna/ui/input";
+import { SubmitButton as BaseSubmitButton } from "@kerna/ui/submit-button";
 import { useMutation } from "@tanstack/react-query";
 import {
   addHours,

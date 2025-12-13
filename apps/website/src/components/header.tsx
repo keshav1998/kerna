@@ -5,15 +5,15 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
-import { cn } from "@midday/ui/cn";
+} from "@kerna/ui/accordion";
+import { cn } from "@kerna/ui/cn";
 import {
   ContextMenu,
   ContextMenuContent,
   ContextMenuItem,
   ContextMenuTrigger,
-} from "@midday/ui/context-menu";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/context-menu";
+import { Icons } from "@kerna/ui/icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -160,7 +160,7 @@ export function Header() {
           icon: <FaGithub size={19} />,
         },
         {
-          path: "https://docs.midday.ai",
+          path: "https://docs.kerna.ai",
           title: "Documentation",
           icon: <MdOutlineDescription size={20} />,
         },
@@ -171,7 +171,7 @@ export function Header() {
         },
         {
           title: "Apps & Integrations",
-          path: "https://docs.midday.ai/integrations",
+          path: "https://docs.kerna.ai/integrations",
           icon: <MdOutlineIntegrationInstructions size={20} />,
         },
         {
@@ -227,7 +227,7 @@ export function Header() {
               </ContextMenuItem>
               <ContextMenuItem>
                 <a
-                  href="https://ui.midday.ai"
+                  href="https://ui.kerna.ai"
                   className="flex items-center space-x-2"
                 >
                   <Icons.Palette />
@@ -320,7 +320,7 @@ export function Header() {
 
         <a
           className="text-sm font-medium pr-2 border-l-[1px] border-border pl-4 hidden md:block"
-          href="https://app.midday.ai"
+          href="https://app.kerna.ai"
         >
           Sign in
         </a>
@@ -421,7 +421,7 @@ export function Header() {
               >
                 <Link
                   className="text-xl text-primary"
-                  href="https://app.midday.ai"
+                  href="https://app.kerna.ai"
                 >
                   Sign in
                 </Link>

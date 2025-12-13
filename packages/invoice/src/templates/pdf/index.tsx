@@ -74,7 +74,7 @@ export async function PdfTemplate({
   let qrCode = null;
 
   if (template.includeQr) {
-    qrCode = await QRCodeUtil.toDataURL(`https://app.midday.ai/i/${token}`, {
+    qrCode = await QRCodeUtil.toDataURL(`https://app.kerna.ai/i/${token}`, {
       margin: 0,
       width: 40 * 3,
     });

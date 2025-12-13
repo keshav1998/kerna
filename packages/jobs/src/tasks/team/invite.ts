@@ -1,8 +1,8 @@
 import { resend } from "@jobs/utils/resend";
-import { InviteEmail } from "@midday/email/emails/invite";
-import { getI18n } from "@midday/email/locales";
-import { render } from "@midday/email/render";
-import { inviteTeamMembersSchema } from "@midday/jobs/schema";
+import { InviteEmail } from "@kerna/email/emails/invite";
+import { getI18n } from "@kerna/email/locales";
+import { render } from "@kerna/email/render";
+import { inviteTeamMembersSchema } from "@kerna/jobs/schema";
 import { schemaTask } from "@trigger.dev/sdk";
 import { nanoid } from "nanoid";
 
@@ -17,7 +17,7 @@ export const inviteTeamMembers = schemaTask({
     const { t } = getI18n({ locale });
 
     const emails = invites?.map(async (invite) => ({
-      from: "Midday <middaybot@midday.ai>",
+      from: "Midday <middaybot@kerna.ai>",
       to: [invite.email],
       subject: t("invite.subject", {
         invitedByName: invite.invitedByName,

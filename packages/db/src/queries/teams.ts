@@ -6,12 +6,12 @@ import {
   users,
   usersOnTeam,
 } from "@db/schema";
-import { teamPermissionsCache } from "@midday/cache/team-permissions-cache";
+import { teamPermissionsCache } from "@kerna/cache/team-permissions-cache";
 import {
   CATEGORIES,
   getTaxRateForCategory,
   getTaxTypeForCountry,
-} from "@midday/categories";
+} from "@kerna/categories";
 import { and, eq } from "drizzle-orm";
 
 export const hasTeamAccess = async (

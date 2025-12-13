@@ -1,7 +1,7 @@
 "use client";
 
 import { useOAuthSecretModalStore } from "@/store/oauth-secret-modal";
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -9,8 +9,8 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@midday/ui/dialog";
-import { Label } from "@midday/ui/label";
+} from "@kerna/ui/dialog";
+import { Label } from "@kerna/ui/label";
 import { CopyInput } from "../copy-input";
 
 export function OAuthSecretModal() {

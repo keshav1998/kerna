@@ -1,5 +1,5 @@
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
-import type { createLoggerWithContext } from "@midday/logger";
+import type { createLoggerWithContext } from "@kerna/logger";
 import { generateText } from "ai";
 import { removeProtocolFromDomain } from "../utils";
 

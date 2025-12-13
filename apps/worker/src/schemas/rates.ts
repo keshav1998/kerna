@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 /**
- * Rates job schemas (independent from @midday/jobs)
+ * Rates job schemas (independent from @kerna/jobs)
  */
 
 export const ratesSchedulerSchema = z.object({

@@ -1,4 +1,4 @@
-import { calculateInboxSuggestions, hasSuggestion } from "@midday/db/queries";
+import { calculateInboxSuggestions, hasSuggestion } from "@kerna/db/queries";
 import type { Job } from "bullmq";
 import {
   type BatchProcessMatchingPayload,

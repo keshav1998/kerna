@@ -1,8 +1,8 @@
 "use client";
 
 import { useConnectParams } from "@/hooks/use-connect-params";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
 import { useRouter } from "next/navigation";
 
 export function ConnectBankMessage() {

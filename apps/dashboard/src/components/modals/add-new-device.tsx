@@ -1,11 +1,11 @@
 "use client";
 
 import { mfaVerifyAction } from "@/actions/mfa-verify-action";
-import { createClient } from "@midday/supabase/client";
-import { Button } from "@midday/ui/button";
-import { Dialog, DialogContent } from "@midday/ui/dialog";
-import { InputOTP, InputOTPGroup, InputOTPSlot } from "@midday/ui/input-otp";
-import { Spinner } from "@midday/ui/spinner";
+import { createClient } from "@kerna/supabase/client";
+import { Button } from "@kerna/ui/button";
+import { Dialog, DialogContent } from "@kerna/ui/dialog";
+import { InputOTP, InputOTPGroup, InputOTPSlot } from "@kerna/ui/input-otp";
+import { Spinner } from "@kerna/ui/spinner";
 import { useAction } from "next-safe-action/hooks";
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";

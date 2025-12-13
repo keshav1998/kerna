@@ -4,8 +4,8 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
-import { Button } from "@midday/ui/button";
+} from "@kerna/ui/accordion";
+import { Button } from "@kerna/ui/button";
 import { Check } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -101,7 +101,7 @@ export default function Page() {
                 </div>
 
                 <div className="mt-8 border-t-[1px] border-border pt-8">
-                  <Link href="https://app.midday.ai">
+                  <Link href="https://app.kerna.ai">
                     <Button
                       variant="outline"
                       className="w-full h-12 border border-primary"
@@ -191,7 +191,7 @@ export default function Page() {
                 </div>
 
                 <div className="mt-8 border-t border-border pt-8">
-                  <Link href="https://app.midday.ai">
+                  <Link href="https://app.kerna.ai">
                     <Button className="w-full h-12">Start 14 day trial</Button>
                   </Link>
                 </div>
@@ -285,7 +285,7 @@ export default function Page() {
                   encrypt data at rest, and sensitive data on row level. We also
                   support 2FA authentication.
                   <Link href="/policy" className="ml-1 underline">
-                    midday.ai/policy
+                    kerna.ai/policy
                   </Link>
                   .
                 </AccordionContent>
@@ -314,8 +314,8 @@ export default function Page() {
                 <AccordionContent>
                   Sure, we're happy to answer any questions you might have. Just
                   send us an email at{" "}
-                  <a href="mailto:support@midday.ai" className="underline">
-                    support@midday.ai
+                  <a href="mailto:support@kerna.ai" className="underline">
+                    support@kerna.ai
                   </a>{" "}
                   and we'll get back to you as soon as possible.
                 </AccordionContent>

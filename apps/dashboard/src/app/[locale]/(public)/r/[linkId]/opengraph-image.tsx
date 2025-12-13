@@ -1,6 +1,6 @@
 import { getChartDisplayName } from "@/components/metrics/utils/chart-types";
 import { getQueryClient, trpc } from "@/trpc/server";
-import { isValidLogoUrl } from "@midday/invoice";
+import { isValidLogoUrl } from "@kerna/invoice";
 import { format } from "date-fns";
 import { notFound } from "next/navigation";
 import { ImageResponse } from "next/og";
@@ -33,11 +33,11 @@ export default async function Image({ params }: Props) {
   }
 
   const hedvigSerifFont = fetch(
-    "https://cdn.midday.ai/fonts/HedvigSerif/HedvigLettersSerif-Regular.ttf?c=1",
+    "https://cdn.kerna.ai/fonts/HedvigSerif/HedvigLettersSerif-Regular.ttf?c=1",
   ).then((res) => res.arrayBuffer());
 
   const hedvigSansFont = fetch(
-    "https://cdn.midday.ai/fonts/HedvigSans/HedvigLettersSans-Regular.ttf",
+    "https://cdn.kerna.ai/fonts/HedvigSans/HedvigLettersSans-Regular.ttf",
   ).then((res) => res.arrayBuffer());
 
   const chartName = getChartDisplayName(report.type as any);

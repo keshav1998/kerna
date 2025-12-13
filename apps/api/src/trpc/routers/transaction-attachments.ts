@@ -4,9 +4,9 @@ import {
   processTransactionAttachmentSchema,
 } from "@api/schemas/transaction-attachments";
 import { createTRPCRouter, protectedProcedure } from "@api/trpc/init";
-import { createAttachments, deleteAttachment } from "@midday/db/queries";
-import { allowedMimeTypes } from "@midday/documents/utils";
-import { triggerJob } from "@midday/job-client";
+import { createAttachments, deleteAttachment } from "@kerna/db/queries";
+import { allowedMimeTypes } from "@kerna/documents/utils";
+import { triggerJob } from "@kerna/job-client";
 
 export const transactionAttachmentsRouter = createTRPCRouter({
   createMany: protectedProcedure

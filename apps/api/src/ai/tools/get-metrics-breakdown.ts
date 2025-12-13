@@ -8,15 +8,15 @@ import { checkBankAccountsRequired } from "@api/ai/utils/tool-helpers";
 import {
   CONTRA_REVENUE_CATEGORIES,
   REVENUE_CATEGORIES,
-} from "@midday/categories";
-import { db } from "@midday/db/client";
+} from "@kerna/categories";
+import { db } from "@kerna/db/client";
 import {
   getReports,
   getSpending,
   getSpendingForPeriod,
   getTransactions,
-} from "@midday/db/queries";
-import { formatAmount } from "@midday/utils/format";
+} from "@kerna/db/queries";
+import { formatAmount } from "@kerna/utils/format";
 import { generateText } from "ai";
 import { tool } from "ai";
 import {

@@ -8,7 +8,7 @@ import {
   getActivities,
   updateActivityStatus,
   updateAllActivitiesStatus,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 
 export const notificationsRouter = createTRPCRouter({
   list: protectedProcedure
