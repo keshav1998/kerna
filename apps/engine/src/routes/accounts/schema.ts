@@ -7,7 +7,7 @@ export const AccountsParamsSchema = z.object({
     .string()
     .optional()
     .openapi({
-      description: "GoCardLess reference id",
+      description: "Reference id (removed: GoCardLess)",
       param: {
         name: "id",
         in: "query",
@@ -76,14 +76,14 @@ export const AccountSchema = z
     resource_id: z
       .string()
       .openapi({
-        description: "GoCardLess reference id",
+        description: "Reference id (removed: GoCardLess)",
         example: "GBRGZX62Y8",
       })
       .nullable(),
     expires_at: z
       .string()
       .openapi({
-        description: "EnableBanking or GoCardLess access valid until",
+        description: "EnableBanking access valid until",
         example: "2024-03-06",
       })
       .nullable(),

@@ -1,7 +1,7 @@
 import type { Bindings } from "@engine/common/bindings";
 import { ErrorSchema } from "@engine/common/schema";
 import { Provider } from "@engine/providers";
-import { GoCardLessApi } from "@engine/providers/gocardless/gocardless-api";
+
 import { createErrorResponse } from "@engine/utils/error";
 import { OpenAPIHono, createRoute } from "@hono/zod-openapi";
 import { env } from "hono/adapter";
@@ -12,7 +12,7 @@ import {
   ConnectionStatusQuerySchema,
   ConnectionStatusSchema,
   DeleteConnectionBodySchema,
-  GoCardLessConnectionsSchema,
+
 } from "./schema";
 
 const app = new OpenAPIHono<{ Bindings: Bindings }>()
@@ -135,121 +135,6 @@ const app = new OpenAPIHono<{ Bindings: Bindings }>()
       } catch (error) {
         const errorResponse = createErrorResponse(error);
 
-        return c.json(errorResponse, 400);
-      }
-    },
-  )
-  .openapi(
-    createRoute({
-      method: "get",
-      path: "/gocardless",
-      summary: "Get GoCardless Connections",
-      responses: {
-        200: {
-          content: {
-            "application/json": {
-              schema: GoCardLessConnectionsSchema,
-            },
-          },
-          description: "Retrieve GoCardless connections",
-        },
-        400: {
-          content: {
-            "application/json": {
-              schema: ErrorSchema,
-            },
-          },
-          description: "Returns an error",
-        },
-      },
-    }),
-    async (c) => {
-      const envs = env(c);
-
-      const api = new GoCardLessApi({
-        kv: c.env.KV,
-        envs,
-      });
-
-      try {
-        const data = await api.getRequisitions();
-
-        return c.json(
-          {
-            count: data.count,
-            next: data.next,
-            previous: data.previous,
-            results: data.results,
-          },
-          200,
-        );
-      } catch (error) {
-        const errorResponse = createErrorResponse(error);
-
-        return c.json(errorResponse, 400);
-      }
-    },
-  )
-  .openapi(
-    createRoute({
-      method: "get",
-      path: "/:reference",
-      summary: "Get Connection by Reference",
-      request: {
-        params: ConnectionByReferenceParamsSchema,
-      },
-      responses: {
-        200: {
-          content: {
-            "application/json": {
-              schema: ConnectionByReferenceSchema,
-            },
-          },
-          description: "Retrieve connection by reference",
-        },
-        404: {
-          content: {
-            "application/json": {
-              schema: ErrorSchema,
-            },
-          },
-          description: "Connection not found",
-        },
-        400: {
-          content: {
-            "application/json": {
-              schema: ErrorSchema,
-            },
-          },
-          description: "Connection not found",
-        },
-      },
-    }),
-    async (c) => {
-      const envs = env(c);
-      const { reference } = c.req.valid("param");
-
-      const api = new GoCardLessApi({
-        kv: c.env.KV,
-        envs,
-      });
-
-      try {
-        const data = await api.getRequiestionByReference(reference);
-
-        if (!data) {
-          return c.json(
-            {
-              code: "NOT_FOUND",
-              message: "Connection not found",
-            },
-            404,
-          );
-        }
-
-        return c.json({ data: { id: data.id, accounts: data.accounts } }, 200);
-      } catch (error) {
-        const errorResponse = createErrorResponse(error);
         return c.json(errorResponse, 400);
       }
     },

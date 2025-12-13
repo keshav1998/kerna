@@ -1,7 +1,7 @@
 import type { Bindings } from "@engine/common/bindings";
 import { ErrorSchema } from "@engine/common/schema";
 import { EnableBankingApi } from "@engine/providers/enablebanking/enablebanking-api";
-import { GoCardLessApi } from "@engine/providers/gocardless/gocardless-api";
+
 import { PlaidApi } from "@engine/providers/plaid/plaid-api";
 import { createErrorResponse } from "@engine/utils/error";
 import { createRoute } from "@hono/zod-openapi";
@@ -12,12 +12,7 @@ import {
   EnableBankingLinkResponseSchema,
   EnableBankingSessionQuerySchema,
   EnableBankingSessionSchema,
-  GoCardLessAgreementBodySchema,
-  GoCardLessAgreementSchema,
-  GoCardLessExchangeBodySchema,
-  GoCardLessExchangeSchema,
-  GoCardLessLinkBodySchema,
-  GoCardLessLinkSchema,
+
   PlaidExchangeBodySchema,
   PlaidExchangeSchema,
   PlaidLinkBodySchema,
@@ -137,196 +132,6 @@ const app = new OpenAPIHono<{ Bindings: Bindings }>()
         });
 
         return c.json(data, 200);
-      } catch (error) {
-        const errorResponse = createErrorResponse(error);
-
-        return c.json(errorResponse, 400);
-      }
-    },
-  )
-  .openapi(
-    createRoute({
-      method: "post",
-      path: "/gocardless/link",
-      summary: "Auth link (GoCardLess)",
-      request: {
-        body: {
-          content: {
-            "application/json": {
-              schema: GoCardLessLinkBodySchema,
-            },
-          },
-        },
-      },
-      responses: {
-        200: {
-          content: {
-            "application/json": {
-              schema: GoCardLessLinkSchema,
-            },
-          },
-          description: "Retrieve Link",
-        },
-        400: {
-          content: {
-            "application/json": {
-              schema: ErrorSchema,
-            },
-          },
-          description: "Returns an error",
-        },
-      },
-    }),
-    async (c) => {
-      const envs = env(c);
-
-      const { institutionId, agreement, redirect, reference } =
-        await c.req.json();
-
-      const api = new GoCardLessApi({
-        kv: c.env.KV,
-        envs,
-      });
-
-      try {
-        const data = await api.buildLink({
-          institutionId,
-          agreement,
-          redirect,
-          reference,
-        });
-
-        return c.json(
-          {
-            data,
-          },
-          200,
-        );
-      } catch (error) {
-        const errorResponse = createErrorResponse(error);
-
-        return c.json(errorResponse, 400);
-      }
-    },
-  )
-  .openapi(
-    createRoute({
-      method: "post",
-      path: "/gocardless/agreement",
-      summary: "Agreement (GoCardLess)",
-      request: {
-        body: {
-          content: {
-            "application/json": {
-              schema: GoCardLessAgreementBodySchema,
-            },
-          },
-        },
-      },
-      responses: {
-        200: {
-          content: {
-            "application/json": {
-              schema: GoCardLessAgreementSchema,
-            },
-          },
-          description: "Retrieve Agreement",
-        },
-        400: {
-          content: {
-            "application/json": {
-              schema: ErrorSchema,
-            },
-          },
-          description: "Returns an error",
-        },
-      },
-    }),
-    async (c) => {
-      const envs = env(c);
-
-      const { institutionId, transactionTotalDays, reference } =
-        await c.req.json();
-
-      const api = new GoCardLessApi({
-        kv: c.env.KV,
-        envs,
-      });
-
-      try {
-        const data = await api.createEndUserAgreement({
-          institutionId,
-          transactionTotalDays,
-        });
-
-        return c.json(
-          {
-            data,
-          },
-          200,
-        );
-      } catch (error) {
-        const errorResponse = createErrorResponse(error);
-
-        return c.json(errorResponse, 400);
-      }
-    },
-  )
-  .openapi(
-    createRoute({
-      method: "post",
-      path: "/gocardless/exchange",
-      summary: "Exchange token (GoCardLess)",
-      request: {
-        body: {
-          content: {
-            "application/json": {
-              schema: GoCardLessExchangeBodySchema,
-            },
-          },
-        },
-      },
-      responses: {
-        200: {
-          content: {
-            "application/json": {
-              schema: GoCardLessExchangeSchema,
-            },
-          },
-          description: "Retrieve Exchange",
-        },
-        400: {
-          content: {
-            "application/json": {
-              schema: ErrorSchema,
-            },
-          },
-          description: "Returns an error",
-        },
-      },
-    }),
-    async (c) => {
-      const envs = env(c);
-
-      const { institutionId, transactionTotalDays } = await c.req.json();
-
-      const api = new GoCardLessApi({
-        kv: c.env.KV,
-        envs,
-      });
-
-      try {
-        const data = await api.createEndUserAgreement({
-          institutionId,
-          transactionTotalDays,
-        });
-
-        return c.json(
-          {
-            data,
-          },
-          200,
-        );
       } catch (error) {
         const errorResponse = createErrorResponse(error);
 
