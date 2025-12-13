@@ -1,5 +1,5 @@
-import { cn } from "@midday/ui/cn";
-import { Input as BaseInput, type InputProps } from "@midday/ui/input";
+import { cn } from "@kerna/ui/cn";
+import { Input as BaseInput, type InputProps } from "@kerna/ui/input";
 import { useState } from "react";
 import { useFormContext } from "react-hook-form";
 

@@ -1,9 +1,9 @@
 import type { AppContext } from "@api/ai/agents/config/shared";
 import { tz } from "@date-fns/tz";
-import { db } from "@midday/db/client";
-import { getTrackerProjects, upsertTrackerEntries } from "@midday/db/queries";
-import { getAppUrl } from "@midday/utils/envs";
-import { formatDate } from "@midday/utils/format";
+import { db } from "@kerna/db/client";
+import { getTrackerProjects, upsertTrackerEntries } from "@kerna/db/queries";
+import { getAppUrl } from "@kerna/utils/envs";
+import { formatDate } from "@kerna/utils/format";
 import { tool } from "ai";
 import { formatDistance, setHours, setMinutes } from "date-fns";
 import parseDuration from "parse-duration";

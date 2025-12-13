@@ -1,10 +1,10 @@
 "use client";
 
 import { useTRPC } from "@/trpc/client";
-import { Button } from "@midday/ui/button";
-import { Spinner } from "@midday/ui/spinner";
-import { Table, TableBody, TableCell, TableRow } from "@midday/ui/table";
-import { formatDate } from "@midday/utils/format";
+import { Button } from "@kerna/ui/button";
+import { Spinner } from "@kerna/ui/spinner";
+import { Table, TableBody, TableCell, TableRow } from "@kerna/ui/table";
+import { formatDate } from "@kerna/utils/format";
 import { useSuspenseInfiniteQuery } from "@tanstack/react-query";
 import { useMemo } from "react";
 import { FormatAmount } from "../../format-amount";

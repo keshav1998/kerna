@@ -2,9 +2,9 @@
 
 import { useProductParams } from "@/hooks/use-product-params";
 import { useTeamQuery } from "@/hooks/use-team";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
-import { Sheet, SheetContent, SheetHeader } from "@midday/ui/sheet";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
+import { Sheet, SheetContent, SheetHeader } from "@kerna/ui/sheet";
 import React from "react";
 import { ProductForm } from "../forms/product-form";
 

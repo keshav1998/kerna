@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
-import { cn } from "@midday/ui/cn";
-import "@midday/ui/globals.css";
+import { cn } from "@kerna/ui/cn";
+import "@kerna/ui/globals.css";
 import { DesktopHeader } from "@/components/desktop-header";
 import { isDesktopApp } from "@/utils/desktop";
-import { Provider as Analytics } from "@midday/events/client";
-import { Toaster } from "@midday/ui/toaster";
+import { Provider as Analytics } from "@kerna/events/client";
+import { Toaster } from "@kerna/ui/toaster";
 import type { Metadata } from "next";
 import { Hedvig_Letters_Sans, Hedvig_Letters_Serif } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
@@ -12,7 +12,7 @@ import type { ReactElement } from "react";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://app.midday.ai"),
+  metadataBase: new URL("https://app.kerna.ai"),
   title: "Midday | Your AI-Powered Business Assistant",
   description:
     "Automate financial tasks, stay organized, and make informed decisions effortlessly.",
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
       "Automate financial tasks, stay organized, and make informed decisions effortlessly.",
     images: [
       {
-        url: "https://cdn.midday.ai/opengraph-image.jpg",
+        url: "https://cdn.kerna.ai/opengraph-image.jpg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://cdn.midday.ai/opengraph-image.jpg",
+        url: "https://cdn.kerna.ai/opengraph-image.jpg",
         width: 1800,
         height: 1600,
       },
@@ -37,16 +37,16 @@ export const metadata: Metadata = {
     title: "Midday | Your AI-Powered Business Assistant",
     description:
       "Automate financial tasks, stay organized, and make informed decisions effortlessly.",
-    url: "https://app.midday.ai",
+    url: "https://app.kerna.ai",
     siteName: "Midday",
     images: [
       {
-        url: "https://cdn.midday.ai/opengraph-image.jpg",
+        url: "https://cdn.kerna.ai/opengraph-image.jpg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://cdn.midday.ai/opengraph-image.jpg",
+        url: "https://cdn.kerna.ai/opengraph-image.jpg",
         width: 1800,
         height: 1600,
       },

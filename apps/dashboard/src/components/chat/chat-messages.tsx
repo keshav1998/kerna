@@ -9,8 +9,8 @@ import {
   extractArtifactTypeFromMessage,
   extractBankAccountRequired,
 } from "@/lib/chat-utils";
-import { Message, MessageAvatar, MessageContent } from "@midday/ui/message";
-import { Response } from "@midday/ui/response";
+import { Message, MessageAvatar, MessageContent } from "@kerna/ui/message";
+import { Response } from "@kerna/ui/response";
 import type { UIMessage } from "ai";
 import { PaperclipIcon } from "lucide-react";
 import Image from "next/image";

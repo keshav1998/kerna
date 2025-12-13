@@ -2,15 +2,15 @@
 
 import { useUserQuery } from "@/hooks/use-user";
 import { useTRPC } from "@/trpc/client";
-import { isDesktopApp } from "@midday/desktop-client/platform";
-import { cn } from "@midday/ui/cn";
-import { SubmitButton } from "@midday/ui/submit-button";
+import { isDesktopApp } from "@kerna/desktop-client/platform";
+import { cn } from "@kerna/ui/cn";
+import { SubmitButton } from "@kerna/ui/submit-button";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
+} from "@kerna/ui/tooltip";
 import { PolarEmbedCheckout } from "@polar-sh/checkout/embed";
 import { useQuery } from "@tanstack/react-query";
 import { Check } from "lucide-react";

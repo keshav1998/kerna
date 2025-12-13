@@ -1,6 +1,6 @@
 "use client";
 
-import { Icons } from "@midday/ui/icons";
+import { Icons } from "@kerna/ui/icons";
 import { useEffect, useRef, useState } from "react";
 import LoginTestimonials from "./login-testimonials";
 

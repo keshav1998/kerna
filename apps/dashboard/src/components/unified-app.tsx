@@ -1,25 +1,25 @@
 import { useTRPC } from "@/trpc/client";
 import { getScopeDescription } from "@/utils/scopes";
-import type { UnifiedApp } from "@midday/app-store/types";
-import { openUrl } from "@midday/desktop-client/core";
-import { isDesktopApp } from "@midday/desktop-client/platform";
+import type { UnifiedApp } from "@kerna/app-store/types";
+import { openUrl } from "@kerna/desktop-client/core";
+import { isDesktopApp } from "@kerna/desktop-client/platform";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
-import { Badge } from "@midday/ui/badge";
-import { Button } from "@midday/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@midday/ui/card";
+} from "@kerna/ui/accordion";
+import { Badge } from "@kerna/ui/badge";
+import { Button } from "@kerna/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@kerna/ui/card";
 import {
   Carousel,
   type CarouselApi,
   CarouselContent,
   CarouselItem,
-} from "@midday/ui/carousel";
-import { ScrollArea } from "@midday/ui/scroll-area";
-import { Sheet, SheetContent, SheetHeader } from "@midday/ui/sheet";
+} from "@kerna/ui/carousel";
+import { ScrollArea } from "@kerna/ui/scroll-area";
+import { Sheet, SheetContent, SheetHeader } from "@kerna/ui/sheet";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import Image from "next/image";
 import { parseAsBoolean, parseAsString, useQueryStates } from "nuqs";
@@ -395,7 +395,7 @@ export function UnifiedAppComponent({ app }: UnifiedAppProps) {
                 </p>
 
                 <a
-                  href="mailto:support@midday.dev"
+                  href="mailto:support@kerna.dev"
                   className="text-[10px] text-red-500"
                 >
                   Report app

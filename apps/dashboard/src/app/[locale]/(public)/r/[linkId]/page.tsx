@@ -1,8 +1,8 @@
 import { getChartDisplayName } from "@/components/metrics/utils/chart-types";
 import { PublicMetricView } from "@/components/public-metric-view";
 import { getQueryClient, trpc } from "@/trpc/server";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
 import { format } from "date-fns";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -124,7 +124,7 @@ export default async function Page({ params }: Props) {
           <p className="text-center text-xs text-muted-foreground">
             Powered by{" "}
             <a
-              href="https://midday.ai"
+              href="https://kerna.ai"
               className="hover:text-foreground transition-colors"
             >
               Midday

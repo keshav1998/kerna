@@ -15,9 +15,9 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@midday/ui/alert-dialog";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/alert-dialog";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 

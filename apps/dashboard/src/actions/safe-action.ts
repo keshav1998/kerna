@@ -1,7 +1,7 @@
 import { getQueryClient, trpc } from "@/trpc/server";
 import { logger } from "@/utils/logger";
-import { setupAnalytics } from "@midday/events/server";
-import { createClient } from "@midday/supabase/server";
+import { setupAnalytics } from "@kerna/events/server";
+import { createClient } from "@kerna/supabase/server";
 import {
   DEFAULT_SERVER_ERROR_MESSAGE,
   createSafeActionClient,

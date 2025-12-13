@@ -12,8 +12,8 @@ import {
   createShortLink,
   getDocumentById,
   getShortLinkByShortId,
-} from "@midday/db/queries";
-import { signedUrl } from "@midday/supabase/storage";
+} from "@kerna/db/queries";
+import { signedUrl } from "@kerna/supabase/storage";
 
 export const shortLinksRouter = createTRPCRouter({
   createForUrl: protectedProcedure

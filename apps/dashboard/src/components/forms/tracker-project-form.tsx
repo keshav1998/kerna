@@ -8,9 +8,9 @@ import { useTrackerParams } from "@/hooks/use-tracker-params";
 import { useZodForm } from "@/hooks/use-zod-form";
 import { useTRPC } from "@/trpc/client";
 import type { RouterOutputs } from "@api/trpc/routers/_app";
-import { uniqueCurrencies } from "@midday/location/currencies";
-import { Collapsible, CollapsibleContent } from "@midday/ui/collapsible";
-import { CurrencyInput } from "@midday/ui/currency-input";
+import { uniqueCurrencies } from "@kerna/location/currencies";
+import { Collapsible, CollapsibleContent } from "@kerna/ui/collapsible";
+import { CurrencyInput } from "@kerna/ui/currency-input";
 import {
   Form,
   FormControl,
@@ -19,19 +19,19 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@midday/ui/form";
-import { Input } from "@midday/ui/input";
-import { Label } from "@midday/ui/label";
+} from "@kerna/ui/form";
+import { Input } from "@kerna/ui/input";
+import { Label } from "@kerna/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@midday/ui/select";
-import { SubmitButton } from "@midday/ui/submit-button";
-import { Switch } from "@midday/ui/switch";
-import { Textarea } from "@midday/ui/textarea";
+} from "@kerna/ui/select";
+import { SubmitButton } from "@kerna/ui/submit-button";
+import { Switch } from "@kerna/ui/switch";
+import { Textarea } from "@kerna/ui/textarea";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
 import { z } from "zod/v3";

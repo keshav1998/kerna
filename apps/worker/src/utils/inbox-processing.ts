@@ -3,7 +3,7 @@
  * Extracted common logic from inbox processors for better maintainability
  */
 
-import { createClient } from "@midday/supabase/job";
+import { createClient } from "@kerna/supabase/job";
 import convert from "heic-convert";
 import sharp from "sharp";
 import { TIMEOUTS, withTimeout } from "./timeout";

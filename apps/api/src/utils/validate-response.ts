@@ -1,4 +1,4 @@
-import { createLoggerWithContext } from "@midday/logger";
+import { createLoggerWithContext } from "@kerna/logger";
 
 const logger = createLoggerWithContext("api");
 import type { ZodSchema } from "zod";

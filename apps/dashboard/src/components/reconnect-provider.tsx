@@ -2,17 +2,17 @@ import { createPlaidLinkTokenAction } from "@/actions/institutions/create-plaid-
 import { reconnectEnableBankingLinkAction } from "@/actions/institutions/reconnect-enablebanking-link";
 import { reconnectGoCardLessLinkAction } from "@/actions/institutions/reconnect-gocardless-link";
 import { getUrl } from "@/utils/environment";
-import { isDesktopApp } from "@midday/desktop-client/platform";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
-import { Spinner } from "@midday/ui/spinner";
+import { isDesktopApp } from "@kerna/desktop-client/platform";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
+import { Spinner } from "@kerna/ui/spinner";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
-import { useToast } from "@midday/ui/use-toast";
+} from "@kerna/ui/tooltip";
+import { useToast } from "@kerna/ui/use-toast";
 import { useAction } from "next-safe-action/hooks";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";

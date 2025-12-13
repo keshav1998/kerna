@@ -6,8 +6,8 @@ import { useTeamQuery } from "@/hooks/use-team";
 import { useZodForm } from "@/hooks/use-zod-form";
 import { useTRPC } from "@/trpc/client";
 import type { RouterOutputs } from "@api/trpc/routers/_app";
-import { uniqueCurrencies } from "@midday/location/currencies";
-import { CurrencyInput } from "@midday/ui/currency-input";
+import { uniqueCurrencies } from "@kerna/location/currencies";
+import { CurrencyInput } from "@kerna/ui/currency-input";
 import {
   Form,
   FormControl,
@@ -16,11 +16,11 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@midday/ui/form";
-import { Input } from "@midday/ui/input";
-import { SubmitButton } from "@midday/ui/submit-button";
-import { Switch } from "@midday/ui/switch";
-import { Textarea } from "@midday/ui/textarea";
+} from "@kerna/ui/form";
+import { Input } from "@kerna/ui/input";
+import { SubmitButton } from "@kerna/ui/submit-button";
+import { Switch } from "@kerna/ui/switch";
+import { Textarea } from "@kerna/ui/textarea";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { z } from "zod/v3";
 

@@ -1,4 +1,4 @@
-import { createLoggerWithContext } from "@midday/logger";
+import { createLoggerWithContext } from "@kerna/logger";
 import type { z } from "zod/v4";
 import { invoiceConfig } from "../../config/extraction-config";
 import type { GetDocumentRequest } from "../../types";

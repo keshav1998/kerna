@@ -2,31 +2,31 @@
 
 import { useZodForm } from "@/hooks/use-zod-form";
 import { useTRPC } from "@/trpc/client";
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import {
   Card,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
+} from "@kerna/ui/card";
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@midday/ui/form";
-import { Icons } from "@midday/ui/icons";
-import { Input } from "@midday/ui/input";
+} from "@kerna/ui/form";
+import { Icons } from "@kerna/ui/icons";
+import { Input } from "@kerna/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@midday/ui/select";
-import { SubmitButton } from "@midday/ui/submit-button";
+} from "@kerna/ui/select";
+import { SubmitButton } from "@kerna/ui/submit-button";
 import {
   useMutation,
   useQuery,

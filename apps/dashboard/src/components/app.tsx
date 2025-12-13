@@ -4,11 +4,11 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
-import { Button } from "@midday/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@midday/ui/card";
-import { ScrollArea } from "@midday/ui/scroll-area";
-import { Sheet, SheetContent, SheetHeader } from "@midday/ui/sheet";
+} from "@kerna/ui/accordion";
+import { Button } from "@kerna/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@kerna/ui/card";
+import { ScrollArea } from "@kerna/ui/scroll-area";
+import { Sheet, SheetContent, SheetHeader } from "@kerna/ui/sheet";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import Image from "next/image";
 import { parseAsBoolean, parseAsString, useQueryStates } from "nuqs";
@@ -239,7 +239,7 @@ export function App({
             </p>
 
             <a
-              href="mailto:support@midday.dev"
+              href="mailto:support@kerna.dev"
               className="text-[10px] text-red-500"
             >
               Report app

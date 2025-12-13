@@ -1,13 +1,13 @@
 import { getTaxRateAction } from "@/actions/ai/get-tax-rate";
-import { Button } from "@midday/ui/button";
-import { cn } from "@midday/ui/cn";
-import { Icons } from "@midday/ui/icons";
+import { Button } from "@kerna/ui/button";
+import { cn } from "@kerna/ui/cn";
+import { Icons } from "@kerna/ui/icons";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
+} from "@kerna/ui/tooltip";
 import { useAction } from "next-safe-action/hooks";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useDebounceValue } from "usehooks-ts";

@@ -1,9 +1,9 @@
 import CustomerHeader from "@/components/customer-header";
 import InvoiceToolbar from "@/components/invoice-toolbar";
 import { getQueryClient, trpc } from "@/trpc/server";
-import { decrypt } from "@midday/encryption";
-import { HtmlTemplate } from "@midday/invoice/templates/html";
-import { createClient } from "@midday/supabase/server";
+import { decrypt } from "@kerna/encryption";
+import { HtmlTemplate } from "@kerna/invoice/templates/html";
+import { createClient } from "@kerna/supabase/server";
 import { waitUntil } from "@vercel/functions";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -149,7 +149,7 @@ export default async function Page(props: Props) {
 
       <div className="fixed bottom-4 right-4 hidden md:block">
         <a
-          href="https://midday.ai?utm_source=invoice"
+          href="https://kerna.ai?utm_source=invoice"
           target="_blank"
           rel="noreferrer"
           className="text-[9px] text-[#878787]"

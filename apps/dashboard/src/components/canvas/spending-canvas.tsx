@@ -16,7 +16,7 @@ import { useUserQuery } from "@/hooks/use-user";
 import { formatAmount } from "@/utils/format";
 import { useArtifact } from "@ai-sdk-tools/artifacts/client";
 import { spendingArtifact } from "@api/ai/artifacts/spending";
-import { cn } from "@midday/ui/cn";
+import { cn } from "@kerna/ui/cn";
 import {
   Table,
   TableBody,
@@ -24,7 +24,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@midday/ui/table";
+} from "@kerna/ui/table";
 import Link from "next/link";
 import { parseAsInteger, useQueryState } from "nuqs";
 

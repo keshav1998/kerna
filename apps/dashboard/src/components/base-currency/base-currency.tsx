@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
+} from "@kerna/ui/card";
 import { SelectCurrency } from "./select-currency";
 
 export function BaseCurrency() {

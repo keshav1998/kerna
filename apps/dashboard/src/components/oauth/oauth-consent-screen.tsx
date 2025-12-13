@@ -4,25 +4,25 @@ import { useOAuthParams } from "@/hooks/use-oauth-params";
 import { useTeamQuery } from "@/hooks/use-team";
 import { useTRPC } from "@/trpc/client";
 import { getScopeDescription } from "@/utils/scopes";
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
-import { cn } from "@midday/ui/cn";
-import { Icons } from "@midday/ui/icons";
-import { Label } from "@midday/ui/label";
+} from "@kerna/ui/card";
+import { cn } from "@kerna/ui/cn";
+import { Icons } from "@kerna/ui/icons";
+import { Label } from "@kerna/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@midday/ui/select";
-import { useToast } from "@midday/ui/use-toast";
+} from "@kerna/ui/select";
+import { useToast } from "@kerna/ui/use-toast";
 import { useMutation, useSuspenseQuery } from "@tanstack/react-query";
 import { AlertTriangle, Check, X } from "lucide-react";
 import Image from "next/image";

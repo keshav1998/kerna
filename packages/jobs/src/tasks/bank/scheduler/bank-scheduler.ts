@@ -1,4 +1,4 @@
-import { createClient } from "@midday/supabase/job";
+import { createClient } from "@kerna/supabase/job";
 import { logger, schedules } from "@trigger.dev/sdk";
 import { syncConnection } from "../sync/connection";
 

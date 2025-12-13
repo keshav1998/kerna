@@ -1,8 +1,8 @@
-import { updateDocumentByPath } from "@midday/db/queries";
-import { loadDocument } from "@midday/documents/loader";
-import { getContentSample } from "@midday/documents/utils";
-import { triggerJob } from "@midday/job-client";
-import { createClient } from "@midday/supabase/job";
+import { updateDocumentByPath } from "@kerna/db/queries";
+import { loadDocument } from "@kerna/documents/loader";
+import { getContentSample } from "@kerna/documents/utils";
+import { triggerJob } from "@kerna/job-client";
+import { createClient } from "@kerna/supabase/job";
 import type { Job } from "bullmq";
 import convert from "heic-convert";
 import sharp from "sharp";

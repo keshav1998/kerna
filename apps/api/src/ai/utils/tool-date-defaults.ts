@@ -1,4 +1,4 @@
-import { getFiscalYearToDate } from "@midday/utils";
+import { getFiscalYearToDate } from "@kerna/utils";
 import { endOfMonth, startOfMonth, subMonths } from "date-fns";
 
 /**

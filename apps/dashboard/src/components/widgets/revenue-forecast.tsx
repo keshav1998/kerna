@@ -6,7 +6,7 @@ import { useMetricsFilter } from "@/hooks/use-metrics-filter";
 import { useTRPC } from "@/trpc/client";
 import { getPeriodLabel } from "@/utils/metrics-date-utils";
 import { useChatActions, useChatId } from "@ai-sdk-tools/store";
-import { Icons } from "@midday/ui/icons";
+import { Icons } from "@kerna/ui/icons";
 import { useQuery } from "@tanstack/react-query";
 import { format } from "date-fns";
 import { Line, LineChart, ResponsiveContainer } from "recharts";

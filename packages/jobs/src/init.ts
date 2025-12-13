@@ -1,5 +1,5 @@
-import type { Database } from "@midday/db/client";
-import { createJobDb } from "@midday/db/job-client";
+import type { Database } from "@kerna/db/client";
+import { createJobDb } from "@kerna/db/job-client";
 import { locals, tasks } from "@trigger.dev/sdk";
 
 // Store the database instance

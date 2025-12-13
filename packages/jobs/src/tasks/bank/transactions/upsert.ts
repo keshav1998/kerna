@@ -1,5 +1,5 @@
 import { transformTransaction } from "@jobs/utils/transform";
-import { createClient } from "@midday/supabase/job";
+import { createClient } from "@kerna/supabase/job";
 import { logger, schemaTask, tasks } from "@trigger.dev/sdk";
 import { z } from "zod";
 import { embedTransaction } from "../../transactions/embed-transaction";

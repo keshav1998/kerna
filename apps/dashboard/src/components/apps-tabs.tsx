@@ -1,7 +1,7 @@
 "use client";
 
-import { cn } from "@midday/ui/cn";
-import { Tabs, TabsList, TabsTrigger } from "@midday/ui/tabs";
+import { cn } from "@kerna/ui/cn";
+import { Tabs, TabsList, TabsTrigger } from "@kerna/ui/tabs";
 import { useQueryState } from "nuqs";
 
 export function AppsTabs() {

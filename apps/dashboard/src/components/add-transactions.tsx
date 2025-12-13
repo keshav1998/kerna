@@ -1,14 +1,14 @@
 "use client";
 
 import { useTransactionParams } from "@/hooks/use-transaction-params";
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
 import { parseAsBoolean, parseAsString, useQueryStates } from "nuqs";
 
 export function AddTransactions() {

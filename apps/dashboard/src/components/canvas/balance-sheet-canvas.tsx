@@ -12,7 +12,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
+} from "@kerna/ui/tooltip";
 import { format } from "date-fns";
 import { parseAsInteger, useQueryState } from "nuqs";
 

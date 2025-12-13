@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@midday/ui/cn";
+import { cn } from "@kerna/ui/cn";
 
 export function BaseCanvas({ children }: { children: React.ReactNode }) {
   return (

@@ -1,4 +1,4 @@
-import { notificationSchema } from "@midday/jobs/schema";
+import { notificationSchema } from "@kerna/jobs/schema";
 import type { z } from "zod";
 
 /**

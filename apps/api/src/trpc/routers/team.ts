@@ -31,8 +31,8 @@ import {
   leaveTeam,
   updateTeamById,
   updateTeamMember,
-} from "@midday/db/queries";
-import { triggerJob } from "@midday/job-client";
+} from "@kerna/db/queries";
+import { triggerJob } from "@kerna/job-client";
 import { tasks } from "@trigger.dev/sdk";
 import { TRPCError } from "@trpc/server";
 

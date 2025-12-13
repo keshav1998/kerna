@@ -3,13 +3,13 @@ import {
   getInboxAccountInfo,
   getInboxBlocklist,
   updateInboxAccount,
-} from "@midday/db/queries";
-import { separateBlocklistEntries } from "@midday/db/utils/blocklist";
-import { InboxConnector } from "@midday/inbox/connector";
-import { isAuthenticationError } from "@midday/inbox/utils";
-import { triggerJob } from "@midday/job-client";
-import { createClient } from "@midday/supabase/job";
-import { ensureFileExtension } from "@midday/utils";
+} from "@kerna/db/queries";
+import { separateBlocklistEntries } from "@kerna/db/utils/blocklist";
+import { InboxConnector } from "@kerna/inbox/connector";
+import { isAuthenticationError } from "@kerna/inbox/utils";
+import { triggerJob } from "@kerna/job-client";
+import { createClient } from "@kerna/supabase/job";
+import { ensureFileExtension } from "@kerna/utils";
 import type { Job } from "bullmq";
 import type { InboxProviderSyncAccountPayload } from "../../schemas/inbox";
 import { getDb } from "../../utils/db";

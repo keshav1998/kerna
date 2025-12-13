@@ -4,8 +4,8 @@ import { MetricsFilter } from "@/components/metrics/components/metrics-filter";
 import { Customize } from "@/components/widgets/customize";
 import { useUserQuery } from "@/hooks/use-user";
 import { TZDate } from "@date-fns/tz";
-import { cn } from "@midday/ui/cn";
-import { TabsList, TabsTrigger } from "@midday/ui/tabs";
+import { cn } from "@kerna/ui/cn";
+import { TabsList, TabsTrigger } from "@kerna/ui/tabs";
 import { useEffect, useState } from "react";
 import { useIsCustomizing } from "./widget-provider";
 

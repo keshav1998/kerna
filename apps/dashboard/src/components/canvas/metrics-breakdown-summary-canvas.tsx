@@ -16,7 +16,7 @@ import { isMonthlyBreakdownType } from "@/lib/metrics-breakdown-constants";
 import { formatAmount } from "@/utils/format";
 import { useArtifact, useArtifacts } from "@ai-sdk-tools/artifacts/client";
 import { metricsBreakdownSummaryArtifact } from "@api/ai/artifacts/metrics-breakdown";
-import { cn } from "@midday/ui/cn";
+import { cn } from "@kerna/ui/cn";
 import {
   Table,
   TableBody,
@@ -24,7 +24,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@midday/ui/table";
+} from "@kerna/ui/table";
 import { format, parseISO } from "date-fns";
 import Link from "next/link";
 import { parseAsInteger, parseAsString, useQueryState } from "nuqs";

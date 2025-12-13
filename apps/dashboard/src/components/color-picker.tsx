@@ -1,4 +1,4 @@
-import { Popover, PopoverContent, PopoverTrigger } from "@midday/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "@kerna/ui/popover";
 import { HexColorPicker } from "react-colorful";
 
 type Props = {

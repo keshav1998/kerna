@@ -1,14 +1,14 @@
 "use client";
 
-import { Badge } from "@midday/ui/badge";
-import { Icons } from "@midday/ui/icons";
+import { Badge } from "@kerna/ui/badge";
+import { Icons } from "@kerna/ui/icons";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
-import { formatDate } from "@midday/utils/format";
+} from "@kerna/ui/tooltip";
+import { formatDate } from "@kerna/utils/format";
 import { FormatAmount } from "../format-amount";
 
 type Props = {

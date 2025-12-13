@@ -1,9 +1,9 @@
 "use client";
 
 import { useCustomerParams } from "@/hooks/use-customer-params";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
-import { Sheet, SheetContent, SheetHeader } from "@midday/ui/sheet";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
+import { Sheet, SheetContent, SheetHeader } from "@kerna/ui/sheet";
 import React from "react";
 import { CustomerForm } from "../forms/customer-form";
 

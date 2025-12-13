@@ -12,7 +12,7 @@ import {
   getCategories,
   getCategoryById,
   updateTransactionCategory,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 
 export const transactionCategoriesRouter = createTRPCRouter({
   get: protectedProcedure

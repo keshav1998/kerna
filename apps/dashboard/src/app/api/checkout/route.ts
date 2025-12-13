@@ -1,8 +1,8 @@
 import { getDiscount, getPlans } from "@/utils/plans";
 import { api } from "@/utils/polar";
-import { getSession } from "@midday/supabase/cached-queries";
-import { getTeamByIdQuery } from "@midday/supabase/queries";
-import { createClient } from "@midday/supabase/server";
+import { getSession } from "@kerna/supabase/cached-queries";
+import { getTeamByIdQuery } from "@kerna/supabase/queries";
+import { createClient } from "@kerna/supabase/server";
 import { type NextRequest, NextResponse } from "next/server";
 
 export const GET = async (req: NextRequest) => {

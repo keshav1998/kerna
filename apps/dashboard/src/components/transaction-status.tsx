@@ -1,10 +1,10 @@
-import { Icons } from "@midday/ui/icons";
+import { Icons } from "@kerna/ui/icons";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
+} from "@kerna/ui/tooltip";
 
 type Props = {
   fullfilled: boolean;

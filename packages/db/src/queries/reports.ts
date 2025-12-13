@@ -3,7 +3,7 @@ import type { Database } from "@db/client";
 import {
   CONTRA_REVENUE_CATEGORIES,
   REVENUE_CATEGORIES,
-} from "@midday/categories";
+} from "@kerna/categories";
 import {
   eachMonthOfInterval,
   endOfMonth,

@@ -15,9 +15,9 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@midday/ui/alert-dialog";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/alert-dialog";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
 import NumberFlow from "@number-flow/react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { AnimatePresence, motion } from "framer-motion";

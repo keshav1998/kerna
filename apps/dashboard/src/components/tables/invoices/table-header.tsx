@@ -2,14 +2,14 @@
 
 import { HorizontalPagination } from "@/components/horizontal-pagination";
 import { useSortParams } from "@/hooks/use-sort-params";
-import { Button } from "@midday/ui/button";
-import { Checkbox } from "@midday/ui/checkbox";
-import { cn } from "@midday/ui/cn";
+import { Button } from "@kerna/ui/button";
+import { Checkbox } from "@kerna/ui/checkbox";
+import { cn } from "@kerna/ui/cn";
 import {
   TableHeader as BaseTableHeader,
   TableHead,
   TableRow,
-} from "@midday/ui/table";
+} from "@kerna/ui/table";
 import { ArrowDown, ArrowUp } from "lucide-react";
 
 interface TableColumn {

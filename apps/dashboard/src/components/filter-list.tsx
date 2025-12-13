@@ -1,7 +1,7 @@
 import { formatAccountName } from "@/utils/format";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
-import { Skeleton } from "@midday/ui/skeleton";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
+import { Skeleton } from "@kerna/ui/skeleton";
 import { format } from "date-fns";
 import { formatDateRange } from "little-date";
 

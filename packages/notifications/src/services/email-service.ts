@@ -1,12 +1,12 @@
-import type { Database } from "@midday/db/client";
-import { shouldSendNotification } from "@midday/db/queries";
-import InvoiceEmail from "@midday/email/emails/invoice";
-import InvoiceOverdueEmail from "@midday/email/emails/invoice-overdue";
-import InvoicePaidEmail from "@midday/email/emails/invoice-paid";
-import InvoiceReminderEmail from "@midday/email/emails/invoice-reminder";
-import TransactionsEmail from "@midday/email/emails/transactions";
-import TransactionsExportedEmail from "@midday/email/emails/transactions-exported";
-import { render } from "@midday/email/render";
+import type { Database } from "@kerna/db/client";
+import { shouldSendNotification } from "@kerna/db/queries";
+import InvoiceEmail from "@kerna/email/emails/invoice";
+import InvoiceOverdueEmail from "@kerna/email/emails/invoice-overdue";
+import InvoicePaidEmail from "@kerna/email/emails/invoice-paid";
+import InvoiceReminderEmail from "@kerna/email/emails/invoice-reminder";
+import TransactionsEmail from "@kerna/email/emails/transactions";
+import TransactionsExportedEmail from "@kerna/email/emails/transactions-exported";
+import { render } from "@kerna/email/render";
 import { nanoid } from "nanoid";
 import { type CreateEmailOptions, Resend } from "resend";
 import type { EmailInput } from "../base";
@@ -137,7 +137,7 @@ export class EmailService {
     const recipients = email.to || [email.user.email];
 
     const payload: CreateEmailOptions = {
-      from: email.from || "Midday <middaybot@midday.ai>",
+      from: email.from || "Midday <middaybot@kerna.ai>",
       to: recipients,
       subject: email.subject,
       html,

@@ -1,9 +1,9 @@
 "use client";
 
 import { useTRPC } from "@/trpc/client";
-import { CurrencyInput } from "@midday/ui/currency-input";
-import { Input } from "@midday/ui/input";
-import { Label } from "@midday/ui/label";
+import { CurrencyInput } from "@kerna/ui/currency-input";
+import { Input } from "@kerna/ui/input";
+import { Label } from "@kerna/ui/label";
 import {
   Select,
   SelectContent,
@@ -11,12 +11,12 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@midday/ui/select";
+} from "@kerna/ui/select";
 import {
   calculateTaxAmountFromGross,
   calculateTaxRateFromGross,
   getTaxTypeLabel,
-} from "@midday/utils/tax";
+} from "@kerna/utils/tax";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useEffect, useRef, useState } from "react";
 import { useDebounceCallback } from "usehooks-ts";

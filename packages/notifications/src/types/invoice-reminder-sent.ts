@@ -1,6 +1,6 @@
-import { getI18n } from "@midday/email/locales";
-import { encrypt } from "@midday/encryption";
-import { getAppUrl } from "@midday/utils/envs";
+import { getI18n } from "@kerna/email/locales";
+import { encrypt } from "@kerna/encryption";
+import { getAppUrl } from "@kerna/utils/envs";
 import type { NotificationHandler } from "../base";
 import { invoiceReminderSentSchema } from "../schemas";
 
@@ -31,7 +31,7 @@ export const invoiceReminderSent: NotificationHandler = {
       subject: t("invoice.reminder.subject", {
         invoiceNumber: data.invoiceNumber,
       }),
-      from: `${team.name} <middaybot@midday.ai>`,
+      from: `${team.name} <middaybot@kerna.ai>`,
       data: {
         companyName: data.customerName,
         teamName: team.name,

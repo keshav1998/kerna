@@ -2,9 +2,9 @@
 
 import { useAudioRecording } from "@/hooks/use-audio-recording";
 import { useChatStore } from "@/store/chat";
-import { Button } from "@midday/ui/button";
-import { cn } from "@midday/ui/cn";
-import { Spinner } from "@midday/ui/spinner";
+import { Button } from "@kerna/ui/button";
+import { cn } from "@kerna/ui/cn";
+import { Spinner } from "@kerna/ui/spinner";
 import { useCallback } from "react";
 
 // Custom Record Icon with smooth animation

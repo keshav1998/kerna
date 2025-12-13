@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 /**
- * Document job schemas (independent from @midday/jobs)
+ * Document job schemas (independent from @kerna/jobs)
  */
 
 export const processDocumentSchema = z.object({

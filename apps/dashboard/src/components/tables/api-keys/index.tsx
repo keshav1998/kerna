@@ -2,8 +2,8 @@
 
 import { useTokenModalStore } from "@/store/token-modal";
 import { useTRPC } from "@/trpc/client";
-import { Button } from "@midday/ui/button";
-import { cn } from "@midday/ui/cn";
+import { Button } from "@kerna/ui/button";
+import { cn } from "@kerna/ui/cn";
 import {
   Table,
   TableBody,
@@ -11,7 +11,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@midday/ui/table";
+} from "@kerna/ui/table";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import {
   flexRender,

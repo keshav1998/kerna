@@ -1,11 +1,11 @@
 import {
   createSlackWebClient,
   downloadFile,
-} from "@midday/app-store/slack-client";
-import { DocumentClient } from "@midday/documents";
-import { inboxSlackUploadSchema } from "@midday/jobs/schema";
-import { createClient } from "@midday/supabase/job";
-import { getExtensionFromMimeType } from "@midday/utils";
+} from "@kerna/app-store/slack-client";
+import { DocumentClient } from "@kerna/documents";
+import { inboxSlackUploadSchema } from "@kerna/jobs/schema";
+import { createClient } from "@kerna/supabase/job";
+import { getExtensionFromMimeType } from "@kerna/utils";
 import { schemaTask, tasks } from "@trigger.dev/sdk";
 import { format } from "date-fns";
 
@@ -140,7 +140,7 @@ export const inboxSlackUpload = schemaTask({
                       text: "Show receipt",
                       emoji: true,
                     },
-                    url: `https://app.midday.ai/inbox?id=${encodeURIComponent(updatedInbox.id)}`,
+                    url: `https://app.kerna.ai/inbox?id=${encodeURIComponent(updatedInbox.id)}`,
                     action_id: "view_receipt",
                   },
                 ],

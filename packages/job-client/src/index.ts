@@ -1,4 +1,4 @@
-import { createLoggerWithContext } from "@midday/logger";
+import { createLoggerWithContext } from "@kerna/logger";
 import { getQueue } from "./queues";
 import type { JobStatus, JobStatusResponse, JobTriggerResponse } from "./types";
 

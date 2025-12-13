@@ -20,9 +20,9 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
-import { Button } from "@midday/ui/button";
-import { cn } from "@midday/ui/cn";
+} from "@kerna/ui/accordion";
+import { Button } from "@kerna/ui/button";
+import { cn } from "@kerna/ui/cn";
 import {
   Form,
   FormControl,
@@ -31,13 +31,13 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@midday/ui/form";
-import { Input } from "@midday/ui/input";
-import { SubmitButton } from "@midday/ui/submit-button";
-import { Switch } from "@midday/ui/switch";
-import { Tabs, TabsList, TabsTrigger } from "@midday/ui/tabs";
-import { Textarea } from "@midday/ui/textarea";
-import { useToast } from "@midday/ui/use-toast";
+} from "@kerna/ui/form";
+import { Input } from "@kerna/ui/input";
+import { SubmitButton } from "@kerna/ui/submit-button";
+import { Switch } from "@kerna/ui/switch";
+import { Tabs, TabsList, TabsTrigger } from "@kerna/ui/tabs";
+import { Textarea } from "@kerna/ui/textarea";
+import { useToast } from "@kerna/ui/use-toast";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { nanoid } from "nanoid";
 import { useEffect, useState } from "react";

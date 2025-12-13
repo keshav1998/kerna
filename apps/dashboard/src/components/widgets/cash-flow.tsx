@@ -5,7 +5,7 @@ import { useTRPC } from "@/trpc/client";
 import { formatAmount } from "@/utils/format";
 import { getPeriodLabel } from "@/utils/metrics-date-utils";
 import { useChatActions, useChatId } from "@ai-sdk-tools/store";
-import { Icons } from "@midday/ui/icons";
+import { Icons } from "@kerna/ui/icons";
 import { useQuery } from "@tanstack/react-query";
 import { BaseWidget } from "./base";
 import { WIDGET_POLLING_CONFIG } from "./widget-config";

@@ -1,6 +1,6 @@
-import { Button } from "@midday/ui/button";
-import { Card } from "@midday/ui/card";
-import { cn } from "@midday/ui/cn";
+import { Button } from "@kerna/ui/button";
+import { Card } from "@kerna/ui/card";
+import { cn } from "@kerna/ui/cn";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";

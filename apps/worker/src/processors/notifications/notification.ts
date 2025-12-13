@@ -1,4 +1,4 @@
-import { Notifications } from "@midday/notifications";
+import { Notifications } from "@kerna/notifications";
 import type { Job } from "bullmq";
 import type { NotificationPayload } from "../../schemas/notifications";
 import { getDb } from "../../utils/db";

@@ -6,8 +6,8 @@ import { useUserQuery } from "@/hooks/use-user";
 import { downloadFile } from "@/lib/download";
 import { useTRPC } from "@/trpc/client";
 import { getUrl } from "@/utils/environment";
-import { Button } from "@midday/ui/button";
-import { Calendar } from "@midday/ui/calendar";
+import { Button } from "@kerna/ui/button";
+import { Calendar } from "@kerna/ui/calendar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,8 +16,8 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { useToast } from "@midday/ui/use-toast";
+} from "@kerna/ui/dropdown-menu";
+import { useToast } from "@kerna/ui/use-toast";
 import { DotsHorizontalIcon } from "@radix-ui/react-icons";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useCopyToClipboard } from "usehooks-ts";

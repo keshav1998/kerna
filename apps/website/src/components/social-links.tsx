@@ -7,13 +7,13 @@ export function SocialLinks() {
   return (
     <ul className="flex space-x-4 items-center md:ml-5">
       <li>
-        <a target="_blank" rel="noreferrer" href="https://go.midday.ai/lS72Toq">
+        <a target="_blank" rel="noreferrer" href="https://go.kerna.ai/lS72Toq">
           <span className="sr-only">Twitter</span>
           <FaXTwitter size={22} className="fill-[#878787]" />
         </a>
       </li>
       <li>
-        <a target="_blank" rel="noreferrer" href="https://go.midday.ai/7rhA3rz">
+        <a target="_blank" rel="noreferrer" href="https://go.kerna.ai/7rhA3rz">
           <span className="sr-only">Producthunt</span>
           <FaProductHunt size={22} className="fill-[#878787]" />
         </a>
@@ -25,13 +25,13 @@ export function SocialLinks() {
         </a>
       </li>
       <li>
-        <a target="_blank" rel="noreferrer" href="https://go.midday.ai/Ct3xybK">
+        <a target="_blank" rel="noreferrer" href="https://go.kerna.ai/Ct3xybK">
           <span className="sr-only">LinkedIn</span>
           <FaLinkedinIn size={22} className="fill-[#878787]" />
         </a>
       </li>
       <li>
-        <a target="_blank" rel="noreferrer" href="https://go.midday.ai/0yq8rfn">
+        <a target="_blank" rel="noreferrer" href="https://go.kerna.ai/0yq8rfn">
           <span className="sr-only">Youtube</span>
           <FaYoutube size={22} className="fill-[#878787]" />
         </a>

@@ -1,5 +1,5 @@
-import { cn } from "@midday/ui/cn";
-import { Spinner } from "@midday/ui/spinner";
+import { cn } from "@kerna/ui/cn";
+import { Spinner } from "@kerna/ui/spinner";
 import Papa from "papaparse";
 import { useCallback, useEffect, useRef, useState } from "react";
 import Dropzone, { type FileRejection } from "react-dropzone";

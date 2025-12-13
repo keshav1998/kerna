@@ -1,5 +1,5 @@
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
-import { createLoggerWithContext } from "@midday/logger";
+import { createLoggerWithContext } from "@kerna/logger";
 import { generateObject } from "ai";
 import type { z } from "zod/v4";
 import type { ExtractionConfig } from "../config/extraction-config";

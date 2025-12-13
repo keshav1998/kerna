@@ -3,7 +3,7 @@ import {
   createInboxEmbedding,
   getInboxForEmbedding,
   updateInboxStatus,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 import type { Job } from "bullmq";
 import { type EmbedInboxPayload, embedInboxSchema } from "../../schemas/inbox";
 import { getDb } from "../../utils/db";

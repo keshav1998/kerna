@@ -3,7 +3,7 @@
 
 import { useUserQuery } from "@/hooks/use-user";
 import { formatAmount } from "@/utils/format";
-import { Icons } from "@midday/ui/icons";
+import { Icons } from "@kerna/ui/icons";
 import { format } from "date-fns";
 import {
   Bar,

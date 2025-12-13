@@ -1,4 +1,4 @@
-import { db } from "@midday/db/client";
+import { db } from "@kerna/db/client";
 import type { MiddlewareHandler } from "hono";
 
 /**

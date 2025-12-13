@@ -1,8 +1,8 @@
 "use client";
 
-import { cn } from "@midday/ui/cn";
-import { Skeleton } from "@midday/ui/skeleton";
-import { Table, TableBody, TableCell, TableRow } from "@midday/ui/table";
+import { cn } from "@kerna/ui/cn";
+import { Skeleton } from "@kerna/ui/skeleton";
+import { Table, TableBody, TableCell, TableRow } from "@kerna/ui/table";
 import { DataTableHeader } from "./data-table-header";
 
 const data = [...Array(40)].map((_, i) => ({ id: i.toString() }));

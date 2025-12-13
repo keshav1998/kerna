@@ -6,7 +6,7 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@midday/ui/dialog";
+} from "@kerna/ui/dialog";
 import Link from "next/link";
 import { Plans } from "../plans";
 

@@ -12,7 +12,7 @@ import {
   getBankAccountsBalances,
   getBankAccountsCurrencies,
   updateBankAccount,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 
 export const bankAccountsRouter = createTRPCRouter({
   get: protectedProcedure

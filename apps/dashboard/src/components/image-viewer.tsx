@@ -1,9 +1,9 @@
 "use client";
 
 import { useImageLoadState } from "@/hooks/use-image-load-state";
-import { cn } from "@midday/ui/cn";
-import { Icons } from "@midday/ui/icons";
-import { Skeleton } from "@midday/ui/skeleton";
+import { cn } from "@kerna/ui/cn";
+import { Icons } from "@kerna/ui/icons";
+import { Skeleton } from "@kerna/ui/skeleton";
 
 function ErrorImage() {
   return (

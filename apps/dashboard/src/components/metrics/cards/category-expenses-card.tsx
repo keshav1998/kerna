@@ -9,7 +9,7 @@ import { useMetricsCustomize } from "@/hooks/use-metrics-customize";
 import { useOverviewTab } from "@/hooks/use-overview-tab";
 import { useTRPC } from "@/trpc/client";
 import { formatAmount } from "@/utils/format";
-import { cn } from "@midday/ui/cn";
+import { cn } from "@kerna/ui/cn";
 import { useQuery } from "@tanstack/react-query";
 import { format } from "date-fns";
 import { useMemo } from "react";

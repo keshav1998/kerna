@@ -1,9 +1,9 @@
 import { PassThrough } from "node:stream";
 import { writeToString } from "@fast-csv/format";
-import { createShortLink, updateDocumentByPath } from "@midday/db/queries";
-import { createClient } from "@midday/supabase/job";
-import { signedUrl } from "@midday/supabase/storage";
-import { getAppUrl } from "@midday/utils/envs";
+import { createShortLink, updateDocumentByPath } from "@kerna/db/queries";
+import { createClient } from "@kerna/supabase/job";
+import { signedUrl } from "@kerna/supabase/storage";
+import { getAppUrl } from "@kerna/utils/envs";
 import archiver from "archiver";
 import type { Job } from "bullmq";
 import { format } from "date-fns";

@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
+} from "@kerna/ui/card";
 import { AvatarUpload } from "./avatar-upload";
 
 export function UserAvatar() {

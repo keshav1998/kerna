@@ -7,7 +7,7 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@midday/ui/dialog";
+} from "@kerna/ui/dialog";
 
 export function EditApiKeyModal() {
   const { setData, data, type } = useTokenModalStore();

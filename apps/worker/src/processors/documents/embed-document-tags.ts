@@ -4,8 +4,8 @@ import {
   upsertDocumentTagAssignments,
   upsertDocumentTagEmbeddings,
   upsertDocumentTags,
-} from "@midday/db/queries";
-import { Embed } from "@midday/documents/embed";
+} from "@kerna/db/queries";
+import { Embed } from "@kerna/documents/embed";
 import slugify from "@sindresorhus/slugify";
 import type { Job } from "bullmq";
 import type { EmbedDocumentTagsPayload } from "../../schemas/documents";

@@ -2,10 +2,10 @@
 
 import { useChatInterface } from "@/hooks/use-chat-interface";
 import { useOverviewTab } from "@/hooks/use-overview-tab";
-import type { AppRouter } from "@midday/api/trpc/routers/_app";
-import { cn } from "@midday/ui/cn";
-import { Skeleton } from "@midday/ui/skeleton";
-import { Tabs, TabsContent } from "@midday/ui/tabs";
+import type { AppRouter } from "@kerna/api/trpc/routers/_app";
+import { cn } from "@kerna/ui/cn";
+import { Skeleton } from "@kerna/ui/skeleton";
+import { Tabs, TabsContent } from "@kerna/ui/tabs";
 import type { inferRouterOutputs } from "@trpc/server";
 import { Suspense } from "react";
 import { MetricsView } from "../metrics/metrics-view";

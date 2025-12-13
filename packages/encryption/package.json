@@ -1,5 +1,5 @@
 {
-  "name": "@midday/encryption",
+  "name": "@kerna/encryption",
   "version": "1.0.0",
   "private": true,
   "main": "src/index.ts",

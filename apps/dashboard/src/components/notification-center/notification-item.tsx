@@ -7,9 +7,9 @@ import {
 } from "@/hooks/use-notifications";
 import { useUserQuery } from "@/hooks/use-user";
 import { useI18n } from "@/locales/client";
-import { Button } from "@midday/ui/button";
-import { cn } from "@midday/ui/cn";
-import { Icons } from "@midday/ui/icons";
+import { Button } from "@kerna/ui/button";
+import { cn } from "@kerna/ui/cn";
+import { Icons } from "@kerna/ui/icons";
 import { formatDistanceToNow } from "date-fns";
 import { getNotificationDescription } from "./notification-descriptions";
 import { NotificationLink } from "./notification-link";

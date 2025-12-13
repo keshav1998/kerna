@@ -25,10 +25,10 @@ import {
   revokeUserApplicationTokens,
   updateOAuthApplication,
   updateOAuthApplicationstatus,
-} from "@midday/db/queries";
-import { AppInstalledEmail } from "@midday/email/emails/app-installed";
-import { AppReviewRequestEmail } from "@midday/email/emails/app-review-request";
-import { render } from "@midday/email/render";
+} from "@kerna/db/queries";
+import { AppInstalledEmail } from "@kerna/email/emails/app-installed";
+import { AppReviewRequestEmail } from "@kerna/email/emails/app-review-request";
+import { render } from "@kerna/email/render";
 
 export const oauthApplicationsRouter = createTRPCRouter({
   list: protectedProcedure.query(async ({ ctx }) => {
@@ -184,7 +184,7 @@ export const oauthApplicationsRouter = createTRPCRouter({
             );
 
             await resend.emails.send({
-              from: "Midday <middaybot@midday.ai>",
+              from: "Midday <middaybot@kerna.ai>",
               to: session.user.email,
               subject: "An app has been added to your team",
               html,
@@ -351,8 +351,8 @@ export const oauthApplicationsRouter = createTRPCRouter({
             );
 
             await resend.emails.send({
-              from: "Midday <middaybot@midday.ai>",
-              to: "pontus@midday.ai",
+              from: "Midday <middaybot@kerna.ai>",
+              to: "pontus@kerna.ai",
               subject: `Application Review Request - ${application.name}`,
               html,
             });

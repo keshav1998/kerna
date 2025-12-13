@@ -1,5 +1,5 @@
-import { ComboboxDropdown } from "@midday/ui/combobox-dropdown";
-import { getFiscalYearLabel } from "@midday/utils";
+import { ComboboxDropdown } from "@kerna/ui/combobox-dropdown";
+import { getFiscalYearLabel } from "@kerna/utils";
 
 type Props = {
   value?: number | null;

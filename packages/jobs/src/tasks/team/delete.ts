@@ -1,5 +1,5 @@
 import { deleteTeamSchema } from "@jobs/schema";
-import { client } from "@midday/engine-client";
+import { client } from "@kerna/engine-client";
 import { logger, schedules, schemaTask } from "@trigger.dev/sdk";
 import { bankSyncScheduler } from "../bank/scheduler/bank-scheduler";
 

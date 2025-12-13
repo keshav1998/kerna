@@ -3,10 +3,10 @@
 import { HorizontalPagination } from "@/components/horizontal-pagination";
 import { useSortParams } from "@/hooks/use-sort-params";
 import { useStickyColumns } from "@/hooks/use-sticky-columns";
-import { Button } from "@midday/ui/button";
-import { Checkbox } from "@midday/ui/checkbox";
-import { cn } from "@midday/ui/cn";
-import { TableHead, TableHeader, TableRow } from "@midday/ui/table";
+import { Button } from "@kerna/ui/button";
+import { Checkbox } from "@kerna/ui/checkbox";
+import { cn } from "@kerna/ui/cn";
+import { TableHead, TableHeader, TableRow } from "@kerna/ui/table";
 import { ArrowDown, ArrowUp } from "lucide-react";
 import { useCallback } from "react";
 

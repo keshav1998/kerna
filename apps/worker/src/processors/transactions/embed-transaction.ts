@@ -2,8 +2,8 @@ import {
   type CreateTransactionEmbeddingParams,
   createTransactionEmbeddings,
   getTransactionsForEmbedding,
-} from "@midday/db/queries";
-import { triggerJob } from "@midday/job-client";
+} from "@kerna/db/queries";
+import { triggerJob } from "@kerna/job-client";
 import type { Job } from "bullmq";
 import type { EmbedTransactionPayload } from "../../schemas/transactions";
 import { getDb } from "../../utils/db";

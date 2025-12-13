@@ -1,9 +1,9 @@
 import type { AppContext } from "@api/ai/agents/config/shared";
 import { checkBankAccountsRequired } from "@api/ai/utils/tool-helpers";
-import { db } from "@midday/db/client";
-import { getTransactions } from "@midday/db/queries";
-import { getAppUrl } from "@midday/utils/envs";
-import { formatAmount, formatDate } from "@midday/utils/format";
+import { db } from "@kerna/db/client";
+import { getTransactions } from "@kerna/db/queries";
+import { getAppUrl } from "@kerna/utils/envs";
+import { formatAmount, formatDate } from "@kerna/utils/format";
 import { tool } from "ai";
 import { z } from "zod";
 

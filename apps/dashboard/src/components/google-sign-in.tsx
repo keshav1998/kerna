@@ -1,10 +1,10 @@
 "use client";
 
 import { getUrl } from "@/utils/environment";
-import { isDesktopApp } from "@midday/desktop-client/platform";
-import { createClient } from "@midday/supabase/client";
-import { Icons } from "@midday/ui/icons";
-import { SubmitButton } from "@midday/ui/submit-button";
+import { isDesktopApp } from "@kerna/desktop-client/platform";
+import { createClient } from "@kerna/supabase/client";
+import { Icons } from "@kerna/ui/icons";
+import { SubmitButton } from "@kerna/ui/submit-button";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 

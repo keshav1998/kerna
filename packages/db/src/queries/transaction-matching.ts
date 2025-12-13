@@ -7,7 +7,7 @@ import {
   transactionMatchSuggestions,
   transactions,
 } from "@db/schema";
-import { createLoggerWithContext } from "@midday/logger";
+import { createLoggerWithContext } from "@kerna/logger";
 
 const logger = createLoggerWithContext("matching");
 import {

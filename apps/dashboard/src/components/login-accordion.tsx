@@ -4,7 +4,7 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-} from "@midday/ui/accordion";
+} from "@kerna/ui/accordion";
 import { useState } from "react";
 
 type Props = {

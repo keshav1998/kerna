@@ -1,6 +1,6 @@
 import { processBatch } from "@jobs/utils/process-batch";
-import { client } from "@midday/engine-client";
-import { createClient } from "@midday/supabase/job";
+import { client } from "@kerna/engine-client";
+import { createClient } from "@kerna/supabase/job";
 import { logger, schedules } from "@trigger.dev/sdk";
 
 export const ratesScheduler = schedules.task({

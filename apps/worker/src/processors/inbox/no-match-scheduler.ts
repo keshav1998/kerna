@@ -1,4 +1,4 @@
-import { updateInboxStatusToNoMatch } from "@midday/db/queries";
+import { updateInboxStatusToNoMatch } from "@kerna/db/queries";
 import type { Job } from "bullmq";
 import { subDays } from "date-fns";
 import type { NoMatchSchedulerPayload } from "../../schemas/inbox";

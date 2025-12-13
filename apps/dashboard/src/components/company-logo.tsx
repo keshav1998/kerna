@@ -2,16 +2,16 @@
 
 import { useTeamMutation, useTeamQuery } from "@/hooks/use-team";
 import { useUpload } from "@/hooks/use-upload";
-import { Avatar, AvatarFallback, AvatarImage } from "@midday/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@kerna/ui/avatar";
 import {
   Card,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
-import { Spinner } from "@midday/ui/spinner";
-import { stripSpecialCharacters } from "@midday/utils";
+} from "@kerna/ui/card";
+import { Spinner } from "@kerna/ui/spinner";
+import { stripSpecialCharacters } from "@kerna/utils";
 import { useRef } from "react";
 
 export function CompanyLogo() {

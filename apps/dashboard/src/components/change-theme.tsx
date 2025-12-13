@@ -5,7 +5,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
+} from "@kerna/ui/card";
 
 export function ChangeTheme() {
   return (

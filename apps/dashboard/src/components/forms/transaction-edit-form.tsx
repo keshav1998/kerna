@@ -11,22 +11,22 @@ import { useUserQuery } from "@/hooks/use-user";
 import { useTRPC } from "@/trpc/client";
 import type { RouterOutputs } from "@api/trpc/routers/_app";
 import { utc } from "@date-fns/utc";
-import { uniqueCurrencies } from "@midday/location/currencies";
+import { uniqueCurrencies } from "@kerna/location/currencies";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
-import { Button } from "@midday/ui/button";
-import { Calendar } from "@midday/ui/calendar";
-import { cn } from "@midday/ui/cn";
-import { CurrencyInput } from "@midday/ui/currency-input";
-import { Input } from "@midday/ui/input";
-import { Label } from "@midday/ui/label";
-import { Popover, PopoverContent, PopoverTrigger } from "@midday/ui/popover";
-import { Switch } from "@midday/ui/switch";
-import { Textarea } from "@midday/ui/textarea";
+} from "@kerna/ui/accordion";
+import { Button } from "@kerna/ui/button";
+import { Calendar } from "@kerna/ui/calendar";
+import { cn } from "@kerna/ui/cn";
+import { CurrencyInput } from "@kerna/ui/currency-input";
+import { Input } from "@kerna/ui/input";
+import { Label } from "@kerna/ui/label";
+import { Popover, PopoverContent, PopoverTrigger } from "@kerna/ui/popover";
+import { Switch } from "@kerna/ui/switch";
+import { Textarea } from "@kerna/ui/textarea";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { format, formatISO } from "date-fns";
 import { useEffect, useMemo, useState } from "react";

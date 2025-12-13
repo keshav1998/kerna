@@ -12,8 +12,8 @@ import { useUserQuery } from "@/hooks/use-user";
 import { downloadFile } from "@/lib/download";
 import { useSearchStore } from "@/store/search";
 import { useTRPC } from "@/trpc/client";
-import { Window, emit, invoke, listen } from "@midday/desktop-client/core";
-import { isDesktopApp } from "@midday/desktop-client/platform";
+import { Window, emit, invoke, listen } from "@kerna/desktop-client/core";
+import { isDesktopApp } from "@kerna/desktop-client/platform";
 import {
   Command,
   CommandEmpty,
@@ -21,10 +21,10 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@midday/ui/command";
-import { Icons } from "@midday/ui/icons";
-import { Spinner } from "@midday/ui/spinner";
-import { formatDate } from "@midday/utils/format";
+} from "@kerna/ui/command";
+import { Icons } from "@kerna/ui/icons";
+import { Spinner } from "@kerna/ui/spinner";
+import { formatDate } from "@kerna/utils/format";
 import { useQuery } from "@tanstack/react-query";
 import { formatISO } from "date-fns";
 import { useRouter } from "next/navigation";

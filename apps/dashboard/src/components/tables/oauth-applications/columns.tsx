@@ -1,25 +1,25 @@
 import type { RouterOutputs } from "@api/trpc/routers/_app";
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import type { ColumnDef } from "@tanstack/react-table";
 import * as React from "react";
 import "@tanstack/react-table";
 import { useOAuthApplicationParams } from "@/hooks/use-oauth-application-params";
 import { scopesToName } from "@api/utils/scopes";
-import { Badge } from "@midday/ui/badge";
+import { Badge } from "@kerna/ui/badge";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
+} from "@kerna/ui/tooltip";
 import { format } from "date-fns";
 import { useCopyToClipboard } from "usehooks-ts";
 import { DeleteOAuthApplicationModal } from "../../modals/delete-oauth-application-modal";

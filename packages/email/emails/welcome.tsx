@@ -1,4 +1,4 @@
-import { getEmailUrl } from "@midday/utils/envs";
+import { getEmailUrl } from "@kerna/utils/envs";
 import {
   Body,
   Container,

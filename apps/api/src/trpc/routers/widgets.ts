@@ -19,7 +19,7 @@ import {
   updateWidgetPreferencesSchema,
 } from "@api/schemas/widgets";
 import { createTRPCRouter, protectedProcedure } from "@api/trpc/init";
-import { widgetPreferencesCache } from "@midday/cache/widget-preferences-cache";
+import { widgetPreferencesCache } from "@kerna/cache/widget-preferences-cache";
 import {
   getBillableHours,
   getCashFlow,
@@ -39,7 +39,7 @@ import {
   getTaxSummary,
   getTopRevenueClient,
   getTrackedTime,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 
 export const widgetsRouter = createTRPCRouter({
   getRunway: protectedProcedure

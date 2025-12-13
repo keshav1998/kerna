@@ -1,8 +1,8 @@
-import { replicationCache } from "@midday/cache/replication-cache";
-import { teamPermissionsCache } from "@midday/cache/team-permissions-cache";
-import type { DatabaseWithPrimary } from "@midday/db/client";
-import { getUserTeamId } from "@midday/db/queries";
-import { logger } from "@midday/logger";
+import { replicationCache } from "@kerna/cache/replication-cache";
+import { teamPermissionsCache } from "@kerna/cache/team-permissions-cache";
+import type { DatabaseWithPrimary } from "@kerna/db/client";
+import { getUserTeamId } from "@kerna/db/queries";
+import { logger } from "@kerna/logger";
 import type { MiddlewareHandler } from "hono";
 
 /**

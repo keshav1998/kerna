@@ -7,7 +7,7 @@ import { useRealtime } from "@/hooks/use-realtime";
 import { useUserQuery } from "@/hooks/use-user";
 import { useInboxStore } from "@/store/inbox";
 import { useTRPC } from "@/trpc/client";
-import { ScrollArea } from "@midday/ui/scroll-area";
+import { ScrollArea } from "@kerna/ui/scroll-area";
 import {
   useQueryClient,
   useSuspenseInfiniteQuery,

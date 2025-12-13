@@ -1,5 +1,5 @@
 {
-  "name": "@midday/engine",
+  "name": "@kerna/engine",
   "types": "dist/index.d.ts",
   "files": ["dist"],
   "scripts": {

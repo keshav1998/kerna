@@ -2,8 +2,8 @@
 
 import { useInvalidateTransactionQueries } from "@/hooks/use-invalidate-transaction-queries";
 import { useTRPC } from "@/trpc/client";
-import { ToastAction } from "@midday/ui/toast";
-import { toast } from "@midday/ui/use-toast";
+import { ToastAction } from "@kerna/ui/toast";
+import { toast } from "@kerna/ui/use-toast";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 type Category = {

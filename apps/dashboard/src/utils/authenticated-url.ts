@@ -1,4 +1,4 @@
-import { createClient } from "@midday/supabase/client";
+import { createClient } from "@kerna/supabase/client";
 
 /**
  * Creates an authenticated URL by appending the access token as a query parameter.

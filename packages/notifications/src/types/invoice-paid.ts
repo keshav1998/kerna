@@ -1,5 +1,5 @@
-import { getI18n } from "@midday/email/locales";
-import { getAppUrl } from "@midday/utils/envs";
+import { getI18n } from "@kerna/email/locales";
+import { getAppUrl } from "@kerna/utils/envs";
 import type { NotificationHandler } from "../base";
 import { invoicePaidSchema } from "../schemas";
 

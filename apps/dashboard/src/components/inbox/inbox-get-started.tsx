@@ -6,13 +6,13 @@ import { useInboxParams } from "@/hooks/use-inbox-params";
 import { useRealtime } from "@/hooks/use-realtime";
 import { useUserQuery } from "@/hooks/use-user";
 import { useTRPC } from "@/trpc/client";
-import { getInboxEmail } from "@midday/inbox";
+import { getInboxEmail } from "@kerna/inbox";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
+} from "@kerna/ui/accordion";
 import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { CopyInput } from "../copy-input";

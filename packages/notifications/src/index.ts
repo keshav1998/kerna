@@ -1,11 +1,11 @@
-import type { Database } from "@midday/db/client";
+import type { Database } from "@kerna/db/client";
 import {
   createActivity,
   getTeamById,
   getTeamMembers,
   shouldSendNotification,
   updateActivityMetadata,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 import type {
   EmailInput,
   NotificationOptions,

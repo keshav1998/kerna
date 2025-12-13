@@ -1,4 +1,4 @@
-import { getFiscalYearDates } from "@midday/utils";
+import { getFiscalYearDates } from "@kerna/utils";
 import { format, formatISO, subMonths, subYears } from "date-fns";
 
 export type PeriodOption =

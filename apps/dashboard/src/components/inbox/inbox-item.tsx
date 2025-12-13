@@ -4,17 +4,17 @@ import { useInboxParams } from "@/hooks/use-inbox-params";
 import { useUserQuery } from "@/hooks/use-user";
 import { useInboxStore } from "@/store/inbox";
 import type { RouterOutputs } from "@api/trpc/routers/_app";
-import { Badge } from "@midday/ui/badge";
-import { cn } from "@midday/ui/cn";
-import { Skeleton } from "@midday/ui/skeleton";
+import { Badge } from "@kerna/ui/badge";
+import { cn } from "@kerna/ui/cn";
+import { Skeleton } from "@kerna/ui/skeleton";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
-import { formatDate } from "@midday/utils/format";
-import { getTaxTypeLabel } from "@midday/utils/tax";
+} from "@kerna/ui/tooltip";
+import { formatDate } from "@kerna/utils/format";
+import { getTaxTypeLabel } from "@kerna/utils/tax";
 import { forwardRef } from "react";
 
 type Props = {

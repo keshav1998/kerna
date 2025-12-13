@@ -1,14 +1,14 @@
 "use client";
 
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/card";
+import { Icons } from "@kerna/ui/icons";
 import { useRouter } from "next/navigation";
 
 export type OAuthErrorType =

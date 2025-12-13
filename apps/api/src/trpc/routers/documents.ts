@@ -15,10 +15,10 @@ import {
   getDocuments,
   getRelatedDocuments,
   updateDocuments,
-} from "@midday/db/queries";
-import { isMimeTypeSupportedForProcessing } from "@midday/documents/utils";
-import { triggerJob } from "@midday/job-client";
-import { remove, signedUrl } from "@midday/supabase/storage";
+} from "@kerna/db/queries";
+import { isMimeTypeSupportedForProcessing } from "@kerna/documents/utils";
+import { triggerJob } from "@kerna/job-client";
+import { remove, signedUrl } from "@kerna/supabase/storage";
 import { TRPCError } from "@trpc/server";
 
 export const documentsRouter = createTRPCRouter({

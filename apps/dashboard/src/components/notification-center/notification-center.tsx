@@ -2,11 +2,11 @@
 
 import { ErrorFallback } from "@/components/error-fallback";
 import { useNotifications } from "@/hooks/use-notifications";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
-import { Popover, PopoverContent, PopoverTrigger } from "@midday/ui/popover";
-import { ScrollArea } from "@midday/ui/scroll-area";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@midday/ui/tabs";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
+import { Popover, PopoverContent, PopoverTrigger } from "@kerna/ui/popover";
+import { ScrollArea } from "@kerna/ui/scroll-area";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@kerna/ui/tabs";
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 import Link from "next/link";
 import { useEffect, useState } from "react";

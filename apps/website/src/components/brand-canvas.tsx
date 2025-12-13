@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import {
   Select,
   SelectContent,
@@ -8,7 +8,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@midday/ui/select";
+} from "@kerna/ui/select";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { useDraggable } from "react-use-draggable-scroll";
@@ -97,7 +97,7 @@ const assets = [
 const repeated = [...assets, ...assets, ...assets, ...assets, ...assets];
 
 export function BrandCanvas() {
-  const [value, setValue] = useState("https://cdn.midday.ai/all.zip");
+  const [value, setValue] = useState("https://cdn.kerna.ai/all.zip");
   const ref = useRef(undefined);
   const { events } = useDraggable(ref);
 
@@ -127,16 +127,16 @@ export function BrandCanvas() {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="https://cdn.midday.ai/all.zip">
+                <SelectItem value="https://cdn.kerna.ai/all.zip">
                   All
                 </SelectItem>
-                <SelectItem value="https://cdn.midday.ai/videos.zip">
+                <SelectItem value="https://cdn.kerna.ai/videos.zip">
                   Videos
                 </SelectItem>
-                <SelectItem value="https://cdn.midday.ai/founders.zip">
+                <SelectItem value="https://cdn.kerna.ai/founders.zip">
                   Founders
                 </SelectItem>
-                <SelectItem value="https://cdn.midday.ai/screens.zip">
+                <SelectItem value="https://cdn.kerna.ai/screens.zip">
                   Screens
                 </SelectItem>
               </SelectGroup>

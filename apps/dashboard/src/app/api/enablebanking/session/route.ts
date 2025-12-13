@@ -1,6 +1,6 @@
-import { client } from "@midday/engine-client";
-import { getSession } from "@midday/supabase/cached-queries";
-import { createClient } from "@midday/supabase/server";
+import { client } from "@kerna/engine-client";
+import { getSession } from "@kerna/supabase/cached-queries";
+import { createClient } from "@kerna/supabase/server";
 import { type NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {

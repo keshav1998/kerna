@@ -139,14 +139,14 @@ export default async function Page() {
             <p className="font-sans text-xs text-[#878787]">
               By signing in you agree to our{" "}
               <Link
-                href="https://midday.ai/terms"
+                href="https://kerna.ai/terms"
                 className="text-[#878787] hover:text-foreground transition-colors underline"
               >
                 Terms of service
               </Link>{" "}
               &{" "}
               <Link
-                href="https://midday.ai/policy"
+                href="https://kerna.ai/policy"
                 className="text-[#878787] hover:text-foreground transition-colors underline"
               >
                 Privacy policy

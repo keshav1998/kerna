@@ -8,11 +8,11 @@ import {
   createBankConnection,
   deleteBankConnection,
   getBankConnections,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 import type {
   DeleteConnectionPayload,
   InitialBankSetupPayload,
-} from "@midday/jobs/schema";
+} from "@kerna/jobs/schema";
 import { tasks } from "@trigger.dev/sdk";
 import { TRPCError } from "@trpc/server";
 

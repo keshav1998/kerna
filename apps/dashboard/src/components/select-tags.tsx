@@ -6,11 +6,11 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@midday/ui/dialog";
-import { Input } from "@midday/ui/input";
-import { Label } from "@midday/ui/label";
-import MultipleSelector from "@midday/ui/multiple-selector";
-import { SubmitButton } from "@midday/ui/submit-button";
+} from "@kerna/ui/dialog";
+import { Input } from "@kerna/ui/input";
+import { Label } from "@kerna/ui/label";
+import MultipleSelector from "@kerna/ui/multiple-selector";
+import { SubmitButton } from "@kerna/ui/submit-button";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import React, { useState } from "react";
 

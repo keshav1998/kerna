@@ -1,4 +1,4 @@
-import { logger } from "@midday/logger";
+import { logger } from "@kerna/logger";
 import type { Context, MiddlewareHandler } from "hono";
 
 export const httpLogger = (): MiddlewareHandler => {

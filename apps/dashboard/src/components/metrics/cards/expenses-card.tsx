@@ -8,7 +8,7 @@ import { useOverviewTab } from "@/hooks/use-overview-tab";
 import { useChatStore } from "@/store/chat";
 import { useTRPC } from "@/trpc/client";
 import { generateChartSelectionMessage } from "@/utils/chart-selection-message";
-import { cn } from "@midday/ui/cn";
+import { cn } from "@kerna/ui/cn";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { ShareMetricButton } from "../components/share-metric-button";

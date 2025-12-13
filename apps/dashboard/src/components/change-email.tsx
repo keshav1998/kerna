@@ -9,16 +9,16 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@midday/ui/card";
+} from "@kerna/ui/card";
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@midday/ui/form";
-import { Input } from "@midday/ui/input";
-import { SubmitButton } from "@midday/ui/submit-button";
+} from "@kerna/ui/form";
+import { Input } from "@kerna/ui/input";
+import { SubmitButton } from "@kerna/ui/submit-button";
 import { z } from "zod/v3";
 
 const formSchema = z.object({

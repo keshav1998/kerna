@@ -1,5 +1,5 @@
-import type { Database } from "@midday/db/client";
-import { getWorkerDb } from "@midday/db/worker-client";
+import type { Database } from "@kerna/db/client";
+import { getWorkerDb } from "@kerna/db/worker-client";
 
 /**
  * Get database instance for worker jobs

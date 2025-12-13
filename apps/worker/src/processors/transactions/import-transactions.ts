@@ -1,9 +1,9 @@
-import { upsertTransactions } from "@midday/db/queries";
-import { mapTransactions } from "@midday/import/mappings";
-import { transform } from "@midday/import/transform";
-import { validateTransactions } from "@midday/import/validate";
-import { triggerJob } from "@midday/job-client";
-import { createClient } from "@midday/supabase/job";
+import { upsertTransactions } from "@kerna/db/queries";
+import { mapTransactions } from "@kerna/import/mappings";
+import { transform } from "@kerna/import/transform";
+import { validateTransactions } from "@kerna/import/validate";
+import { triggerJob } from "@kerna/job-client";
+import { createClient } from "@kerna/supabase/job";
 import type { Job } from "bullmq";
 import Papa from "papaparse";
 import type { ImportTransactionsPayload } from "../../schemas/transactions";

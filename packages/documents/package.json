@@ -1,5 +1,5 @@
 {
-  "name": "@midday/documents",
+  "name": "@kerna/documents",
   "version": "1.0.0",
   "private": true,
   "main": "src/index.ts",
@@ -22,7 +22,7 @@
     "@ai-sdk/google": "^2.0.33",
     "@langchain/community": "1.0.3",
     "@langchain/core": "1.0.5",
-    "@midday/utils": "workspace:*",
+    "@kerna/utils": "workspace:*",
     "ai": "5.0.87",
     "canvas": "^3.2.0",
     "langchain": "^1.0.5",

@@ -12,7 +12,7 @@ import {
   getCustomerInvoiceSummary,
   getCustomers,
   upsertCustomer,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 
 export const customersRouter = createTRPCRouter({
   get: protectedProcedure

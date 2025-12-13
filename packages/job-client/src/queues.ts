@@ -1,4 +1,4 @@
-import { createLoggerWithContext } from "@midday/logger";
+import { createLoggerWithContext } from "@kerna/logger";
 import type { QueueOptions } from "bullmq";
 import { Queue } from "bullmq";
 import Redis from "ioredis";

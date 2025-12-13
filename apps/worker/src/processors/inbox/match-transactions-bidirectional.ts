@@ -5,7 +5,7 @@ import {
   getTransactionById,
   hasSuggestion,
   matchTransaction,
-} from "@midday/db/queries";
+} from "@kerna/db/queries";
 import type { Job } from "bullmq";
 import type { MatchTransactionsBidirectionalPayload } from "../../schemas/inbox";
 import { getDb } from "../../utils/db";

@@ -2,13 +2,13 @@
 
 import type { ArtifactType } from "@/lib/artifact-config";
 import { useArtifacts } from "@ai-sdk-tools/artifacts/client";
-import { Icons } from "@midday/ui/icons";
+import { Icons } from "@kerna/ui/icons";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@midday/ui/tooltip";
+} from "@kerna/ui/tooltip";
 import { parseAsString, useQueryState } from "nuqs";
 import { useCallback } from "react";
 

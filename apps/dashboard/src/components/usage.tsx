@@ -1,6 +1,6 @@
 import { getPlanLimits } from "@/utils/plans";
-import { Card } from "@midday/ui/card";
-import { Skeleton } from "@midday/ui/skeleton";
+import { Card } from "@kerna/ui/card";
+import { Skeleton } from "@kerna/ui/skeleton";
 
 interface UsageItemProps {
   label: string;

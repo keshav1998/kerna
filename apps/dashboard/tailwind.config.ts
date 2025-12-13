@@ -1,5 +1,5 @@
-import desktopPlugin from "@midday/desktop-client/desktop-variants";
-import baseConfig from "@midday/ui/tailwind.config";
+import desktopPlugin from "@kerna/desktop-client/desktop-variants";
+import baseConfig from "@kerna/ui/tailwind.config";
 import type { Config } from "tailwindcss";
 
 export default {

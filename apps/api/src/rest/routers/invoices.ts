@@ -27,10 +27,10 @@ import {
   getPaymentStatus,
   isInvoiceNumberUsed,
   updateInvoice,
-} from "@midday/db/queries";
-import { calculateTotal } from "@midday/invoice/calculate";
-import { transformCustomerToContent } from "@midday/invoice/utils";
-import type { GenerateInvoicePayload } from "@midday/jobs/schema";
+} from "@kerna/db/queries";
+import { calculateTotal } from "@kerna/invoice/calculate";
+import { transformCustomerToContent } from "@kerna/invoice/utils";
+import type { GenerateInvoicePayload } from "@kerna/jobs/schema";
 import { tasks } from "@trigger.dev/sdk";
 import { addMonths } from "date-fns";
 import { HTTPException } from "hono/http-exception";

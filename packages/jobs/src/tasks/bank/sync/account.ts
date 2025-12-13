@@ -1,7 +1,7 @@
 import { parseAPIError } from "@jobs/utils/parse-error";
 import { getClassification } from "@jobs/utils/transform";
-import { client } from "@midday/engine-client";
-import { createClient } from "@midday/supabase/job";
+import { client } from "@kerna/engine-client";
+import { createClient } from "@kerna/supabase/job";
 import { logger, schemaTask } from "@trigger.dev/sdk";
 import { z } from "zod";
 import { upsertTransactions } from "../transactions/upsert";

@@ -1,6 +1,6 @@
 import { getQueryClient, trpc } from "@/trpc/server";
 import { getWebsiteLogo } from "@/utils/logos";
-import { OgTemplate, isValidLogoUrl } from "@midday/invoice";
+import { OgTemplate, isValidLogoUrl } from "@kerna/invoice";
 import { ImageResponse } from "next/og";
 
 export const contentType = "image/png";
@@ -24,7 +24,7 @@ export default async function Image({ params }: Props) {
   }
 
   const hedvigSansFont = fetch(
-    "https://cdn.midday.ai/fonts/HedvigSans/HedvigLettersSans-Regular.ttf",
+    "https://cdn.kerna.ai/fonts/HedvigSans/HedvigLettersSans-Regular.ttf",
   ).then((res) => res.arrayBuffer());
 
   const logoUrl = getWebsiteLogo(invoice.customer?.website);

@@ -43,13 +43,13 @@ import {
   getUserById,
   searchInvoiceNumber,
   updateInvoice,
-} from "@midday/db/queries";
-import { verify } from "@midday/invoice/token";
-import { transformCustomerToContent } from "@midday/invoice/utils";
+} from "@kerna/db/queries";
+import { verify } from "@kerna/invoice/token";
+import { transformCustomerToContent } from "@kerna/invoice/utils";
 import type {
   GenerateInvoicePayload,
   SendInvoiceReminderPayload,
-} from "@midday/jobs/schema";
+} from "@kerna/jobs/schema";
 import { runs, tasks } from "@trigger.dev/sdk";
 import { TRPCError } from "@trpc/server";
 import { addMonths, format, parseISO } from "date-fns";

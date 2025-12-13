@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import { useRouter } from "next/navigation";
 
 export function ErrorFallback() {

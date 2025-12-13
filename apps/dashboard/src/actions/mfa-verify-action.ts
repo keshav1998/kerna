@@ -1,6 +1,6 @@
 "use server";
 
-import { LogEvents } from "@midday/events/events";
+import { LogEvents } from "@kerna/events/events";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { authActionClient } from "./safe-action";

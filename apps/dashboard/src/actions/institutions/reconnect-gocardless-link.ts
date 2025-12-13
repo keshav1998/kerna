@@ -1,6 +1,6 @@
 "use server";
 
-import { client } from "@midday/engine-client";
+import { client } from "@kerna/engine-client";
 import { nanoid } from "nanoid";
 import { redirect } from "next/navigation";
 import { z } from "zod";

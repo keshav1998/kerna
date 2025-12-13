@@ -1,9 +1,9 @@
 import "server-only";
 
 import { Cookies } from "@/utils/constants";
-import type { AppRouter } from "@midday/api/trpc/routers/_app";
-import { getCountryCode, getLocale, getTimezone } from "@midday/location";
-import { createClient } from "@midday/supabase/server";
+import type { AppRouter } from "@kerna/api/trpc/routers/_app";
+import { getCountryCode, getLocale, getTimezone } from "@kerna/location";
+import { createClient } from "@kerna/supabase/server";
 import { HydrationBoundary } from "@tanstack/react-query";
 import { dehydrate } from "@tanstack/react-query";
 import { createTRPCClient, httpBatchLink, loggerLink } from "@trpc/client";

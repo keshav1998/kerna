@@ -16,10 +16,10 @@ const config = {
     ],
   },
   transpilePackages: [
-    "@midday/ui",
-    "@midday/tailwind",
-    "@midday/invoice",
-    "@midday/api",
+    "@kerna/ui",
+    "@kerna/tailwind",
+    "@kerna/invoice",
+    "@kerna/api",
   ],
   serverExternalPackages: ["@react-pdf/renderer", "pino"],
   typescript: {

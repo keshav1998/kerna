@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { Document, Page, PasswordResponses, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/TextLayer.css";
-import { Alert, AlertDescription } from "@midday/ui/alert";
-import { cn } from "@midday/ui/cn";
-import { Input } from "@midday/ui/input";
-import { ScrollArea } from "@midday/ui/scroll-area";
-import { Skeleton } from "@midday/ui/skeleton";
+import { Alert, AlertDescription } from "@kerna/ui/alert";
+import { cn } from "@kerna/ui/cn";
+import { Input } from "@kerna/ui/input";
+import { ScrollArea } from "@kerna/ui/scroll-area";
+import { Skeleton } from "@kerna/ui/skeleton";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 

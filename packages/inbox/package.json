@@ -1,5 +1,5 @@
 {
-  "name": "@midday/inbox",
+  "name": "@kerna/inbox",
   "version": "1.0.0",
   "private": true,
   "main": "src/index.ts",
@@ -16,8 +16,8 @@
     "test": "bun test src"
   },
   "dependencies": {
-    "@midday/encryption": "workspace:*",
-    "@midday/supabase": "workspace:*",
+    "@kerna/encryption": "workspace:*",
+    "@kerna/supabase": "workspace:*",
     "googleapis": "^166.0.0",
     "zod": "^4.1.13"
   }

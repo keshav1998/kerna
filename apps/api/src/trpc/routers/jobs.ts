@@ -1,6 +1,6 @@
 import { getJobStatusSchema } from "@api/schemas/jobs";
 import { createTRPCRouter, protectedProcedure } from "@api/trpc/init";
-import { getJobStatus } from "@midday/job-client";
+import { getJobStatus } from "@kerna/job-client";
 import { TRPCError } from "@trpc/server";
 
 export const jobsRouter = createTRPCRouter({

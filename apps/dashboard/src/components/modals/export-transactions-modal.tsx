@@ -12,28 +12,28 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@midday/ui/accordion";
-import { Button } from "@midday/ui/button";
+} from "@kerna/ui/accordion";
+import { Button } from "@kerna/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@midday/ui/dialog";
+} from "@kerna/ui/dialog";
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormLabel,
-} from "@midday/ui/form";
-import { Input } from "@midday/ui/input";
-import { Label } from "@midday/ui/label";
-import { RadioGroup, RadioGroupItem } from "@midday/ui/radio-group";
-import { Separator } from "@midday/ui/separator";
-import { Spinner } from "@midday/ui/spinner";
-import { Switch } from "@midday/ui/switch";
+} from "@kerna/ui/form";
+import { Input } from "@kerna/ui/input";
+import { Label } from "@kerna/ui/label";
+import { RadioGroup, RadioGroupItem } from "@kerna/ui/radio-group";
+import { Separator } from "@kerna/ui/separator";
+import { Spinner } from "@kerna/ui/spinner";
+import { Switch } from "@kerna/ui/switch";
 import NumberFlow from "@number-flow/react";
 import { useMutation } from "@tanstack/react-query";
 import { useEffect } from "react";

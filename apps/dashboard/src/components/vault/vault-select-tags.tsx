@@ -1,7 +1,7 @@
 import { useTRPC } from "@/trpc/client";
-import { Icons } from "@midday/ui/icons";
-import MultipleSelector from "@midday/ui/multiple-selector";
-import type { Option as MultipleSelectorOption } from "@midday/ui/multiple-selector";
+import { Icons } from "@kerna/ui/icons";
+import MultipleSelector from "@kerna/ui/multiple-selector";
+import type { Option as MultipleSelectorOption } from "@kerna/ui/multiple-selector";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import React, { useState } from "react";
 

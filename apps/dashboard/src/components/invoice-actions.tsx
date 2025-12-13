@@ -12,9 +12,9 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@midday/ui/alert-dialog";
-import { Button } from "@midday/ui/button";
-import { Calendar } from "@midday/ui/calendar";
+} from "@kerna/ui/alert-dialog";
+import { Button } from "@kerna/ui/button";
+import { Calendar } from "@kerna/ui/calendar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -23,9 +23,9 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
-import { useToast } from "@midday/ui/use-toast";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
+import { useToast } from "@kerna/ui/use-toast";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 type Props = {

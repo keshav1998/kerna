@@ -3,8 +3,8 @@ import { join } from "node:path";
 import { Agent, type AgentConfig } from "@ai-sdk-tools/agents";
 import { RedisProvider } from "@ai-sdk-tools/memory/redis";
 import { openai } from "@ai-sdk/openai";
-import type { ChatUserContext } from "@midday/cache/chat-cache";
-import { getSharedRedisClient } from "@midday/cache/shared-redis";
+import type { ChatUserContext } from "@kerna/cache/chat-cache";
+import { getSharedRedisClient } from "@kerna/cache/shared-redis";
 
 const memoryTemplate = readFileSync(
   join(process.cwd(), "src/ai/agents/config/memory-template.md"),

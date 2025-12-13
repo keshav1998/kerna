@@ -1,5 +1,5 @@
 import { timingSafeEqual } from "node:crypto";
-import { hash } from "@midday/encryption";
+import { hash } from "@kerna/encryption";
 
 export type OAuthApplication = {
   id: string;

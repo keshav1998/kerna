@@ -1,5 +1,5 @@
 {
-  "name": "@midday/job-client",
+  "name": "@kerna/job-client",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@midday/logger": "workspace:*",
+    "@kerna/logger": "workspace:*",
     "bullmq": "^5.65.1",
     "ioredis": "^5.8.2"
   },

@@ -1,9 +1,9 @@
-import { createApp } from "@midday/app-store/db";
+import { createApp } from "@kerna/app-store/db";
 import {
   config,
   createSlackApp,
   getSlackInstaller,
-} from "@midday/app-store/slack";
+} from "@kerna/app-store/slack";
 import { type NextRequest, NextResponse } from "next/server";
 import { z } from "zod/v3";
 
@@ -136,7 +136,7 @@ export async function GET(request: NextRequest) {
               elements: [
                 {
                   type: "mrkdwn",
-                  text: "<https://app.midday.ai/apps?app=slack&settings=true|Notification settings>",
+                  text: "<https://app.kerna.ai/apps?app=slack&settings=true|Notification settings>",
                 },
               ],
             },

@@ -1,7 +1,7 @@
 import type { Session } from "@api/utils/auth";
 import { withRetryOnPrimary } from "@api/utils/db-retry";
-import { teamCache } from "@midday/cache/team-cache";
-import type { Database } from "@midday/db/client";
+import { teamCache } from "@kerna/cache/team-cache";
+import type { Database } from "@kerna/db/client";
 import { TRPCError } from "@trpc/server";
 
 export const withTeamPermission = async <TReturn>(opts: {

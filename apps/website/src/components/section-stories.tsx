@@ -1,16 +1,16 @@
 "use client";
 
-import { Avatar } from "@midday/ui/avatar";
-import { AvatarImageNext } from "@midday/ui/avatar";
-import { Button } from "@midday/ui/button";
+import { Avatar } from "@kerna/ui/avatar";
+import { AvatarImageNext } from "@kerna/ui/avatar";
+import { Button } from "@kerna/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@midday/ui/dialog";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/dialog";
+import { Icons } from "@kerna/ui/icons";
 import dynamic from "next/dynamic";
 import { useRef, useState } from "react";
 import { type Story, StoryCard } from "./story-card";
@@ -226,7 +226,7 @@ function Video({ src }: { src: string }) {
         src={src}
         onClick={togglePlay}
         autoPlay={false}
-        poster="https://cdn.midday.ai/guy-cover.png"
+        poster="https://cdn.kerna.ai/guy-cover.png"
         playerRef={playerRef}
         className="w-full"
       />

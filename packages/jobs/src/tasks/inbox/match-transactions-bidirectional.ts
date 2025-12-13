@@ -6,8 +6,8 @@ import {
   getTransactionById,
   hasSuggestion,
   matchTransaction,
-} from "@midday/db/queries";
-import { findInboxMatches } from "@midday/db/queries";
+} from "@kerna/db/queries";
+import { findInboxMatches } from "@kerna/db/queries";
 import { logger, schemaTask } from "@trigger.dev/sdk";
 import { z } from "zod";
 

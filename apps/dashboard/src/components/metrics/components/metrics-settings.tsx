@@ -1,7 +1,7 @@
 "use client";
 
 import { useTRPC } from "@/trpc/client";
-import { Button } from "@midday/ui/button";
+import { Button } from "@kerna/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,8 +9,8 @@ import {
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
-} from "@midday/ui/dropdown-menu";
-import { Icons } from "@midday/ui/icons";
+} from "@kerna/ui/dropdown-menu";
+import { Icons } from "@kerna/ui/icons";
 import { useQuery } from "@tanstack/react-query";
 
 interface MetricsSettingsProps {

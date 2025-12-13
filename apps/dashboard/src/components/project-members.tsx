@@ -1,5 +1,5 @@
 import type { RouterOutputs } from "@api/trpc/routers/_app";
-import { Avatar, AvatarFallback, AvatarImageNext } from "@midday/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImageNext } from "@kerna/ui/avatar";
 
 interface ProjectMembersProps {
   members: RouterOutputs["trackerProjects"]["get"]["data"][number]["users"];

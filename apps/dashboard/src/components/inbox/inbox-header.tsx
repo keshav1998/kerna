@@ -2,8 +2,8 @@
 
 import { InboxOrdering } from "@/components/inbox/inbox-ordering";
 import { InboxSearch } from "@/components/inbox/inbox-search";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
 
 export function InboxHeader() {
   return (

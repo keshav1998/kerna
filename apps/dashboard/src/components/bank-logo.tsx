@@ -1,5 +1,5 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@midday/ui/avatar";
-import { cn } from "@midday/ui/cn";
+import { Avatar, AvatarFallback, AvatarImage } from "@kerna/ui/avatar";
+import { cn } from "@kerna/ui/cn";
 import { useState } from "react";
 
 type Props = {
@@ -26,14 +26,14 @@ export function BankLogo({ src, alt, size = 34 }: Props) {
         />
       ) : (
         <AvatarImage
-          src="https://cdn-engine.midday.ai/default.jpg"
+          src="https://cdn-engine.kerna.ai/default.jpg"
           alt={alt}
           className="object-contain"
         />
       )}
       <AvatarFallback>
         <AvatarImage
-          src="https://cdn-engine.midday.ai/default.jpg"
+          src="https://cdn-engine.kerna.ai/default.jpg"
           alt={alt}
           className="object-contain"
         />

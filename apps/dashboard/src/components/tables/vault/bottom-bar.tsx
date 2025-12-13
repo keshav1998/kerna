@@ -2,9 +2,9 @@
 
 import { useDownloadZip } from "@/hooks/use-download-zip";
 import { useDocumentsStore } from "@/store/vault";
-import { Button } from "@midday/ui/button";
-import { Icons } from "@midday/ui/icons";
-import { SubmitButton } from "@midday/ui/submit-button";
+import { Button } from "@kerna/ui/button";
+import { Icons } from "@kerna/ui/icons";
+import { SubmitButton } from "@kerna/ui/submit-button";
 import NumberFlow from "@number-flow/react";
 import { motion } from "framer-motion";
 

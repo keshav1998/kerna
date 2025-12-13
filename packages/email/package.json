@@ -1,5 +1,5 @@
 {
-  "name": "@midday/email",
+  "name": "@kerna/email",
   "version": "1.0.0",
   "private": true,
   "main": "index.ts",
@@ -18,8 +18,8 @@
     "start": "email start"
   },
   "dependencies": {
-    "@midday/ui": "workspace:*",
-    "@midday/utils": "workspace:*",
+    "@kerna/ui": "workspace:*",
+    "@kerna/utils": "workspace:*",
     "@react-email/components": "1.0.1",
     "@react-email/render": "2.0.0",
     "@react-email/tailwind": "2.0.1",

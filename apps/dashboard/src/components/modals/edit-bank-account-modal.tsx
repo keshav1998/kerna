@@ -1,14 +1,14 @@
 import { useZodForm } from "@/hooks/use-zod-form";
 import { useI18n } from "@/locales/client";
 import { useTRPC } from "@/trpc/client";
-import { CurrencyInput } from "@midday/ui/currency-input";
+import { CurrencyInput } from "@kerna/ui/currency-input";
 import {
   Dialog,
   DialogContent,
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@midday/ui/dialog";
+} from "@kerna/ui/dialog";
 import {
   Form,
   FormControl,
@@ -17,16 +17,16 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@midday/ui/form";
-import { Input } from "@midday/ui/input";
+} from "@kerna/ui/form";
+import { Input } from "@kerna/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@midday/ui/select";
-import { SubmitButton } from "@midday/ui/submit-button";
+} from "@kerna/ui/select";
+import { SubmitButton } from "@kerna/ui/submit-button";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { z } from "zod/v3";
 
