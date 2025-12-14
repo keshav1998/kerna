@@ -30,10 +30,23 @@ export const syncConnection = schemaTask({
         throw new Error("Connection not found");
       }
 
+      // Validate provider is supported
+      const supportedProviders = ["plaid", "teller", "enablebanking"] as const;
+      if (!supportedProviders.includes(data.provider as any)) {
+        logger.error("Unsupported provider", {
+          provider: data.provider,
+          connectionId,
+          supportedProviders,
+        });
+        throw new Error(
+          `Unsupported provider: ${data.provider}. Supported providers: ${supportedProviders.join(", ")}`,
+        );
+      }
+
       const connectionResponse = await client.connections.status.$get({
         query: {
           id: data.reference_id!,
-          provider: data.provider as "plaid" | "teller" | "enablebanking", // Pluggy not supported yet
+          provider: data.provider as "plaid" | "teller" | "enablebanking",
           accessToken: data.access_token ?? undefined,
         },
       });
