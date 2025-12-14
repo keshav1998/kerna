@@ -16,11 +16,7 @@ export const deleteTeam = schemaTask({
       return client.connections.delete.$delete({
         json: {
           id: connection.referenceId!,
-          provider: connection.provider as
-            | "gocardless"
-            | "teller"
-            | "plaid"
-            | "enablebanking",
+          provider: connection.provider as "teller" | "plaid" | "enablebanking",
           accessToken: connection.accessToken ?? undefined,
         },
       });

@@ -33,10 +33,7 @@ export const syncConnection = schemaTask({
       const connectionResponse = await client.connections.status.$get({
         query: {
           id: data.reference_id!,
-          provider: data.provider as
-            | "plaid"
-            | "teller"
-            | "enablebanking", // Pluggy not supported yet
+          provider: data.provider as "plaid" | "teller" | "enablebanking", // Pluggy not supported yet
           accessToken: data.access_token ?? undefined,
         },
       });

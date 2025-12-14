@@ -14,6 +14,14 @@ type Props = {
 export function InstitutionInfo({ provider, children }: Props) {
   const getDescription = () => {
     switch (provider) {
+      case "teller":
+        return "Teller provides banking connectivity for US institutions.";
+      case "plaid":
+        return "Plaid provides banking connectivity for US and Canadian institutions.";
+      case "enablebanking":
+        return "Enable Banking provides banking connectivity for European institutions.";
+      default:
+        return "Banking connectivity provider.";
     }
   };
 
