@@ -1,5 +1,4 @@
 // @ts-nocheck
-import { getAccessValidForDays } from "@kerna/engine/gocardless/utils";
 import { addDays, addMonths } from "date-fns";
 import { nanoid } from "nanoid";
 import type { Client } from "../types";
@@ -21,7 +20,7 @@ export async function updateBankConnection(
     .update({
       expires_at: addDays(
         new Date(),
-        getAccessValidForDays({ institutionId: id }),
+        180, // Default: 180 days (was GoCardLess-specific logic)
       ).toDateString(),
       reference_id: referenceId,
     })

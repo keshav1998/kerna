@@ -31,7 +31,6 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
-    },
-    "./gocardless/utils": "./src/providers/gocardless/utils.ts"
+    }
   }
 }
