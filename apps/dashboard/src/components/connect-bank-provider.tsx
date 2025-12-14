@@ -3,7 +3,6 @@ import { useTRPC } from "@/trpc/client";
 import { useMutation } from "@tanstack/react-query";
 import { BankConnectButton } from "./bank-connect-button";
 import { EnableBankingConnect } from "./enablebanking-connect";
-
 import { TellerConnect } from "./teller-connect";
 
 type Props = {

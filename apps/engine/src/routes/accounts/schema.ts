@@ -7,7 +7,7 @@ export const AccountsParamsSchema = z.object({
     .string()
     .optional()
     .openapi({
-      description: "Reference id (removed: GoCardLess (removed))",
+      description: "Connection reference id",
       param: {
         name: "id",
         in: "query",
@@ -76,7 +76,7 @@ export const AccountSchema = z
     resource_id: z
       .string()
       .openapi({
-        description: "Reference id (removed: GoCardLess (removed))",
+        description: "Connection reference id",
         example: "GBRGZX62Y8",
       })
       .nullable(),

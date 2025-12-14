@@ -6,7 +6,7 @@ export const ConnectionStatusQuerySchema = z.object({
     .string()
     .optional()
     .openapi({
-      description: "GoCardLess (removed) reference id",
+      description: "Connection reference id",
       param: {
         name: "id",
         in: "query",
@@ -50,7 +50,7 @@ export const DeleteConnectionBodySchema = z.object({
     .string()
     .optional()
     .openapi({
-      description: "GoCardLess (removed) or Enable Banking reference id",
+      description: "Enable Banking reference id",
       param: {
         name: "id",
         in: "query",

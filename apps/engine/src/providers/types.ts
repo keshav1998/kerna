@@ -115,7 +115,6 @@ export type HealthCheckResponse = {
 
 export type GetHealthCheckResponse = {
   teller: HealthCheckResponse;
-
   plaid: HealthCheckResponse;
   enablebanking: HealthCheckResponse;
 };

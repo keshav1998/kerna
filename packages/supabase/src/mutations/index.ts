@@ -20,7 +20,10 @@ export async function updateBankConnection(
     .update({
       expires_at: addDays(
         new Date(),
-        180, // Default: 180 days (was GoCardLess-specific logic)
+        180, // 180 days is appropriate for all remaining providers:
+        // - Plaid: Refresh tokens don't expire (180 days is conservative buffer)
+        // - Teller: Access tokens valid indefinitely (180 days for safety)
+        // - EnableBanking: Consent validity varies by bank (90-180 days typical)
       ).toDateString(),
       reference_id: referenceId,
     })
