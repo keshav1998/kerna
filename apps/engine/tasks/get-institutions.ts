@@ -77,7 +77,6 @@ export async function getPlaidInstitutions() {
 
 export async function getInstitutions() {
   const data = await Promise.all([
-    // getGoCardLess (removed)Institutions(),
     // getTellerInstitutions(),
     // getPlaidInstitutions(),
     getEnableBankingInstitutions(),
