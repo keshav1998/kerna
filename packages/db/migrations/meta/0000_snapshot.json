@@ -7650,7 +7650,7 @@
     "public.bank_providers": {
       "name": "bank_providers",
       "schema": "public",
-      "values": ["gocardless", "plaid", "teller", "enablebanking"]
+      "values": ["plaid", "teller", "enablebanking"]
     },
     "public.connection_status": {
       "name": "connection_status",
