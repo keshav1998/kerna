@@ -33,8 +33,6 @@ import { SyncTransactions } from "./sync-transactions";
 
 function getProviderName(provider: string | null) {
   switch (provider) {
-    case "gocardless":
-      return "GoCardLess";
     case "enablebanking":
       return "Enable Banking";
     case "teller":
@@ -250,16 +248,12 @@ export function BankConnection({ connection }: { connection: BankConnection }) {
     }
   }, [status]);
 
-  // NOTE: GoCardLess reconnect flow (redirect from API route)
+  // NOTE: GoCardLess (removed) reconnect flow (redirect from API route)
   useEffect(() => {
     if (params.step === "reconnect" && params.id) {
       reconnectConnection.execute({
         connectionId: params.id,
-        provider: connection.provider as
-          | "gocardless"
-          | "plaid"
-          | "teller"
-          | "enablebanking",
+        provider: connection.provider as "plaid" | "teller" | "enablebanking",
       });
     }
   }, [params]);

@@ -21,7 +21,12 @@ import { useHotkeys } from "react-hotkeys-hook";
 import { FaXTwitter } from "react-icons/fa6";
 import { CopyInput } from "./copy-input";
 
-const popupCenter = ({ url, title, w, h }) => {
+const popupCenter = ({
+  url,
+  title,
+  w,
+  h,
+}: { url: string; title: string; w: number; h: number }) => {
   const dualScreenLeft =
     window.screenLeft !== undefined ? window.screenLeft : window.screenX;
   const dualScreenTop =
@@ -56,9 +61,10 @@ const popupCenter = ({ url, title, w, h }) => {
   return newWindow;
 };
 
-export function UpdatesToolbar({ posts }) {
+export function UpdatesToolbar({ posts }: { posts: any[] }) {
   const pathname = usePathname();
-  const currentIndex = posts.findIndex((a) => pathname.endsWith(a.slug)) ?? 0;
+  const currentIndex =
+    posts.findIndex((a: any) => pathname.endsWith(a.slug)) ?? 0;
 
   const currentPost = posts[currentIndex];
 

@@ -11,16 +11,31 @@ export const deleteTeam = schemaTask({
     concurrencyLimit: 10,
   },
   run: async ({ teamId, connections }) => {
+    // Validate providers before deletion
+    const supportedProviders = ["plaid", "teller", "enablebanking"] as const;
+    const unsupportedConnections = connections.filter(
+      (c) => !supportedProviders.includes(c.provider as any),
+    );
+
+    if (unsupportedConnections.length > 0) {
+      logger.error("Unsupported providers found in team connections", {
+        teamId,
+        unsupportedProviders: unsupportedConnections.map((c) => ({
+          id: c.id,
+          provider: c.provider,
+        })),
+      });
+      throw new Error(
+        `Cannot delete team: ${unsupportedConnections.length} connection(s) with unsupported provider(s). Supported: ${supportedProviders.join(", ")}`,
+      );
+    }
+
     // Delete connections in providers
     const connectionPromises = connections.map(async (connection) => {
       return client.connections.delete.$delete({
         json: {
           id: connection.referenceId!,
-          provider: connection.provider as
-            | "gocardless"
-            | "teller"
-            | "plaid"
-            | "enablebanking",
+          provider: connection.provider as "teller" | "plaid" | "enablebanking",
           accessToken: connection.accessToken ?? undefined,
         },
       });

@@ -1,5 +1,6 @@
 import { syncConnectionSchema } from "@jobs/schema";
 import { triggerSequenceAndWait } from "@jobs/utils/trigger-sequence";
+import { bankProvidersEnum } from "@kerna/db/schema";
 import { client } from "@kerna/engine-client";
 import { createClient } from "@kerna/supabase/job";
 import { logger, schemaTask } from "@trigger.dev/sdk";
@@ -30,14 +31,25 @@ export const syncConnection = schemaTask({
         throw new Error("Connection not found");
       }
 
+      // Validate provider is supported using schema
+      const supportedProviders = bankProvidersEnum.enumValues;
+      const provider = data.provider as (typeof supportedProviders)[number];
+
+      if (!supportedProviders.includes(provider)) {
+        logger.error("Unsupported provider", {
+          provider: data.provider,
+          connectionId,
+          supportedProviders,
+        });
+        throw new Error(
+          `Unsupported provider: ${data.provider}. Supported providers: ${supportedProviders.join(", ")}`,
+        );
+      }
+
       const connectionResponse = await client.connections.status.$get({
         query: {
           id: data.reference_id!,
-          provider: data.provider as
-            | "gocardless"
-            | "plaid"
-            | "teller"
-            | "enablebanking", // Pluggy not supported yet
+          provider,
           accessToken: data.access_token ?? undefined,
         },
       });

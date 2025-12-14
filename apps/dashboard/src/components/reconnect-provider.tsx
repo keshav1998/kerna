@@ -1,6 +1,5 @@
 import { createPlaidLinkTokenAction } from "@/actions/institutions/create-plaid-link";
 import { reconnectEnableBankingLinkAction } from "@/actions/institutions/reconnect-enablebanking-link";
-import { reconnectGoCardLessLinkAction } from "@/actions/institutions/reconnect-gocardless-link";
 import { getUrl } from "@/utils/environment";
 import { isDesktopApp } from "@kerna/desktop-client/platform";
 import { Button } from "@kerna/ui/button";
@@ -44,24 +43,6 @@ export function ReconnectProvider({
   const { theme } = useTheme();
   const [plaidToken, setPlaidToken] = useState<string | undefined>();
   const [isLoading, setIsLoading] = useState(false);
-
-  const reconnectGoCardLessLink = useAction(reconnectGoCardLessLinkAction, {
-    onExecute: () => {
-      setIsLoading(true);
-    },
-    onError: () => {
-      setIsLoading(false);
-
-      toast({
-        duration: 2500,
-        variant: "error",
-        title: "Something went wrong please try again.",
-      });
-    },
-    onSuccess: () => {
-      setIsLoading(false);
-    },
-  });
 
   const reconnectEnableBankingLink = useAction(
     reconnectEnableBankingLinkAction,
@@ -140,15 +121,7 @@ export function ReconnectProvider({
 
         return;
       }
-      case "gocardless": {
-        return reconnectGoCardLessLink.execute({
-          id,
-          institutionId,
-          availableHistory: 60,
-          redirectTo: `${getUrl()}/api/gocardless/reconnect`,
-          isDesktop: isDesktopApp(),
-        });
-      }
+
       case "enablebanking": {
         return reconnectEnableBankingLink.execute({
           institutionId,

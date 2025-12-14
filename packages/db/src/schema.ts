@@ -60,7 +60,6 @@ export const accountTypeEnum = pgEnum("account_type", [
 ]);
 
 export const bankProvidersEnum = pgEnum("bank_providers", [
-  "gocardless",
   "plaid",
   "teller",
   "enablebanking",

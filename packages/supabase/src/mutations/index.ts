@@ -1,5 +1,4 @@
 // @ts-nocheck
-import { getAccessValidForDays } from "@kerna/engine/gocardless/utils";
 import { addDays, addMonths } from "date-fns";
 import { nanoid } from "nanoid";
 import type { Client } from "../types";
@@ -10,7 +9,6 @@ type UpdateBankConnectionData = {
   referenceId?: string;
 };
 
-// NOTE: Only GoCardLess needs to be updated
 export async function updateBankConnection(
   supabase: Client,
   data: UpdateBankConnectionData,
@@ -22,7 +20,10 @@ export async function updateBankConnection(
     .update({
       expires_at: addDays(
         new Date(),
-        getAccessValidForDays({ institutionId: id }),
+        180, // 180 days is appropriate for all remaining providers:
+        // - Plaid: Refresh tokens don't expire (180 days is conservative buffer)
+        // - Teller: Access tokens valid indefinitely (180 days for safety)
+        // - EnableBanking: Consent validity varies by bank (90-180 days typical)
       ).toDateString(),
       reference_id: referenceId,
     })

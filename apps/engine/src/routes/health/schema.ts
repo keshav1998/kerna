@@ -6,9 +6,6 @@ export const HealthSchema = z
       plaid: z.object({
         healthy: z.boolean(),
       }),
-      gocardless: z.object({
-        healthy: z.boolean(),
-      }),
       teller: z.object({
         healthy: z.boolean(),
       }),

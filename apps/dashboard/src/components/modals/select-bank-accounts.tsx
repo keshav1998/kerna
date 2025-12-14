@@ -133,10 +133,10 @@ function SupportForm() {
 }
 
 const formSchema = z.object({
-  referenceId: z.string().nullable().optional(), // GoCardLess
+  referenceId: z.string().nullable().optional(), // GoCardLess (removed)
   accessToken: z.string().nullable().optional(), // Teller
   enrollmentId: z.string().nullable().optional(), // Teller
-  provider: z.enum(["gocardless", "plaid", "teller", "enablebanking"]),
+  provider: z.enum(["plaid", "teller", "enablebanking"]),
   accounts: z
     .array(
       z.object({
@@ -146,10 +146,10 @@ const formSchema = z.object({
         currency: z.string(),
         name: z.string(),
         institutionId: z.string(),
-        accountReference: z.string().nullable().optional(), // EnableBanking & GoCardLess
+        accountReference: z.string().nullable().optional(), // EnableBanking & GoCardLess (removed)
         enabled: z.boolean(),
         logoUrl: z.string().nullable().optional(),
-        expiresAt: z.string().nullable().optional(), // EnableBanking & GoCardLess
+        expiresAt: z.string().nullable().optional(), // EnableBanking & GoCardLess (removed)
         type: z.enum([
           "credit",
           "depository",
@@ -194,11 +194,7 @@ export function SelectBankAccountsModal() {
         id: ref ?? undefined,
         accessToken: token ?? undefined,
         institutionId: institution_id ?? undefined,
-        provider: provider as
-          | "gocardless"
-          | "plaid"
-          | "teller"
-          | "enablebanking",
+        provider: provider as "plaid" | "teller" | "enablebanking",
       },
       {
         enabled: isOpen,
@@ -227,7 +223,7 @@ export function SelectBankAccountsModal() {
 
   useEffect(() => {
     if (error) {
-      // NOTE: On GoCardLess cancel flow
+      // NOTE: On GoCardLess (removed) cancel flow
       setParams({
         step: "connect",
         error: null,
@@ -246,17 +242,17 @@ export function SelectBankAccountsModal() {
       accessToken: token ?? undefined,
       enrollmentId: enrollment_id ?? undefined,
       referenceId: ref ?? undefined,
-      provider: provider as "gocardless" | "plaid" | "teller" | "enablebanking",
+      provider: provider as "plaid" | "teller" | "enablebanking",
       accounts: [],
     },
   });
 
   useEffect(() => {
     form.reset({
-      provider: provider as "gocardless" | "plaid" | "teller" | "enablebanking",
+      provider: provider as "plaid" | "teller" | "enablebanking",
       accessToken: token ?? undefined,
       enrollmentId: enrollment_id ?? undefined,
-      // GoCardLess Requestion ID or Plaid Item ID
+      // GoCardLess (removed) Requestion ID or Plaid Item ID
       referenceId: ref ?? undefined,
       accounts: data?.map((account) => ({
         name: account.name,

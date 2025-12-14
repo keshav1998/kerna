@@ -14,11 +14,6 @@ export class ProviderError extends Error {
       return "disconnected";
     }
 
-    // GoCardLess
-    if (this.message.startsWith("EUA was valid for")) {
-      return "disconnected";
-    }
-
     switch (code) {
       // Teller
       case "enrollment.disconnected":
@@ -35,10 +30,6 @@ export class ProviderError extends Error {
       case "ITEM_LOCKED":
       case "ITEM_CONCURRENTLY_DELETED":
       case "ACCESS_NOT_GRANTED":
-      // GoCardLess
-      case "AccessExpiredError":
-      case "AccountInactiveError":
-      case "Account suspended":
         logger("disconnected", this.message);
         return "disconnected";
 

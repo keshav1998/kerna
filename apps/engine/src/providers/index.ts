@@ -1,6 +1,5 @@
 import { logger } from "@engine/utils/logger";
 import { EnableBankingProvider } from "./enablebanking/enablebanking-provider";
-import { GoCardLessProvider } from "./gocardless/gocardless-provider";
 import { PlaidProvider } from "./plaid/plaid-provider";
 import { TellerProvider } from "./teller/teller-provider";
 import type {
@@ -17,20 +16,13 @@ import type {
 export class Provider {
   #name?: string;
 
-  #provider:
-    | PlaidProvider
-    | TellerProvider
-    | GoCardLessProvider
-    | EnableBankingProvider
-    | null = null;
+  #provider: PlaidProvider | TellerProvider | EnableBankingProvider | null =
+    null;
 
   constructor(params?: ProviderParams) {
     this.#name = params?.provider;
 
     switch (params?.provider) {
-      case "gocardless":
-        this.#provider = new GoCardLessProvider(params);
-        break;
       case "teller":
         this.#provider = new TellerProvider(params);
         break;
@@ -49,28 +41,19 @@ export class Provider {
   ): Promise<GetHealthCheckResponse> {
     const teller = new TellerProvider(params);
     const plaid = new PlaidProvider(params);
-    const gocardless = new GoCardLessProvider(params);
     const enablebanking = new EnableBankingProvider(params);
 
     try {
-      const [
-        isPlaidHealthy,
-        isGocardlessHealthy,
-        isTellerHealthy,
-        isEnableBankingHealthy,
-      ] = await Promise.all([
-        plaid.getHealthCheck(),
-        gocardless.getHealthCheck(),
-        teller.getHealthCheck(),
-        enablebanking.getHealthCheck(),
-      ]);
+      const [isPlaidHealthy, isTellerHealthy, isEnableBankingHealthy] =
+        await Promise.all([
+          plaid.getHealthCheck(),
+          teller.getHealthCheck(),
+          enablebanking.getHealthCheck(),
+        ]);
 
       return {
         plaid: {
           healthy: isPlaidHealthy,
-        },
-        gocardless: {
-          healthy: isGocardlessHealthy,
         },
         teller: {
           healthy: isTellerHealthy,

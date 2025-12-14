@@ -47,8 +47,6 @@ function formatProvider(provider: string) {
   switch (provider) {
     case "enablebanking":
       return "Enable Banking";
-    case "gocardless":
-      return "GoCardLess";
     case "plaid":
       return "Plaid";
     case "teller":
@@ -259,7 +257,7 @@ export function ConnectTransactionsModal() {
                       name={institution.name}
                       logo={institution.logo}
                       provider={institution.provider}
-                      // GoCardLess
+                      // GoCardLess (removed)
                       availableHistory={
                         institution.availableHistory
                           ? +institution.availableHistory

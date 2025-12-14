@@ -90,7 +90,7 @@ export type CreateBankConnectionPayload = {
   referenceId?: string | null;
   teamId: string;
   userId: string;
-  provider: "gocardless" | "teller" | "plaid" | "enablebanking";
+  provider: "teller" | "plaid" | "enablebanking";
 };
 
 export const createBankConnection = async (

@@ -1,4 +1,3 @@
-import { GoCardLessProvider } from "@engine/providers/gocardless/gocardless-provider";
 import { PlaidProvider } from "@engine/providers/plaid/plaid-provider";
 import { TellerProvider } from "@engine/providers/teller/teller-provider";
 import type { ProviderParams } from "@engine/providers/types";
@@ -15,13 +14,11 @@ export async function getInstitutions(
 ) {
   const { countryCode } = params;
 
-  const gocardless = new GoCardLessProvider(params);
   const teller = new TellerProvider(params);
   const plaid = new PlaidProvider(params);
 
   const result = await Promise.all([
     teller.getInstitutions(),
-    gocardless.getInstitutions({ countryCode }),
     plaid.getInstitutions({ countryCode }),
   ]);
 

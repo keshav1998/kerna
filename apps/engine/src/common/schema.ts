@@ -19,12 +19,7 @@ export const GeneralErrorSchema = z.object({
   }),
 });
 
-export const Providers = z.enum([
-  "teller",
-  "plaid",
-  "gocardless",
-  "enablebanking",
-]);
+export const Providers = z.enum(["teller", "plaid", "enablebanking"]);
 
 export const HeadersSchema = z.object({
   authorization: z.string().openapi({
