@@ -27,5 +27,8 @@
     "turbo": "2.6.3",
     "typescript": "^5.9.3"
   },
-  "packageManager": "bun@1.2.22"
+  "packageManager": "bun@1.2.22",
+  "devDependencies": {
+    "@types/react-syntax-highlighter": "^15.5.13"
+  }
 }
