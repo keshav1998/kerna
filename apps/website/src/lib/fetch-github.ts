@@ -1,12 +1,15 @@
 "use server";
 
-async function getAllStargazers({ owner, name }) {
+async function getAllStargazers({
+  owner,
+  name,
+}: { owner: string; name: string }) {
   let endCursor = undefined;
   let hasNextPage = true;
-  let added = [];
+  let added: any[] = [];
 
   while (hasNextPage) {
-    const request = await fetch("https://api.github.com/graphql", {
+    const request: Response = await fetch("https://api.github.com/graphql", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +33,7 @@ async function getAllStargazers({ owner, name }) {
       }),
     });
 
-    const { data } = await request.json();
+    const { data }: any = await request.json();
 
     added = added.concat(data.repository.stargazers.edges);
     hasNextPage = data.repository.stargazers.pageInfo.hasNextPage;
@@ -40,7 +43,7 @@ async function getAllStargazers({ owner, name }) {
   return added;
 }
 
-async function githubRequest({ owner, name }) {
+async function githubRequest({ owner, name }: { owner: string; name: string }) {
   const request = await fetch("https://api.github.com/graphql", {
     method: "POST",
     headers: {
@@ -88,16 +91,19 @@ export async function getGithubStats() {
     name: "midday",
   });
 
-  const starsPerDate = stargazers.reduce((acc, curr) => {
-    const date = curr.starredAt.substring(0, 10);
+  const starsPerDate = stargazers.reduce(
+    (acc: Record<string, number>, curr: any) => {
+      const date = curr.starredAt.substring(0, 10);
 
-    if (acc[date]) {
-      acc[date]++;
-    } else {
-      acc[date] = 1;
-    }
-    return acc;
-  }, {});
+      if (acc[date]) {
+        acc[date]++;
+      } else {
+        acc[date] = 1;
+      }
+      return acc;
+    },
+    {},
+  );
 
   const stats = Object.keys(starsPerDate).map((key) => {
     return {

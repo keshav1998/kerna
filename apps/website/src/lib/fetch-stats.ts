@@ -9,35 +9,13 @@ export async function fetchStats() {
     process.env.SUPABASE_SERVICE_KEY!,
     {
       cookies: {
-        get() {
-          return null;
+        getAll() {
+          return [];
         },
-        set() {
-          return null;
-        },
-        remove() {
-          return null;
+        setAll() {
+          // No-op for server-side service key usage
         },
       },
-    },
-  );
-
-  const supabaseStorage = createServerClient<Database>(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_KEY!,
-    {
-      cookies: {
-        get() {
-          return null;
-        },
-        set() {
-          return null;
-        },
-        remove() {
-          return null;
-        },
-      },
-      db: { schema: "storage" },
     },
   );
 
@@ -50,7 +28,6 @@ export async function fetchStats() {
     { count: bankConnections },
     { count: trackerProjects },
     { count: reports },
-    { count: vaultObjects },
     { count: transactionEnrichments },
     { count: invoices },
     { count: invoiceCustomers },
@@ -87,10 +64,6 @@ export async function fetchStats() {
       .from("reports")
       .select("id", { count: "exact", head: true })
       .limit(1),
-    supabaseStorage
-      .from("objects")
-      .select("id", { count: "exact", head: true })
-      .limit(1),
     supabase
       .from("transaction_enrichments")
       .select("id", { count: "exact", head: true })
@@ -114,7 +87,6 @@ export async function fetchStats() {
     bankConnections,
     trackerProjects,
     reports,
-    vaultObjects,
     transactionEnrichments,
     invoices,
     invoiceCustomers,
