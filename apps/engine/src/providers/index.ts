@@ -16,11 +16,8 @@ import type {
 export class Provider {
   #name?: string;
 
-  #provider:
-    | PlaidProvider
-    | TellerProvider
-    | EnableBankingProvider
-    | null = null;
+  #provider: PlaidProvider | TellerProvider | EnableBankingProvider | null =
+    null;
 
   constructor(params?: ProviderParams) {
     this.#name = params?.provider;
@@ -47,15 +44,12 @@ export class Provider {
     const enablebanking = new EnableBankingProvider(params);
 
     try {
-      const [
-        isPlaidHealthy,
-        isTellerHealthy,
-        isEnableBankingHealthy,
-      ] = await Promise.all([
-        plaid.getHealthCheck(),
-        teller.getHealthCheck(),
-        enablebanking.getHealthCheck(),
-      ]);
+      const [isPlaidHealthy, isTellerHealthy, isEnableBankingHealthy] =
+        await Promise.all([
+          plaid.getHealthCheck(),
+          teller.getHealthCheck(),
+          enablebanking.getHealthCheck(),
+        ]);
 
       return {
         plaid: {

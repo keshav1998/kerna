@@ -10,7 +10,7 @@ type UpdateBankConnectionData = {
   referenceId?: string;
 };
 
-// NOTE: Only GoCardLess needs to be updated
+// NOTE: Only GoCardLess (removed) needs to be updated
 export async function updateBankConnection(
   supabase: Client,
   data: UpdateBankConnectionData,

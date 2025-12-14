@@ -257,7 +257,7 @@ export function ConnectTransactionsModal() {
                       name={institution.name}
                       logo={institution.logo}
                       provider={institution.provider}
-                      // GoCardLess
+                      // GoCardLess (removed)
                       availableHistory={
                         institution.availableHistory
                           ? +institution.availableHistory

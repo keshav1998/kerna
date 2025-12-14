@@ -1,6 +1,6 @@
 import { EnableBankingApi } from "@/providers/enablebanking/enablebanking-api";
 import { hashInstitutionId } from "@/providers/enablebanking/transform";
-import { GoCardLessApi } from "@/providers/gocardless/gocardless-api";
+
 import { PlaidApi } from "@/providers/plaid/plaid-api";
 import { getFileExtension, getLogoURL } from "@/utils/logo";
 import { getPopularity, getTellerData, matchLogoURL } from "./utils";
@@ -36,31 +36,6 @@ export async function getEnableBankingInstitutions() {
   });
 }
 
-export async function getGoCardLessInstitutions() {
-  const provider = new GoCardLessApi({
-    // @ts-ignore
-    envs: {
-      GOCARDLESS_SECRET_ID: process.env.GOCARDLESS_SECRET_ID!,
-      GOCARDLESS_SECRET_KEY: process.env.GOCARDLESS_SECRET_KEY!,
-    },
-  });
-
-  const data = await provider.getInstitutions();
-
-  return data.map((institution) => {
-    const ext = getFileExtension(institution.logo);
-
-    return {
-      id: institution.id,
-      name: institution.name,
-      logo: getLogoURL(institution.id, ext),
-      countries: institution.countries,
-      available_history: institution.transaction_total_days,
-      popularity: getPopularity(institution.id),
-      provider: "gocardless",
-    };
-  });
-}
 
 export async function getTellerInstitutions() {
   const data = await getTellerData();
@@ -102,7 +77,7 @@ export async function getPlaidInstitutions() {
 
 export async function getInstitutions() {
   const data = await Promise.all([
-    // getGoCardLessInstitutions(),
+    // getGoCardLess (removed)Institutions(),
     // getTellerInstitutions(),
     // getPlaidInstitutions(),
     getEnableBankingInstitutions(),

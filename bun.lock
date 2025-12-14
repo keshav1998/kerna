@@ -1,5 +1,6 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "midday",
@@ -11,7 +12,7 @@
       },
     },
     "apps/api": {
-      "name": "@midday/api",
+      "name": "@kerna/api",
       "dependencies": {
         "@ai-sdk-tools/agents": "^1.2.0",
         "@ai-sdk-tools/artifacts": "^1.2.0",
@@ -23,24 +24,24 @@
         "@hono/trpc-server": "^0.4.1",
         "@hono/zod-openapi": "^1.1.5",
         "@hono/zod-validator": "^0.7.5",
-        "@midday/cache": "workspace:*",
-        "@midday/categories": "workspace:*",
-        "@midday/db": "workspace:*",
-        "@midday/documents": "workspace:*",
-        "@midday/encryption": "workspace:*",
-        "@midday/engine": "workspace:*",
-        "@midday/engine-client": "workspace:*",
-        "@midday/events": "workspace:*",
-        "@midday/import": "workspace:*",
-        "@midday/inbox": "workspace:*",
-        "@midday/invoice": "workspace:*",
-        "@midday/job-client": "workspace:*",
-        "@midday/jobs": "workspace:*",
-        "@midday/location": "workspace:*",
-        "@midday/logger": "workspace:*",
-        "@midday/notifications": "workspace:*",
-        "@midday/supabase": "workspace:*",
-        "@midday/utils": "workspace:*",
+        "@kerna/cache": "workspace:*",
+        "@kerna/categories": "workspace:*",
+        "@kerna/db": "workspace:*",
+        "@kerna/documents": "workspace:*",
+        "@kerna/encryption": "workspace:*",
+        "@kerna/engine": "workspace:*",
+        "@kerna/engine-client": "workspace:*",
+        "@kerna/events": "workspace:*",
+        "@kerna/import": "workspace:*",
+        "@kerna/inbox": "workspace:*",
+        "@kerna/invoice": "workspace:*",
+        "@kerna/job-client": "workspace:*",
+        "@kerna/jobs": "workspace:*",
+        "@kerna/location": "workspace:*",
+        "@kerna/logger": "workspace:*",
+        "@kerna/notifications": "workspace:*",
+        "@kerna/supabase": "workspace:*",
+        "@kerna/utils": "workspace:*",
         "@polar-sh/sdk": "^0.41.5",
         "@scalar/hono-api-reference": "^0.9.26",
         "@sentry/bun": "^10.29.0",
@@ -68,7 +69,7 @@
       },
     },
     "apps/dashboard": {
-      "name": "@midday/dashboard",
+      "name": "@kerna/dashboard",
       "version": "1.0.0",
       "dependencies": {
         "@ai-sdk-tools/artifacts": "^1.2.0",
@@ -83,17 +84,17 @@
         "@dnd-kit/sortable": "^10.0.0",
         "@dnd-kit/utilities": "^3.2.2",
         "@hookform/resolvers": "^5.2.2",
-        "@midday/api": "workspace:*",
-        "@midday/app-store": "workspace:*",
-        "@midday/desktop-client": "workspace:*",
-        "@midday/engine": "workspace:*",
-        "@midday/events": "workspace:*",
-        "@midday/inbox": "workspace:*",
-        "@midday/invoice": "workspace:*",
-        "@midday/location": "workspace:*",
-        "@midday/supabase": "workspace:*",
-        "@midday/ui": "workspace:*",
-        "@midday/utils": "workspace:*",
+        "@kerna/api": "workspace:*",
+        "@kerna/app-store": "workspace:*",
+        "@kerna/desktop-client": "workspace:*",
+        "@kerna/engine": "workspace:*",
+        "@kerna/events": "workspace:*",
+        "@kerna/inbox": "workspace:*",
+        "@kerna/invoice": "workspace:*",
+        "@kerna/location": "workspace:*",
+        "@kerna/supabase": "workspace:*",
+        "@kerna/ui": "workspace:*",
+        "@kerna/utils": "workspace:*",
         "@number-flow/react": "^0.5.10",
         "@polar-sh/checkout": "^0.1.14",
         "@polar-sh/nextjs": "^0.9.0",
@@ -147,7 +148,7 @@
         "zustand": "^5.0.9",
       },
       "devDependencies": {
-        "@midday/tsconfig": "workspace:*",
+        "@kerna/tsconfig": "workspace:*",
         "@types/file-saver": "^2.0.7",
         "@types/html2canvas": "^1.0.0",
         "@types/node": "^24.10.1",
@@ -159,7 +160,7 @@
       },
     },
     "apps/desktop": {
-      "name": "@midday/desktop",
+      "name": "@kerna/desktop",
       "version": "0.1.0",
       "dependencies": {
         "@tauri-apps/api": "^2",
@@ -183,13 +184,13 @@
       },
     },
     "apps/docs": {
-      "name": "@midday/docs",
+      "name": "@kerna/docs",
       "devDependencies": {
         "mintlify": "^4.2.202",
       },
     },
     "apps/engine": {
-      "name": "@midday/engine",
+      "name": "@kerna/engine",
       "dependencies": {
         "@hono/zod-openapi": "^1.1.5",
         "@hono/zod-validator": "^0.7.5",
@@ -207,11 +208,11 @@
       },
     },
     "apps/website": {
-      "name": "@midday/website",
+      "name": "@kerna/website",
       "version": "1.0.0",
       "dependencies": {
-        "@midday/supabase": "workspace:*",
-        "@midday/ui": "workspace:*",
+        "@kerna/supabase": "workspace:*",
+        "@kerna/ui": "workspace:*",
         "@openpanel/nextjs": "^1.1.1",
         "@openstatus/react": "^0.0.3",
         "@team-plain/typescript-sdk": "5.11.0",
@@ -232,31 +233,31 @@
         "sugar-high": "^0.9.5",
       },
       "devDependencies": {
-        "@midday/tsconfig": "workspace:*",
+        "@kerna/tsconfig": "workspace:*",
         "@types/node": "^24.10.1",
         "@types/react": "19.2.7",
       },
     },
     "apps/worker": {
-      "name": "@midday/worker",
+      "name": "@kerna/worker",
       "version": "0.0.1",
       "dependencies": {
         "@bull-board/api": "^6.15.0",
         "@bull-board/hono": "^6.15.0",
         "@fast-csv/format": "5.0.5",
         "@hono/node-server": "^1.19.7",
-        "@midday/db": "workspace:*",
-        "@midday/documents": "workspace:*",
-        "@midday/email": "workspace:*",
-        "@midday/engine": "workspace:*",
-        "@midday/engine-client": "workspace:*",
-        "@midday/import": "workspace:*",
-        "@midday/job-client": "workspace:*",
-        "@midday/jobs": "workspace:*",
-        "@midday/logger": "workspace:*",
-        "@midday/notifications": "workspace:*",
-        "@midday/supabase": "workspace:*",
-        "@midday/utils": "workspace:*",
+        "@kerna/db": "workspace:*",
+        "@kerna/documents": "workspace:*",
+        "@kerna/email": "workspace:*",
+        "@kerna/engine": "workspace:*",
+        "@kerna/engine-client": "workspace:*",
+        "@kerna/import": "workspace:*",
+        "@kerna/job-client": "workspace:*",
+        "@kerna/jobs": "workspace:*",
+        "@kerna/logger": "workspace:*",
+        "@kerna/notifications": "workspace:*",
+        "@kerna/supabase": "workspace:*",
+        "@kerna/utils": "workspace:*",
         "@sentry/bun": "^10.29.0",
         "@types/archiver": "^7.0.0",
         "archiver": "^7.0.1",
@@ -278,10 +279,10 @@
       },
     },
     "packages/app-store": {
-      "name": "@midday/app-store",
+      "name": "@kerna/app-store",
       "version": "1.0.0",
       "dependencies": {
-        "@midday/jobs": "workspace:*",
+        "@kerna/jobs": "workspace:*",
         "@slack/bolt": "^4.6.0",
         "@slack/web-api": "^7.13.0",
         "zod": "^4.1.13",
@@ -292,7 +293,7 @@
       },
     },
     "packages/cache": {
-      "name": "@midday/cache",
+      "name": "@kerna/cache",
       "version": "0.0.1",
       "dependencies": {
         "@types/redis": "^4.0.11",
@@ -300,11 +301,11 @@
       },
     },
     "packages/categories": {
-      "name": "@midday/categories",
+      "name": "@kerna/categories",
       "version": "0.1.0",
       "dependencies": {
         "@ai-sdk/google": "^2.0.33",
-        "@midday/logger": "workspace:*",
+        "@kerna/logger": "workspace:*",
         "ai": "5.0.87",
         "zod": "^4.1.13",
       },
@@ -314,15 +315,15 @@
       },
     },
     "packages/db": {
-      "name": "@midday/db",
+      "name": "@kerna/db",
       "dependencies": {
         "@date-fns/utc": "^2.1.1",
-        "@midday/cache": "workspace:*",
-        "@midday/categories": "workspace:*",
-        "@midday/encryption": "workspace:*",
-        "@midday/invoice": "workspace:*",
-        "@midday/logger": "workspace:*",
-        "@midday/utils": "workspace:*",
+        "@kerna/cache": "workspace:*",
+        "@kerna/categories": "workspace:*",
+        "@kerna/encryption": "workspace:*",
+        "@kerna/invoice": "workspace:*",
+        "@kerna/logger": "workspace:*",
+        "@kerna/utils": "workspace:*",
         "@sindresorhus/slugify": "^3.0.0",
         "@types/pg": "^8.15.6",
         "camelcase-keys": "^10.0.1",
@@ -337,20 +338,20 @@
       },
     },
     "packages/desktop-client": {
-      "name": "@midday/desktop-client",
+      "name": "@kerna/desktop-client",
       "version": "0.1.0",
       "dependencies": {
         "@tauri-apps/api": "^2.9.1",
       },
     },
     "packages/documents": {
-      "name": "@midday/documents",
+      "name": "@kerna/documents",
       "version": "1.0.0",
       "dependencies": {
         "@ai-sdk/google": "^2.0.33",
+        "@kerna/utils": "workspace:*",
         "@langchain/community": "1.0.3",
         "@langchain/core": "1.0.5",
-        "@midday/utils": "workspace:*",
         "ai": "5.0.87",
         "canvas": "^3.2.0",
         "langchain": "^1.0.5",
@@ -364,11 +365,11 @@
       },
     },
     "packages/email": {
-      "name": "@midday/email",
+      "name": "@kerna/email",
       "version": "1.0.0",
       "dependencies": {
-        "@midday/ui": "workspace:*",
-        "@midday/utils": "workspace:*",
+        "@kerna/ui": "workspace:*",
+        "@kerna/utils": "workspace:*",
         "@react-email/components": "1.0.1",
         "@react-email/render": "2.0.0",
         "@react-email/tailwind": "2.0.1",
@@ -382,14 +383,14 @@
       },
     },
     "packages/encryption": {
-      "name": "@midday/encryption",
+      "name": "@kerna/encryption",
       "version": "1.0.0",
       "dependencies": {
         "jose": "^6.1.3",
       },
     },
     "packages/engine-client": {
-      "name": "@midday/engine-client",
+      "name": "@kerna/engine-client",
       "version": "0.0.1",
       "dependencies": {
         "hono": "4.10.7",
@@ -399,7 +400,7 @@
       },
     },
     "packages/events": {
-      "name": "@midday/events",
+      "name": "@kerna/events",
       "version": "1.0.0",
       "dependencies": {
         "@openpanel/nextjs": "^1.1.1",
@@ -410,7 +411,7 @@
       },
     },
     "packages/import": {
-      "name": "@midday/import",
+      "name": "@kerna/import",
       "version": "1.0.0",
       "dependencies": {
         "change-case": "^5.4.4",
@@ -420,20 +421,20 @@
       },
     },
     "packages/inbox": {
-      "name": "@midday/inbox",
+      "name": "@kerna/inbox",
       "version": "1.0.0",
       "dependencies": {
-        "@midday/encryption": "workspace:*",
-        "@midday/supabase": "workspace:*",
+        "@kerna/encryption": "workspace:*",
+        "@kerna/supabase": "workspace:*",
         "googleapis": "^166.0.0",
         "zod": "^4.1.13",
       },
     },
     "packages/invoice": {
-      "name": "@midday/invoice",
+      "name": "@kerna/invoice",
       "dependencies": {
-        "@midday/ui": "workspace:*",
-        "@midday/utils": "workspace:*",
+        "@kerna/ui": "workspace:*",
+        "@kerna/utils": "workspace:*",
         "@react-pdf/renderer": "^4.3.1",
         "date-fns": "^4.1.0",
         "jose": "^6.1.3",
@@ -444,10 +445,10 @@
       },
     },
     "packages/job-client": {
-      "name": "@midday/job-client",
+      "name": "@kerna/job-client",
       "version": "0.0.1",
       "dependencies": {
-        "@midday/logger": "workspace:*",
+        "@kerna/logger": "workspace:*",
         "bullmq": "^5.65.1",
         "ioredis": "^5.8.2",
       },
@@ -457,17 +458,17 @@
       },
     },
     "packages/jobs": {
-      "name": "@midday/jobs",
+      "name": "@kerna/jobs",
       "version": "0.0.1",
       "dependencies": {
         "@ai-sdk/google": "^2.0.33",
         "@fast-csv/format": "5.0.5",
-        "@midday/db": "workspace:*",
-        "@midday/email": "workspace:*",
-        "@midday/engine": "workspace:*",
-        "@midday/engine-client": "workspace:*",
-        "@midday/notifications": "workspace:*",
-        "@midday/supabase": "workspace:*",
+        "@kerna/db": "workspace:*",
+        "@kerna/email": "workspace:*",
+        "@kerna/engine": "workspace:*",
+        "@kerna/engine-client": "workspace:*",
+        "@kerna/notifications": "workspace:*",
+        "@kerna/supabase": "workspace:*",
         "@sindresorhus/slugify": "^3.0.0",
         "@zip.js/zip.js": "^2.8.10",
         "ai": "5.0.87",
@@ -483,14 +484,14 @@
       },
     },
     "packages/location": {
-      "name": "@midday/location",
+      "name": "@kerna/location",
       "version": "1.0.0",
       "devDependencies": {
         "typescript": "^5.9.3",
       },
     },
     "packages/logger": {
-      "name": "@midday/logger",
+      "name": "@kerna/logger",
       "version": "0.0.0",
       "dependencies": {
         "pino": "^10.1.0",
@@ -501,23 +502,23 @@
       },
     },
     "packages/notifications": {
-      "name": "@midday/notifications",
+      "name": "@kerna/notifications",
       "version": "0.1.0",
       "dependencies": {
-        "@midday/db": "workspace:*",
-        "@midday/email": "workspace:*",
-        "@midday/inbox": "workspace:*",
+        "@kerna/db": "workspace:*",
+        "@kerna/email": "workspace:*",
+        "@kerna/inbox": "workspace:*",
         "nanoid": "^5.1.6",
         "resend": "^6.5.2",
         "zod": "^4.1.13",
       },
       "devDependencies": {
-        "@midday/tsconfig": "workspace:*",
+        "@kerna/tsconfig": "workspace:*",
         "typescript": "^5.9.3",
       },
     },
     "packages/supabase": {
-      "name": "@midday/supabase",
+      "name": "@kerna/supabase",
       "version": "1.0.0",
       "dependencies": {
         "@supabase/postgrest-js": "^2.87.0",
@@ -533,11 +534,11 @@
       },
     },
     "packages/tsconfig": {
-      "name": "@midday/tsconfig",
+      "name": "@kerna/tsconfig",
       "version": "1.0.0",
     },
     "packages/ui": {
-      "name": "@midday/ui",
+      "name": "@kerna/ui",
       "version": "1.0.0",
       "dependencies": {
         "@radix-ui/react-accordion": "^1.2.11",
@@ -603,7 +604,7 @@
       },
     },
     "packages/utils": {
-      "name": "@midday/utils",
+      "name": "@kerna/utils",
       "version": "1.0.0",
       "devDependencies": {
         "typescript": "^5.9.3",
@@ -1039,6 +1040,64 @@
 
     "@jsonhero/path": ["@jsonhero/path@1.0.21", "", {}, "sha512-gVUDj/92acpVoJwsVJ/RuWOaHyG4oFzn898WNGQItLCTQ+hOaVlEaImhwE1WqOTf+l3dGOUkbSiVKlb3q1hd1Q=="],
 
+    "@kerna/api": ["@kerna/api@workspace:apps/api"],
+
+    "@kerna/app-store": ["@kerna/app-store@workspace:packages/app-store"],
+
+    "@kerna/cache": ["@kerna/cache@workspace:packages/cache"],
+
+    "@kerna/categories": ["@kerna/categories@workspace:packages/categories"],
+
+    "@kerna/dashboard": ["@kerna/dashboard@workspace:apps/dashboard"],
+
+    "@kerna/db": ["@kerna/db@workspace:packages/db"],
+
+    "@kerna/desktop": ["@kerna/desktop@workspace:apps/desktop"],
+
+    "@kerna/desktop-client": ["@kerna/desktop-client@workspace:packages/desktop-client"],
+
+    "@kerna/docs": ["@kerna/docs@workspace:apps/docs"],
+
+    "@kerna/documents": ["@kerna/documents@workspace:packages/documents"],
+
+    "@kerna/email": ["@kerna/email@workspace:packages/email"],
+
+    "@kerna/encryption": ["@kerna/encryption@workspace:packages/encryption"],
+
+    "@kerna/engine": ["@kerna/engine@workspace:apps/engine"],
+
+    "@kerna/engine-client": ["@kerna/engine-client@workspace:packages/engine-client"],
+
+    "@kerna/events": ["@kerna/events@workspace:packages/events"],
+
+    "@kerna/import": ["@kerna/import@workspace:packages/import"],
+
+    "@kerna/inbox": ["@kerna/inbox@workspace:packages/inbox"],
+
+    "@kerna/invoice": ["@kerna/invoice@workspace:packages/invoice"],
+
+    "@kerna/job-client": ["@kerna/job-client@workspace:packages/job-client"],
+
+    "@kerna/jobs": ["@kerna/jobs@workspace:packages/jobs"],
+
+    "@kerna/location": ["@kerna/location@workspace:packages/location"],
+
+    "@kerna/logger": ["@kerna/logger@workspace:packages/logger"],
+
+    "@kerna/notifications": ["@kerna/notifications@workspace:packages/notifications"],
+
+    "@kerna/supabase": ["@kerna/supabase@workspace:packages/supabase"],
+
+    "@kerna/tsconfig": ["@kerna/tsconfig@workspace:packages/tsconfig"],
+
+    "@kerna/ui": ["@kerna/ui@workspace:packages/ui"],
+
+    "@kerna/utils": ["@kerna/utils@workspace:packages/utils"],
+
+    "@kerna/website": ["@kerna/website@workspace:apps/website"],
+
+    "@kerna/worker": ["@kerna/worker@workspace:apps/worker"],
+
     "@langchain/classic": ["@langchain/classic@1.0.3", "", { "dependencies": { "@langchain/openai": "1.1.1", "@langchain/textsplitters": "1.0.0", "handlebars": "^4.7.8", "js-yaml": "^4.1.0", "jsonpointer": "^5.0.1", "openapi-types": "^12.1.3", "p-retry": "4", "uuid": "^10.0.0", "yaml": "^2.2.1", "zod": "^3.25.76 || ^4" }, "optionalDependencies": { "langsmith": "^0.3.64" }, "peerDependencies": { "@langchain/core": "^1.0.0", "cheerio": "*", "peggy": "^3.0.2", "typeorm": "*" }, "optionalPeers": ["cheerio", "peggy", "typeorm"] }, "sha512-XyoaiJSi4y7SzrZMCb3DdDfC+M3gqIQpVH2cOCh9xQf4244jNrncpLXF/MwOJYWxzTsjfcCAHIbFJ0kSH5nqmg=="],
 
     "@langchain/community": ["@langchain/community@1.0.3", "", { "dependencies": { "@langchain/classic": "1.0.3", "@langchain/openai": "1.1.1", "binary-extensions": "^2.2.0", "flat": "^5.0.2", "js-yaml": "^4.1.0", "math-expression-evaluator": "^2.0.0", "uuid": "^10.0.0", "zod": "^3.25.76 || ^4" }, "peerDependencies": { "@arcjet/redact": "^v1.0.0-alpha.23", "@aws-crypto/sha256-js": "^5.0.0", "@aws-sdk/client-dynamodb": "^3.749.0", "@aws-sdk/client-lambda": "^3.749.0", "@aws-sdk/client-s3": "^3.749.0", "@aws-sdk/client-sagemaker-runtime": "^3.749.0", "@aws-sdk/client-sfn": "^3.749.0", "@aws-sdk/credential-provider-node": "^3.388.0", "@azure/search-documents": "^12.0.0", "@azure/storage-blob": "^12.15.0", "@browserbasehq/sdk": "*", "@browserbasehq/stagehand": "^1.0.0", "@clickhouse/client": "^0.2.5", "@datastax/astra-db-ts": "^1.0.0", "@elastic/elasticsearch": "^8.4.0", "@getmetal/metal-sdk": "*", "@getzep/zep-cloud": "^1.0.6", "@getzep/zep-js": "^0.9.0", "@gomomento/sdk-core": "^1.51.1", "@google-cloud/storage": "^6.10.1 || ^7.7.0", "@gradientai/nodejs-sdk": "^1.2.0", "@huggingface/inference": "^4.0.5", "@huggingface/transformers": "^3.5.2", "@ibm-cloud/watsonx-ai": "*", "@lancedb/lancedb": "^0.19.1", "@langchain/core": "^1.0.0", "@layerup/layerup-security": "^1.5.12", "@libsql/client": "^0.14.0", "@mendable/firecrawl-js": "^1.4.3", "@mlc-ai/web-llm": "*", "@mozilla/readability": "*", "@neondatabase/serverless": "*", "@notionhq/client": "^2.2.10", "@opensearch-project/opensearch": "*", "@planetscale/database": "^1.8.0", "@premai/prem-sdk": "^0.3.25", "@raycast/api": "^1.55.2", "@rockset/client": "^0.9.1", "@smithy/eventstream-codec": "^2.0.5", "@smithy/protocol-http": "^3.0.6", "@smithy/signature-v4": "^2.0.10", "@smithy/util-utf8": "^2.0.0", "@spider-cloud/spider-client": "^0.0.21", "@supabase/supabase-js": "^2.45.0", "@tensorflow-models/universal-sentence-encoder": "*", "@tensorflow/tfjs-core": "*", "@upstash/ratelimit": "^1.1.3 || ^2.0.3", "@upstash/redis": "^1.20.6", "@upstash/vector": "^1.1.1", "@vercel/kv": "*", "@vercel/postgres": "*", "@writerai/writer-sdk": "^0.40.2", "@xata.io/client": "^0.28.0", "@zilliz/milvus2-sdk-node": ">=2.3.5", "apify-client": "^2.7.1", "assemblyai": "^4.6.0", "azion": "^1.11.1", "better-sqlite3": ">=9.4.0 <12.0.0", "cassandra-driver": "^4.7.2", "cborg": "^4.1.1", "cheerio": "^1.0.0-rc.12", "chromadb": "*", "closevector-common": "0.1.3", "closevector-node": "0.1.6", "closevector-web": "0.1.6", "convex": "^1.3.1", "crypto-js": "^4.2.0", "d3-dsv": "^2.0.0", "discord.js": "^14.14.1", "duck-duck-scrape": "^2.2.5", "epub2": "^3.0.1", "faiss-node": "*", "fast-xml-parser": "*", "firebase-admin": "^11.9.0 || ^12.0.0 || ^13.0.0", "google-auth-library": "*", "googleapis": "*", "hnswlib-node": "^3.0.0", "html-to-text": "^9.0.5", "ibm-cloud-sdk-core": "*", "ignore": "^5.2.0", "interface-datastore": "^8.2.11", "ioredis": "^5.3.2", "it-all": "^3.0.4", "jsdom": "*", "jsonwebtoken": "^9.0.2", "lodash": "^4.17.21", "lunary": "^0.7.10", "mammoth": "^1.11.0", "mariadb": "^3.4.0", "mem0ai": "^2.1.8", "mysql2": "^3.9.8", "neo4j-driver": "*", "node-llama-cpp": ">=3.0.0", "notion-to-md": "^3.1.0", "officeparser": "^4.0.4", "openai": "*", "pdf-parse": "1.1.1", "pg": "^8.11.0", "pg-copy-streams": "^6.0.5", "pickleparser": "^0.2.1", "playwright": "^1.32.1", "portkey-ai": "^0.1.11", "puppeteer": "*", "pyodide": ">=0.24.1 <0.27.0", "replicate": "*", "sonix-speech-recognition": "^2.1.1", "srt-parser-2": "^1.2.3", "typeorm": "^0.3.26", "typesense": "^1.5.3", "usearch": "^1.1.1", "voy-search": "0.6.2", "word-extractor": "*", "ws": "^8.14.2", "youtubei.js": "*" }, "optionalPeers": ["@arcjet/redact", "@aws-crypto/sha256-js", "@aws-sdk/client-dynamodb", "@aws-sdk/client-lambda", "@aws-sdk/client-s3", "@aws-sdk/client-sagemaker-runtime", "@aws-sdk/client-sfn", "@aws-sdk/credential-provider-node", "@azure/search-documents", "@azure/storage-blob", "@browserbasehq/sdk", "@clickhouse/client", "@datastax/astra-db-ts", "@elastic/elasticsearch", "@getmetal/metal-sdk", "@getzep/zep-cloud", "@getzep/zep-js", "@gomomento/sdk-core", "@google-cloud/storage", "@gradientai/nodejs-sdk", "@huggingface/inference", "@huggingface/transformers", "@lancedb/lancedb", "@layerup/layerup-security", "@libsql/client", "@mendable/firecrawl-js", "@mlc-ai/web-llm", "@mozilla/readability", "@neondatabase/serverless", "@notionhq/client", "@opensearch-project/opensearch", "@planetscale/database", "@premai/prem-sdk", "@raycast/api", "@rockset/client", "@smithy/eventstream-codec", "@smithy/protocol-http", "@smithy/signature-v4", "@smithy/util-utf8", "@spider-cloud/spider-client", "@supabase/supabase-js", "@tensorflow-models/universal-sentence-encoder", "@tensorflow/tfjs-core", "@upstash/ratelimit", "@upstash/redis", "@upstash/vector", "@vercel/kv", "@vercel/postgres", "@writerai/writer-sdk", "@xata.io/client", "@zilliz/milvus2-sdk-node", "apify-client", "assemblyai", "azion", "better-sqlite3", "cassandra-driver", "cborg", "cheerio", "chromadb", "closevector-common", "closevector-node", "closevector-web", "convex", "crypto-js", "d3-dsv", "discord.js", "duck-duck-scrape", "epub2", "faiss-node", "fast-xml-parser", "firebase-admin", "google-auth-library", "googleapis", "hnswlib-node", "html-to-text", "ignore", "interface-datastore", "ioredis", "it-all", "jsdom", "jsonwebtoken", "lodash", "lunary", "mammoth", "mariadb", "mem0ai", "mysql2", "neo4j-driver", "node-llama-cpp", "notion-to-md", "officeparser", "pdf-parse", "pg", "pg-copy-streams", "pickleparser", "playwright", "portkey-ai", "puppeteer", "pyodide", "replicate", "sonix-speech-recognition", "srt-parser-2", "typeorm", "typesense", "usearch", "voy-search", "word-extractor", "ws", "youtubei.js"] }, "sha512-86L7qooSY8Fh5Sf2Tu/X8PvDJqvEXohyZUGusuv0XtnWGivwtecBm0vEbVPkLF07I2ZMtyAGzHJOblbveq6Nmg=="],
@@ -1072,64 +1131,6 @@
     "@mermaid-js/parser": ["@mermaid-js/parser@0.6.3", "", { "dependencies": { "langium": "3.3.1" } }, "sha512-lnjOhe7zyHjc+If7yT4zoedx2vo4sHaTmtkl1+or8BRTnCtDmcTpAjpzDSfCZrshM5bCoz0GyidzadJAH1xobA=="],
 
     "@microsoft/fetch-event-source": ["@microsoft/fetch-event-source@2.0.1", "", {}, "sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA=="],
-
-    "@midday/api": ["@midday/api@workspace:apps/api"],
-
-    "@midday/app-store": ["@midday/app-store@workspace:packages/app-store"],
-
-    "@midday/cache": ["@midday/cache@workspace:packages/cache"],
-
-    "@midday/categories": ["@midday/categories@workspace:packages/categories"],
-
-    "@midday/dashboard": ["@midday/dashboard@workspace:apps/dashboard"],
-
-    "@midday/db": ["@midday/db@workspace:packages/db"],
-
-    "@midday/desktop": ["@midday/desktop@workspace:apps/desktop"],
-
-    "@midday/desktop-client": ["@midday/desktop-client@workspace:packages/desktop-client"],
-
-    "@midday/docs": ["@midday/docs@workspace:apps/docs"],
-
-    "@midday/documents": ["@midday/documents@workspace:packages/documents"],
-
-    "@midday/email": ["@midday/email@workspace:packages/email"],
-
-    "@midday/encryption": ["@midday/encryption@workspace:packages/encryption"],
-
-    "@midday/engine": ["@midday/engine@workspace:apps/engine"],
-
-    "@midday/engine-client": ["@midday/engine-client@workspace:packages/engine-client"],
-
-    "@midday/events": ["@midday/events@workspace:packages/events"],
-
-    "@midday/import": ["@midday/import@workspace:packages/import"],
-
-    "@midday/inbox": ["@midday/inbox@workspace:packages/inbox"],
-
-    "@midday/invoice": ["@midday/invoice@workspace:packages/invoice"],
-
-    "@midday/job-client": ["@midday/job-client@workspace:packages/job-client"],
-
-    "@midday/jobs": ["@midday/jobs@workspace:packages/jobs"],
-
-    "@midday/location": ["@midday/location@workspace:packages/location"],
-
-    "@midday/logger": ["@midday/logger@workspace:packages/logger"],
-
-    "@midday/notifications": ["@midday/notifications@workspace:packages/notifications"],
-
-    "@midday/supabase": ["@midday/supabase@workspace:packages/supabase"],
-
-    "@midday/tsconfig": ["@midday/tsconfig@workspace:packages/tsconfig"],
-
-    "@midday/ui": ["@midday/ui@workspace:packages/ui"],
-
-    "@midday/utils": ["@midday/utils@workspace:packages/utils"],
-
-    "@midday/website": ["@midday/website@workspace:apps/website"],
-
-    "@midday/worker": ["@midday/worker@workspace:apps/worker"],
 
     "@mintlify/cli": ["@mintlify/cli@4.0.830", "", { "dependencies": { "@inquirer/prompts": "7.9.0", "@mintlify/common": "1.0.623", "@mintlify/link-rot": "3.0.770", "@mintlify/models": "0.0.244", "@mintlify/prebuild": "1.0.754", "@mintlify/previewing": "4.0.805", "@mintlify/validation": "0.1.531", "adm-zip": "0.5.16", "chalk": "5.2.0", "color": "4.2.3", "detect-port": "1.5.1", "front-matter": "4.0.2", "fs-extra": "11.2.0", "ink": "6.3.0", "inquirer": "12.3.0", "js-yaml": "4.1.0", "mdast-util-mdx-jsx": "3.2.0", "react": "19.2.1", "semver": "7.7.2", "unist-util-visit": "5.0.0", "yargs": "17.7.1" }, "bin": { "mint": "bin/index.js", "mintlify": "bin/index.js" } }, "sha512-xSqZJCfU9lD76YTjnPOtepXE7ThLNmyVOUMcGjoYItD4osc/NpArtyaKIl2+Tpkfc3BV4gBhce2fymWctmV8yQ=="],
 

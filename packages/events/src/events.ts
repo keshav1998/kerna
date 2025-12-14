@@ -31,8 +31,8 @@ export const LogEvents = {
     name: "Connect Bank Authorized",
     channel: "bank",
   },
-  GoCardLessLinkFailed: {
-    name: "GoCardLess Link Failed",
+  GoCardLess (removed)LinkFailed: {
+    name: "GoCardLess (removed) Link Failed",
     channel: "gocardless",
   },
   ConnectBankFailed: {
@@ -103,8 +103,8 @@ export const LogEvents = {
     name: "Update Currency",
     channel: "transaction",
   },
-  GoCardLessLinkCreated: {
-    name: "GoCardLess Link Created",
+  GoCardLess (removed)LinkCreated: {
+    name: "GoCardLess (removed) Link Created",
     channel: "gocardless",
   },
   InboxUpload: {

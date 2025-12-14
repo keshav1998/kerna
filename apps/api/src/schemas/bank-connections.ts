@@ -7,7 +7,7 @@ export const getBankConnectionsSchema = z
 export const createBankConnectionSchema = z.object({
   accessToken: z.string().nullable().optional(), // Teller
   enrollmentId: z.string().nullable().optional(), // Teller
-  referenceId: z.string().nullable().optional(), // GoCardLess
+  referenceId: z.string().nullable().optional(), // GoCardLess (removed)
   provider: z.enum(["teller", "plaid", "enablebanking"]),
   accounts: z.array(
     z.object({
@@ -26,8 +26,8 @@ export const createBankConnectionSchema = z.object({
         "loan",
         "other_liability",
       ]),
-      accountReference: z.string().nullable().optional(), // EnableBanking & GoCardLess
-      expiresAt: z.string().nullable().optional(), // EnableBanking & GoCardLess
+      accountReference: z.string().nullable().optional(), // EnableBanking & GoCardLess (removed)
+      expiresAt: z.string().nullable().optional(), // EnableBanking & GoCardLess (removed)
     }),
   ),
 });

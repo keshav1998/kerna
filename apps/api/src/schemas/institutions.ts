@@ -6,7 +6,7 @@ export const getInstitutionsSchema = z.object({
 });
 
 export const getAccountsSchema = z.object({
-  id: z.string().optional(), // EnableBanking & GoCardLess
+  id: z.string().optional(), // EnableBanking & GoCardLess (removed)
   accessToken: z.string().optional(),
   institutionId: z.string().optional(), // Plaid
   provider: z.enum(["teller", "plaid", "enablebanking"]),

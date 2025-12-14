@@ -45,8 +45,6 @@ export function ReconnectProvider({
   const [plaidToken, setPlaidToken] = useState<string | undefined>();
   const [isLoading, setIsLoading] = useState(false);
 
-
-
   const reconnectEnableBankingLink = useAction(
     reconnectEnableBankingLinkAction,
     {

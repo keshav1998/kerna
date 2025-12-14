@@ -7,7 +7,7 @@ export const AccountsParamsSchema = z.object({
     .string()
     .optional()
     .openapi({
-      description: "Reference id (removed: GoCardLess)",
+      description: "Reference id (removed: GoCardLess (removed))",
       param: {
         name: "id",
         in: "query",
@@ -76,7 +76,7 @@ export const AccountSchema = z
     resource_id: z
       .string()
       .openapi({
-        description: "Reference id (removed: GoCardLess)",
+        description: "Reference id (removed: GoCardLess (removed))",
         example: "GBRGZX62Y8",
       })
       .nullable(),
@@ -141,7 +141,7 @@ export const AccountBalanceSchema = z
 export const DeleteAccountsParamsSchema = z
   .object({
     accountId: z.string().openapi({
-      description: "Account id (GoCardLess)",
+      description: "Account id (GoCardLess (removed))",
       param: {
         name: "accountId",
         in: "query",

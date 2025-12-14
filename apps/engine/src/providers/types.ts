@@ -48,7 +48,7 @@ export type Account = {
   institution: Institution;
   balance: Balance;
   enrollment_id: string | null; // Teller
-  resource_id: string | null; // Removed: GoCardLess
+  resource_id: string | null; // Removed: GoCardLess (removed)
   expires_at: string | null; // EnableBanking
 };
 
@@ -85,7 +85,7 @@ export type GetAccountBalanceResponse = {
 };
 
 export type DeleteAccountsRequest = {
-  accountId?: string; // Removed: GoCardLess
+  accountId?: string; // Removed: GoCardLess (removed)
   accessToken?: string; // Teller & Plaid
 };
 

@@ -34,7 +34,6 @@ export const syncConnection = schemaTask({
         query: {
           id: data.reference_id!,
           provider: data.provider as
-            | "gocardless"
             | "plaid"
             | "teller"
             | "enablebanking", // Pluggy not supported yet
