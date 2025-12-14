@@ -7,7 +7,6 @@ export function useConnectParams(initialCountryCode?: string) {
     provider: parseAsStringLiteral([
       "teller",
       "plaid",
-
       "enablebanking",
     ]),
     token: parseAsString,
